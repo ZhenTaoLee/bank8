@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>匹配详情</title>
+
+<link href="{$Think.const.BACK_CSS_URL}style.css" rel="stylesheet" type="text/css" />
+<link href="{$Think.const.BACK_CSS_URL}select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}jquery.js"></script>
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}select-ui.min.js"></script>
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}editor/kindeditor.js"></script>
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}laydate/laydate.js"></script>
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+
+</head>
+
+<body>
+	<div class="place">
+        <span>位置：</span>
+        <ul class="placeul">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">系统设置</a></li>
+        </ul>
+    </div>    
+    <div class="formbody">
+
+    <!--<div id="tab1" class="tabson">   
+        <div class="formtext">Hi，<b>admin</b>，欢迎您试用信息发布功能！</div>   
+    </div>  -->
+    
+    <div class="top-left" style="line-height: 40px;">
+        <p>匹配编号：{$matching.addtime}{$matching.matching_id}</p>
+        <p>匹配时间：<?php echo date('Y-m-d H:i:s',$matching['addtime']);?></p>
+        <p>手机号：{$user.phone}</p>
+        <p>姓名：{$matching.name}</p>
+        <p>城市：{$matching.city}</p>
+        <p>性别：{$matching.sex}</p>
+        <p>年龄：{$matching.age}</p>
+        <p>职业：{$matching.profession}</p>
+        <p>征信查询：{$matching.credit}</p>
+        <p>个人负债：{$matching.liabilities}</p>
+        <p>社保：{$matching.socialSecurity}</p>
+        <p>社保基数：{$matching.socialSecurityBasics}</p>
+        <p>公积金：{$matching.accumulationFund}</p>
+        <p>公积金基数：{$matching.accumulationFundBasics}</p>
+        <p>房产购置方式：{$matching.houseBuyType}</p>
+
+			<?php if($matching['ownHouse']==1){ ?>
+				
+				<p>房产城市：{$matchinghouse.houseCity}</p>
+				<p>房产面积：{$matchinghouse.houseArea}</p>
+				<p>房产估值：{$matchinghouse.houseValue}</p>
+				<p>房产类型：{$matchinghouse.houseType}</p>
+
+
+			<?php  }else{ ?>
+
+		<div class="">
+					没有匹配房产
+				</div>
+					<?php  } ?>
+			<?php if($matching['ownAutomobile']==1){ ?>
+				
+				<p>汽车购置方式：{$matchingvehicle.vehicleBuyType}</p>
+				<p>可接受车贷类型：{$matchingvehicle.vehicleLoanType}</p>
+				<p>车牌省：{$matchingvehicle.licensePlateProvince}</p>
+				<p>汽车用途：{$matchingvehicle.vehicleUse}</p>
+				<p>汽车价格：{$matchingvehicle.vehiclePrice}</p>
+				<p>车龄：{$matchingvehicle.vehicleAge}</p>
+				<p>汽车保险：{$matchingvehicle.vehicleInsurance}</p>
+				<p>车险额度：{$matchingvehicle.carInsuranceAmount}</p>
+			<?php  }else{  ?>
+				
+				<div class="">
+					没有匹配汽车
+				</div>
+					<?php  } ?>
+			<?php if($matching['ownGuaranteeSlip']==1){ ?>
+				
+				<p>保险公司：{$matchinginsurance.insuranceName}</p>
+				<p>保单类型：{$matchinginsurance.insuranceType}</p>
+				<p>保单有效时间：{$matchinginsurance.insuranceTime}</p>
+				<p>保单缴费方式：{$matchinginsurance.insurancePaymentMethod}</p>
+				<p>保单已缴费年限：{$matchinginsurance.insuranceAgeLimit}</p>
+				<p>保单单次缴费：{$matchinginsurance.insurancePrice}</p>
+
+
+			<?php  }else{ ?>
+				<div class="">
+					没有匹配保单
+				</div>
+				<?php  } ?>
+				
+				
+			<?php if($matching['ownPersonage']==1){ ?>
+				
+					<p>个人或企业流水：{$matchingpersonage.income}</p>
+					<p>公司：{$matchingpersonage.company}</p>
+					<p>个税缴纳情况：{$matchingpersonage.tax}</p>
+					<p>工龄：{$matchingpersonage.seniority}</p>
+					<p>信用卡总额度：{$matchingpersonage.creditLimit}</p>
+					<p>芝麻信用：{$matchingpersonage.zhimaCredit}</p>
+					<p>微粒贷：{$matchingpersonage.tinyGrainLoan}</p>
+					<p>学历：{$matchingpersonage.education}</p>
+
+	
+<?php  }else{ ?>
+				<div class="">
+					没有匹配个人与企业
+				</div>
+				<?php  } ?>
+    </div>
+
+
+       
+	</div> 
+ 
+	<script type="text/javascript"> 
+      $("#usual1 ul").idTabs(); 
+    </script>
+    
+    <script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+	</script>   
+    
+    </div>
+
+
+</body>
+
+</html>

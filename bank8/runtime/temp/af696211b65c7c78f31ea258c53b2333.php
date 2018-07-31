@@ -1,0 +1,97 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:92:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/finance/problem.html";i:1522230546;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <!-- <title>八号钱庄</title> -->
+  <!-- <link rel="stylesheet" href="<?php echo BACK_CSS_URL; ?>bootstrap.min.css"> -->
+  <link rel="stylesheet" href="<?php echo BACK_CSS_URL; ?>bootstrap.min.css" >
+  <link rel="stylesheet" type="text/css" href="<?php echo BACK_CSS_URL; ?>problem.css">
+  <style type="text/css">
+        /* a标签样式 */
+        a {font-size:16px;color:rgb(28,28,28);}
+        a:link {color:; text-decoration:none;}
+        a:active:{color: red; } //激活：红色
+        a:visited {color:purple;text-decoration:none;} //已访问：purple、无下划线
+        a:hover {color: red; text-decoration:underline;} //鼠标移近：红色、下划线
+        /* 背景颜色 */
+        /* .color{background:#F0F0F0} */
+        /* .bg{background:url(./Images/report.png)} */
+        /* .left{float: right;}
+        .right{float:left;} */
+   </style>
+</head>
+<body>
+  <div class="color">
+   <!--问题标题-->
+   <div class="container">
+
+      <div class="row">
+          <h3><?php echo $list["headline"]; ?></h3>
+      </div>
+      <hr>
+
+      <!--准备展示答案-->
+      <div class="row">
+        <div class="small text-left">
+            <h5>八号答案：</h5>
+        </div>
+
+      </div>
+      <!-- 答案内容 -->
+      <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $list["webtest"]; ?></p>
+
+      <!-- <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国经济四十人论坛常务理事会副主席谢平发表了《金融监管新格局》的演讲，他认为2017年以来的监管风暴已经证明，与其争论监管体制，不如行动。他还谈到金融监管下一步要明确十二大问题：一是金融控股公司监管；二是理财产品是否纳入表内；三是信托公司的定位与监管；四是保险公司破产怎么收拾；五是上市公司推出规则执行问题；六是大量无牌照资管机构如何处置；七是大量网络支付性存款业务怎么处置。八是网络金融资产交易平台问题；九是金融科技产生的许多类金融业务如何监管；十是小贷公司与互联网金融的混合导致的问题；十一是政策性银行的商业行为、国家信用、道德风险和监管；十二是资产管理公司的全能化问题。</p>
+
+      <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国经济四十人论坛常务理事会副主席谢平发表了《金融监管新格局》的演讲，他认为2017年以来的监管风暴已经证明，与其争论监管体制，不如行动。他还谈到金融监管下一步要明确十二大问题：一是金融控股公司监管；二是理财产品是否纳入表内；三是信托公司的定位与监管；四是保险公司破产怎么收拾；五是上市公司推出规则执行问题；六是大量无牌照资管机构如何处置；七是大量网络支付性存款业务怎么处置。八是网络金融资产交易平台问题；九是金融科技产生的许多类金融业务如何监管；十是小贷公司与互联网金融的混合导致的问题；十一是政策性银行的商业行为、国家信用、道德风险和监管；十二是资产管理公司的全能化问题。</p> -->
+      <!-- <hr style="margin: 10 0 10 0;border:2px dotted #F0F0F0;background:#F0F0F0">
+       -->
+   </div>
+
+    <!--其它问题开始-->
+
+    <div class="container relevant">
+      <div class="row">
+        <div class="small text-left bottom">
+            <h4>相关问题</h4>
+        </div>
+        <!-- 其它访问内容 -->
+        <?php if(is_array($res) || $res instanceof \think\Collection || $res instanceof \think\Paginator): $i = 0; $__LIST__ = $res;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+        <ul>
+          <li>
+            <a href="problem?id=<?php echo $vo['issue_id']; ?>" class="tryitbtn">
+              <p><?php echo $vo['headline']; ?>
+                  <!-- <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span> -->
+                  <img src="<?php echo BACK_IMG_URL; ?>right.png" >
+              </p>
+            </a>
+          </li>
+         <?php endforeach; endif; else: echo "" ;endif; ?>
+        </ul>
+      </div>
+    </div>
+
+   <!--主体 container居中-->
+    <div class="container">
+           <!--声明行-->
+           <!-- <div class="row">
+               <h3>综合评估可贷金额</h3>
+           </div> -->
+    </div>
+</div>
+  <!-- jQuery CDN加速 -->
+  <!--使用bootstrap.js必须先引入jquery,jquery要在bootstrap.js前面 -->
+  <script src="<?php echo BACK_JS_URL; ?>bootstrap.min.js"></script>
+  <script src="<?php echo BACK_JS_URL; ?>bootstrap.min.js"></script>
+  <!-- <script type="text/javascript">
+      $(window).load(function(){
+
+      $(".panel-body img").addClass("img-responsive center-block");
+
+    }) -->
+  </script>
+</body>
+</html>

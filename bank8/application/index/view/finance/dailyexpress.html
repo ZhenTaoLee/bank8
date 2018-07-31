@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" href="{$Think.const.BACK_CSS_URL}bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{$Think.const.BACK_CSS_URL}dailyExpress.css">
+</head>
+<body>
+	<div class="container">
+		<!-- 日期 -->
+		<div class="text-center">
+			<p>{$day}/{$month}</p>
+			<p>{$week}</p>
+		</div>
+		<!-- 图文 -->
+		<div>
+			<!-- 标题 -->
+			<div class="title">
+				<img src="{$Think.const.BACK_IMG_URL}tu5.png" alt="" class="img-left">
+				<span>{$list["title"]}</span>
+			</div><br>
+			<!-- 图 -->
+			<!-- <img src="tu6.png" style="width: 100%"><br> -->
+			<!-- 正文 -->
+			<p class="text">{$list["webtext"]}</p>
+		</div>
+
+      <!-- 底部 -->
+      <div class="bottom">
+        <p class="text-left">【八号钱庄】小编</p>
+        <p class="text-right"><span>编辑</span><span>八号小斧</span></p>
+      </div>
+	</div>
+</body>
+</html>

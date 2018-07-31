@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>添加资讯</title>
+<link href="{$Think.const.BACK_CSS_URL}style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="{$Think.const.BACK_CSS_URL}styless.css" media="all">
+
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}jquery.min.js"></script>
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}moment.js"></script>
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}bootstrap-datetimepicker.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    // date time picker
+    if($(".iDate.full").length>0){
+        $(".iDate.full").datetimepicker({
+            locale: "zh-cn",
+            format: "YYYY-MM-DD a hh:mm",
+            dayViewHeaderFormat: "YYYY年 MMMM"
+        });
+    }
+    if($(".iDate.date").length>0){
+        $(".iDate.date").datetimepicker({
+            locale:"zh-cn",
+            format:"YYYY-MM-DD",
+            dayViewHeaderFormat:"YYYY年 MMMM"
+        });
+    }
+})
+</script>
+
+
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">表单</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+
+    <div class="formtitle"><span>基本信息</span></div>
+    <form action="add" method="post" id="selector">
+    	
+
+    <ul class="forminfo">
+    <li><label>资讯来源：</label><input id="name" name="source" type="text" class="dfinput" /></li>  
+    <li>
+    	<label>显示时间：</label> 
+    	<div class="iDate full">
+            <input type="text">
+             <button type="button" class="addOn"></button>
+        </div>
+
+    <!--    <div class="iDate date">
+            <input type="text">
+             <button type="button" class="addOn"></button>
+        </div><br> -->
+    </li>
+
+    	
+
+    <li><label>标签</label><input id="name" name="name" type="text" class="dfinput" /></li>  
+
+    <li><label>是否热门</label><cite>
+    	<select name="hot" class="dfinput">
+		  <option value ="volvo">是</option>
+		  <option value ="saab">否</option>
+		</select></cite>
+	</li>  
+
+   <li><label >状态</label><cite>
+    	<select name="hot" class="dfinput">
+		  <option value ="vhot">上架</option>
+		  <option value ="shot">下架</option>
+		</select></cite>
+    </cite></li>
+
+
+    <li><label>标题</label><input id="pas" name="pas" type="text" class="dfinput" /></li>
+    <li><label>内容</label><input id="nickname" name="nickname" type="text" class="dfinput" placeholder=""/></li>
+   
+ 	
+    <li><label>&nbsp;</label><input name="" type="submit" id="btn" value="确认添加" style="padding: 10px 20px 10px 20px;  background: #DC4E00; color: #F0F0EE;" onclick="return validate();"/></li>
+    </ul>
+    
+    </form>
+    
+    </div>
+
+
+</body>
+
+<script src="{$Think.const.BACK_JS_URL}jquery.js"></script>
+<script type="text/javascript">
+	
+
+window.onload = function() {
+                 var arr = new Array();
+         
+                var btnObj = document.getElementById("btn");
+                btnObj.onclick = function() {
+
+				var qianxians = document.getElementsByName("qianxians");
+                   for (var i = 0; i < qianxians.length; i++) {
+                        if (qianxians[i].checked) {
+                            arr.push(qianxians[i].value);
+                        }
+                   }
+                    document.getElementById("qianxian").value = arr.join(" | ");
+		
+                  
+                  
+                  
+                  
+                };
+ 					    
+                    
+                
+            };
+	
+</script>
+
+</html>

@@ -1,0 +1,129 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:88:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/work/ucwork.html";i:1528960281;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>八号钱庄</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<link rel="icon" href="<?php echo BACK_IMG_URL; ?>web/icon.png" type="image/jpeg"/>
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta name="description" content="八号钱庄是我司目前的主要产品，集成“智能匹配+产品推荐+链接银行+客服协助“于一身的新商业模式，入口端为app，与线上官网咨询，通过服务端在线客服团队引流到app准入。">
+	<meta name="keywords" content="八号钱庄,八号助手,金融工具,中瀛科技,鑫易贷,">
+	<link rel="stylesheet" type="text/css" href="<?php echo BACK_CSS_URL; ?>bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo BACK_CSS_URL; ?>work/paidloan.css">
+</head>
+<body>
+	<div class="topbanner">
+		 <div class="logo">
+		<img src="<?php echo BACK_IMG_URL; ?>work/logo.png" class=""></div>
+	</div>
+	<!-- banner -->
+	<main class="main">
+		<!-- 快速申请 -->
+		<div class="Apply">
+			<div class="container">
+				<div class="row">
+					<div class="title">
+						<p>·立即申请·</p>
+						<img src="<?php echo BACK_IMG_URL; ?>work/redenvelopes.png" alt="" class="redright">
+					</div>
+					<form action="" class="form form-horizontal" name="myform">
+						<table>
+							<tr>
+								<td colspan=3>
+									<select class="select" id="city" name="city">
+									<option value="广州"selected="selected">广州</option>
+									<option value="深圳">深圳</option>
+									<option value="珠海">珠海</option>
+									<option value="杭州">杭州</option>
+									<option value="其它城市">其它城市</option>
+								</select>
+								</td>
+							</tr>
+							<tr>
+								<td colspan=3>
+									<input class="chang" type="text" placeholder="请输入您的真实姓名" id="name" name="name"></input>
+								</td>
+							</tr>
+							<tr>
+								<td colspan=3>
+									 <input class="chang" type="text" placeholder="请输入11位手机号码" id="phone" name="phone"></input>
+								</td>
+							</tr>
+
+							<tr>
+								<td colspan=2>
+									<input class="duan" type="text" id="verfifcation" name="verfifcation" placeholder="请填写验证码" ></input>
+								</td>
+								<td colspan=1>
+									<button id="phonecode" class="btn verificationcode" type="button" value="获取验证码" >获取验证码</button>
+								</td>
+							</tr>
+							<tr>
+								<td colspan=3>
+									<button type="button" id="submit" class="button">立即申请</button>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- 门槛 -->
+		<div class="threshold">
+			<img src="<?php echo BACK_IMG_URL; ?>work/menkan.png" alt="" class="menkan">
+			<img src="<?php echo BACK_IMG_URL; ?>work/edu.png" alt="" class="edu">
+			<p>低息贷款 分期无忧</p>
+		</div>
+
+		<!-- 优势 -->
+		<div class="advantage">
+			<div class="biaoti">
+				<img src="<?php echo BACK_IMG_URL; ?>work/youshi.png" alt="" class="youshi">
+			</div>
+			<div class="youdian">
+				<img src="<?php echo BACK_IMG_URL; ?>work/liabilities.png" alt="" class="">
+				<p>不看负债</p>
+			</div>
+			<div class="youdian">
+				<img src="<?php echo BACK_IMG_URL; ?>work/query.png" alt="">
+				<p>不看查询</p>
+			</div>
+			<div class="youdian">
+				<img src="<?php echo BACK_IMG_URL; ?>work/wages.png" alt="">
+				<p>现金工资可贷</p>
+			</div>
+			<div class="youdian">
+				<img src="<?php echo BACK_IMG_URL; ?>work/beoverdue.png" alt="">
+				<p>当前逾期可贷</p>
+			</div>
+			<div class="youdian">
+				<img src="<?php echo BACK_IMG_URL; ?>work/work.png" alt="">
+				<p>有稳定的工作可贷</p>
+			</div>
+			<a href="/index/index/download/downlad.html">
+				<div class="center">
+					<div class="text">
+						<p name="num" id="but" >立即下载</p>
+					</div>
+				</div>
+			</a>
+		</div>
+
+
+		<div class="footer text-center">
+			<p>杜绝借款犯罪，倡导合法借贷，信守借款合约</p>
+			<p>市场有风险，投资需谨慎</p>
+			<p>CP备案号：粤ICP备17053318号-1</p>
+		</div>
+
+	</main>
+	<script src="<?php echo BACK_JS_URL; ?>jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo BACK_JS_URL; ?>work/ucwork.js"></script>
+	<script type="text/javascript" src="<?php echo BACK_JS_URL; ?>work/ucclick.js"></script>
+</body>
+</html>

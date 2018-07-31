@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="{$Think.const.BACK_CSS_URL}bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{$Think.const.BACK_CSS_URL}web/index.css">
+</head>
+<body>
+	<!-- 顶部 -->
+	<div class="top">
+		<div class="container">
+			<p>客服热线 :404-123-4567</p>
+		</div>
+	</div>
+
+	<!-- 导航栏 开始 -->
+	<div class="navbar " role="navigation">
+	    <nav class="container">
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+	                data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <div style="width: 240px;height: 90px;border: 1px solid red;"></div>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="ture">
+	            <ul class="nav navbar-nav">
+	                <li><a href="#" class="active">首页</a></li>
+	                <li><a href="#" class="">下载APP</a></li>
+	                <li><a href="#" class="">新闻资讯</a></li>
+	                <li><a href="#" class="">关于我们</a></li>
+	            </ul>
+	        </div>
+	    </nav>
+	</div>
+	<!-- 导航栏 结束 -->
+	<!-- banner -->
+	<main>
+		<div class="banner">
+			<!-- 借款申请 -->
+			<div class="bg-img">
+			<div class="container">
+				<div class="row">
+	           <div class="col-md-4 col-md-offset-8">
+	                <div class="Apply">
+	                    <form action="" class="form form-horizontal" name="myform" onsubmit="return checkpost();">
+		                   	<h3>借款申请</h3>
+		                   	<div class="padding-top form-group form-horizontal1 col-md-12">
+		                        <select class="select">
+							        <option value=""selected="selected">职位身份</option>
+							        <option value="">身份</option>
+							    </select>
+		                   	</div>
+
+												<div class="form-group form-horizontal1 col-md-12">
+													<input type="text" placeholder="请输入您的所在城市" id="city" name="city"></input>
+												</div>
+		                    <div class="form-group form-horizontal1 col-md-12">
+		                        <input type="text" placeholder="请输入您的真实姓名" id="name" name="name"></input>
+		                    </div>
+		                    <div class="form-group form-horizontal1 col-md-12">
+		                        <input type="text"  placeholder="请输入11位手机号码" id="phone" name="phone"></input>
+		                    </div>
+		                    <div class="form-group form-horizontal1">
+		                   		<div class="col-md-6 text">
+		                       		<input type="text" id="verfifcation" name="verfifcation" placeholder="请填写验证码" ></input>
+		                   		</div>
+		                       <div class="col-md-6 text-right">
+		                           <!-- <button class="btn btn1" type="button" value="获取验证码" onclick="sendCode(this)" >获取验证码</button> -->
+		                           <input  id="phonecode"   type="button" class="btn btn1" value="获取验证码" onclick="sendCode(this)" style="width: 100px;" />
+		                       </div>
+		                    </div>
+		                    <div class="form-group form-horizontal radio">
+			                   <div class="col-md-3 col-md-offset">
+			                   		<input  type="radio" value="房押贷" name="identity" checked="checked">房押贷</input>
+			                   	</div>
+			                   	<div class="col-md-3 col-md-offset col-md-offset-1">
+			                   		<input  type="radio" value="车押贷" name="identity">车押贷</input>
+			                   	</div>
+			                   	<div class="col-md-3 col-md-offset col-md-offset-1">
+			                   		<input  type="radio" value="薪金贷" name="identity">薪金贷</input>
+			                   	</div>
+		                    </div>
+		                    <div class="form-group">
+		                        <div class="col-md-12">
+		                        <button type="submit" class="btn btn-primary col-md-11"  style="background-color: #377BEE">立即申请</button>
+		                        </div>
+		                    </div>
+	                    </form>
+	                </div>
+	            </div>
+	            </div>
+		    </div>
+		    </div>
+		</div>
+
+		<div class="bg-color">
+			<div class="container">
+				<div class="row">
+					<div class="imgs col-md-6 col-sm-12 col-xs-12">
+						<div class="col-md-4"></div>
+						<div class="col-md-4"></div>
+						<div class="col-md-4"></div>
+					</div>
+					<!-- <div class="vertical col-md-1"></div> -->
+					<div class="right col-md-6 col-sm-12 col-xs-12">
+						<div class="edu col-md-8 col-sm-6">
+							<p>额度</p>
+							<span><b>500,000,000</b>元</span>
+						</div>
+						<div class="col-md-4 col-sm-6 text-right">
+							<button type="button" class="btn">立即申请</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 信贷匹配 -->
+		<div class="credit">
+			<div class="container">
+				<div class="row">
+					<div class="line col-md-6"></div>
+					<div class="line line1 navbar-right col-md-6"></div>
+					<div class="">
+						<div class="title text-center">
+							<h5>信贷匹配</h5>
+							<span>CREDIT TO MATCH </span>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="row block">
+				 	<div class="col-md-3 col-sm-6 left"></div>
+				 	<div class="col-md-3 col-sm-6 left"></div>
+				 	<div class="col-md-3 col-sm-6 left"></div>
+				 	<div class="col-md-3 col-sm-6"></div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 流程介绍 -->
+		<div class="introduce">
+			<div class="container">
+				<div class="row">
+					<div class="line col-md-5 col-sm-3"></div>
+					<div class="line line1 navbar-right col-md-4"></div>
+					<div class="">
+						<div class="title text-center">
+							<h5>流程介绍</h5>
+							<span>THE PROCESS IS INTRODUCED</span>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="col-md-5 left">
+						<p class="color"><span>轻松三步</span>贷款快速到账</p>
+						<p class="fy">Rapld loon to the occounl</p>
+						<p class="wire"></p>
+						<div class="text">
+							<p>无需到访门店，在线三步轻松申请快捷方便，运用先进快捷的贷款程序10秒内获得申请结果，最快一天房款！</p>
+						</div>
+						<button type="burron" class="btn">立即申请</button>
+					</div>
+					<div class="col-md-7 img-right">
+						<img src="{$Think.const.BACK_IMG_URL}web/computer.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 实用小工具 -->
+		<div class="tool">
+			<div class="container">
+			<div class="row">
+				<div class="line col-md-6"></div>
+				<div class="line line1 navbar-right col-md-6"></div>
+				<div class="">
+					<div class="title text-center">
+						<h5>实用小工具</h5>
+						<span>CREDIT TO MATCH</span>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="row block">
+			 	<div class="col-md-3 col-sm-6 left"></div>
+			 	<div class="col-md-3 col-sm-6 left"></div>
+			 	<div class="col-md-3 col-sm-6 left"></div>
+			 	<div class="col-md-3 col-sm-6"></div>
+			</div>
+		</div>
+	</div>
+		<div class="tow">
+	<div class="container">
+		<div class="row">
+			 <!-- 常见问题 -->
+			<div>
+				<div class="col-md-6">
+					<div class="title text-center">
+						<h5>常见问题</h5>
+						<span>CREDIT TO MATCH</span>
+						<p></p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="title text-center">
+						<h5>最新资讯</h5>
+						<span>CREDIT TO MATCH</span>
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+ 				<div class="list">
+	<div class="col-md-5">
+		<ul>
+			<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+			<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+			<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+			<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+			<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+			<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+			<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+			<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+			<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+		</ul>
+		<button type="button" class="btn col-md-offset-4">更多问题</button>
+	</div>
+	<div class="col-md-1 shu"></div>
+	<div class="col-md-6">
+		<div class="col-md-6" style="width: 240px; height: 196px; background-color: #eee;">
+			<img src="" alt="">
+		</div>
+		<div class="col-md-6">
+			<ul>
+				<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+				<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+				<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+				<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+				<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+				<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+				<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+				<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+				<li><p>国家规定贷款利息高于多少算高利贷呢？</p></li>
+			</ul>
+
+		</div>
+		<button type="button" class="btn col-md-offset-4">更多新闻</button>
+	</div>
+</div>
+			</div>
+		</div>
+
+		<!-- 关于鑫易贷 -->
+		<div class="about">
+			<div class="container">
+			<div class="row">
+				<div class="line col-md-6"></div>
+				<div class="line line1 navbar-right col-md-6"></div>
+				<div class="">
+					<div class="title text-center">
+						<h5>关于鑫易贷</h5>
+						<span>ABOUT US</span>
+						<p></p>
+					</div>
+				</div>
+			</div>
+		<div class="">
+		 	<div class="block"></div>
+		 	<div class="button">
+		 		<button type="button" class="btn">了解更多</button>
+		 	</div>
+		</div>
+		</div>
+	</div>
+
+	</main>
+
+	<!-- 下载 -->
+	<div class="downlad">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1 col-md-offset-4"></div>
+				<div class="col-md-4" style="">
+					<div style="width: 142px; height: 160px;text-align: center;float: left;">
+						<img src="" alt="" style="width: 142px; height: 142px;background-color: #eee;">
+						<span class="app">苹果APP下载</span>
+					</div>
+					<div style="width: 142px; height: 180px;text-align: center;float: left;">
+						<img src="" alt="" style="width: 142px; height: 142px;background-color: #eee;">
+						<span class="app">安卓APP下载</span>
+					</div>
+				</div>
+				<div class="col-md-3 text-right">
+					<p style="font-size: 22px;color: #979A9D">客服热线</p>
+					<p style="font-size: 28px;color: #377BEE;">400-123-4567</p>
+					<p style="font-size: 20px;color: #979A9D">（09:00~18：00）</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 尾部 -->
+	<footer class="text-center container" style="width: 100%; background-color: #423D47">
+		<div class="container" style="padding-top: 20px;padding-bottom: 10px">
+			<p style="color: #fff; font-size: 13px;">版权所有深圳市鑫易贷互联网金融有限公司/ICP备案号：<a href="http://www.beianbeian.com/s?keytype=5&q=%E7%B2%A4ICP%E5%A4%8715104065%E5%8F%B7-1">粤ICP备15104065号-1</a></p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="{$Think.const.BACK_JS_URL}jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="{$Think.const.BACK_JS_URL}bootstrap.min.js"></script>
+	<script language="JavaScript">
+	function checkpost()
+	{
+	   if(myform.name.value==""){
+	   	var obj = document.getElementById("name");
+	   	// alert("请输入内容");
+	   	obj.style.border="2px solid red";
+	    myform.name.focus();
+	    return false;
+	   }else if(myform.name.value!=""){
+	   	var obj = document.getElementById("name");
+	   	obj.style.border="1px solid #377BEE";
+	   }
+
+	   if(myform.phone.value.length<11 || myform.phone.value.length>12){
+	   	var obj = document.getElementById("phone");
+	   	obj.style.border="2px solid red";
+	   	/*alert("请输入标题"); */
+	    myform.phone.focus();
+	    return false;
+	   } else if(myform.phone.value!=""){
+	   	var obj = document.getElementById("phone");
+	   	obj.style.border="1px solid #377BEE";
+	   }
+
+	    if(myform.verfifcation.value==""){
+	   	var obj = document.getElementById("verfifcation");
+	   	// alert("请输入内容");
+	   	obj.style.border="2px solid red";
+	    myform.verfifcation.focus();
+	    return false;
+	   }else if(myform.verfifcation.value!=""){
+	   	var obj = document.getElementById("verfifcation");
+	   	obj.style.border="1px solid #377BEE";
+	   }
+
+	}
+
+	</script>
+	 <script type="text/javascript">
+	 var clock = '';
+	 var nums = 60;
+	 var btn;
+	 function sendCode(thisBtn)
+	 {
+	 	if(myform.name.value==""){
+	   	var obj = document.getElementById("name");
+	   	// alert("请输入内容");
+	   	obj.style.border="2px solid red";
+	    myform.name.focus();
+	    return false;
+	   }else if(myform.name.value!=""){
+	   	var obj = document.getElementById("name");
+	   	obj.style.border="1px solid #377BEE";
+	   }
+
+		 // var ret = /^1[34578]\d{9}$/;
+		 // var object = document.getElementById("phone");
+		 // if (!ret.test(object)) {
+			// 		 // console.log(ret.test(uphone));
+			// 		 // $('span#phoneexist').html('请正确输入手机号码！').css('color', 'red');
+			// 		 object.style.border="2px solid red";
+		 // 	    	myform.phone.focus();
+			// 		 return false;
+			//  }
+
+
+	   if(myform.phone.value.length<11 || myform.phone.value.length>12){
+	   	var obj = document.getElementById("phone");
+	   	obj.style.border="2px solid red";
+	    myform.phone.focus();
+	    return false;
+	   } else if(myform.phone.value!=""){
+	   	var obj = document.getElementById("phone");
+	   	obj.style.border="1px solid #377BEE";
+	   	btn = thisBtn;
+		 btn.disabled = true; //将按钮置为不可点击
+		 btn.value = nums+'s';
+		 clock = setInterval(doLoop, 1000); //一秒执行一次
+	   }
+	}
+
+
+
+	// //手机验证码
+	$('input#phonecode').click(function () {
+
+		// alert(123);
+
+		//追加显示提示
+		$('input#phonecode').val('');
+		var that = $(this);
+		var uname = $('input[name="name"]').val();
+
+		var uphone = $('input[name="phone"]').val();
+
+		if(!uphone){
+			$('input#phone').val('手机不能为空！');
+			return false;
+		}
+		var ret = /^1[34578]\d{9}$/;
+		if (!ret.test(uphone)) {
+					// console.log(ret.test(uphone));
+					$('input#phone').val('请正确输入手机号码！').css('color', 'red');
+					return false;
+			}
+		 // var checknum = 0;
+		 //判断手机是否注册
+		 $('#phoneexist').attr('num', 0);
+		 that.attr('num',0);
+		 var a= 0;
+
+				//判断手机是否被注册
+				if (data==100) {
+					var count = 60;
+					var countdown = setInterval(CountDown, 1000);
+					function CountDown() {
+						// count--;
+						// console.log(that.val());
+							that.attr("disabled", true);
+							// that.html("重新发送等待" + count + 's');
+							if (count == 0) {
+									that.attr("disabled", false);
+									clearInterval(countdown);
+							}
+							count--;
+
+							if (count > 0) {
+								 that.html("重新发送请等待" + count + 's');
+							}
+							if (count < 0) {
+								that.html('重新发送');
+							}
+					}
+					$.ajax({
+								type: 'post',
+								url: '{{url("/home/phonecode")}}',
+								data: 'phone='+uphone+'&_token={{csrf_token()}}',
+								success:function (data) {
+									console.log(data);
+								},
+								dataType:'json'
+					});
+				}
+
+	})
+
+
+
+		//提交数据
+		$('#submit').click(function () {
+			var uname = $('input[name="name"]').val();
+			var upass = $('input[name="pass"]').val();
+			var repass = $('input[name="repass"]').val();
+			var uphone = $('input[name="phone"]').val();
+			var uemail = $('input[name="email"]').val();
+			var checkphone = $('input[name="checkphone"]').val();
+			// console.log(checkphone);return false;
+			$('span#nameexist').html('');
+			$('span#passexist').html('');
+			$('span#repassexist').html('');
+			$('span#phoneexist').html('');
+			$('span#emailexist').html('');
+			$('span#exist').html('');
+
+			if(!uphone){
+				$('span#phoneexist').html('手机不能为空！');
+				return false;
+			}
+
+			if(!checkphone){
+				$('span#phoneexist').html('手机验证码不能为空！');
+				return false;
+			}
+
+			// console.log(repass);
+			$.ajax({
+			        type: 'post',
+			        url: '{{url("/home/addregisterdata")}}',
+			        data: 'name='+uname+'&pass='+upass+'&repass='+repass+'&phone='+uphone+'&email='+uemail+'&checkphone='+checkphone+'&_token={{csrf_token()}}',
+			        success:function (data) {
+						console.log(data);
+						if (data.status==1) {
+							$('span#nameexist').html(data.msg).css('color', 'red');
+							return false;
+						}
+
+					},
+
+					dataType:'json'
+				});
+
+		})
+
+
+
+
+
+
+
+
+	 function doLoop()
+	 {
+		 nums--;
+		 if(nums > 0){
+		  btn.value = nums+'s';
+		 }else{
+		  clearInterval(clock); //清除js定时器
+		  btn.disabled = false;
+		  btn.value = '重新获取';
+		  nums = 60; //重置时间
+		 }
+
+
+
+
+
+	 }
+	</script>
+</body>
+</html>

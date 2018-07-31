@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="{$Think.const.BACK_CSS_URL}style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="/index/inde">首页</a></li>
+    <li><a href="show">表单</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+
+    <div class="formtitle"><span>基本信息<input style="padding: 5px 10px 5px 10px; color: #F0F0EE; background-color: #DC4E00;margin-left: 200px;" type='button' name='Submit' onclick='javascript:history.back(-1);' value='返回'></span></div>
+    <form action="add" method="post" id="selector">
+    	
+
+    <ul class="forminfo">
+    <li><label>账号</label><input id="name" name="name" type="text" class="dfinput" /></li>  
+    <li><label>密码</label><input id="pas" name="pas" type="text" class="dfinput" /></li>
+    <li><label>昵称</label><input id="nickname" name="nickname" type="text" class="dfinput" placeholder=""/></li>
+   	<li><label>手机</label><input id="phone" name="phone" type="text" class="dfinput" placeholder=""/></li>
+ 	<li><label>权限</label><cite>
+ 		<select name="qianxian" class="dfinput" >
+			<option value="总经理">总经理</option>
+ 			<option value="总部助理">总部助理(信息管理)</option>
+ 			<option value="财务经理">财务经理（财务）</option>
+ 			<option value="广州经理">广州经理（负责人）</option>
+ 			<option value="杭州经理">杭州经理（负责人）</option>
+ 			<option value="深圳经理">深圳经理（负责人）</option>
+ 			<option value="珠海经理">珠海经理（负责人）</option>
+ 			<option value="广州助理">广州助理（对接人）</option>
+ 			<option value="杭州助理">杭州助理（对接人）</option>
+ 			<option value="深圳助理">深圳助理（对接人）</option>
+ 			<option value="珠海助理">珠海助理（对接人）</option>
+ 			<option value="广州销售">广州销售</option>
+ 			<option value="杭州销售">杭州销售</option>
+ 			<option value="深圳销售">深圳销售</option>
+ 			<option value="珠海销售">珠海销售</option>
+		</select>
+    
+   
+    </cite></li>
+  
+    <li><label>&nbsp;</label><input name="" type="submit" id="btn" value="确认保存" style="padding: 10px 20px 10px 20px;  background: #DC4E00; color: #F0F0EE;" onclick="return validate();"/></li>
+    </ul>
+    
+    </form>
+    
+    </div>
+
+
+</body>
+
+<script src="{$Think.const.BACK_JS_URL}jquery.js"></script>
+<script type="text/javascript">
+	
+
+window.onload = function() {
+                 var arr = new Array();
+         
+                var btnObj = document.getElementById("btn");
+                btnObj.onclick = function() {
+
+				var qianxians = document.getElementsByName("qianxians");
+                   for (var i = 0; i < qianxians.length; i++) {
+                        if (qianxians[i].checked) {
+                            arr.push(qianxians[i].value);
+                        }
+                   }
+                    document.getElementById("qianxian").value = arr.join(" | ");
+		
+                  
+                  
+                  
+                  
+                };
+ 					    
+                    
+                
+            };
+	
+</script>
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" href="{$Think.const.BACK_CSS_URL}bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{$Think.const.BACK_CSS_URL}flyAloneDetails.css">	
+</head>
+<body>
+	<div class="bg_color ">
+		<!-- 用户 开始-->
+		<div class="user container">
+			<div class="img">
+				<!-- 头像 -->
+				<img class="img-circle" src="{$data.portrait}" alt="">
+			</div>
+			<div class="info">
+				<div class="name_img">
+					<span id="name"><?php echo substr($data['name'],0,3);?><?php if($data['sex']=='女'){echo "女士"; }else{echo "先生"; }?></span>
+					<?php if($data['sex']=='女'){?>
+					<img src="{$Think.const.IMG_URL}girl.png" alt=""><!-- 女 -->
+						<?php }else{?>
+					<img src="{$Think.const.IMG_URL}boy.png" alt=""><!-- 男 -->
+						<?php }?>
+				</div>
+				<p id="phone">联系电话:&nbsp;&nbsp;&nbsp;<span><?php echo substr($data['phone'],0,3);?>*****<?php echo substr($data['phone'],8,11);?></span></p>
+				<p style="font-size: 1.3rem;"><span style="color: #666666">{$data.age}</span> &nbsp;&nbsp;&nbsp; <span style="color: #5FAAF1">{$data.profession}</span></p>
+			</div>
+		</div>
+		<!-- 用户 结束-->
+		<div style="border:6px dotted #F0F0F0;background:#F0F0F0; margin-top:5pt;"></div>
+
+		<!-- 用户基础信息 开始-->
+		<div class="information container" id="div1" style="display: block">
+			<div class="top">				
+				<img src="{$Think.const.IMG_URL}vertical.png" alt="" class="left">
+				<span>用户基础信息</span>
+				<!-- 点击展开收起按钮 -->
+				<button onclick="show1('div1')" ><img src="{$Think.const.IMG_URL}an.png" alt="" class="right"></button>
+			</div>
+			<div class="text">
+				<p><span class="text-left">个人负债：</span><span style="float: right;" >{$data.liabilities}</span></p>
+				<p><span class="text-left">房产：</span><span style="float: right;">{$data.houseBuyType}</span></p>
+				<p><span class="text-left">公积金：</span><span style="float: right;">{$data.accumulationFund}</span></p>
+				
+				<p><span class="text-left">征信查询：</span><span style="float: right;">{$data.credit}</span></p>
+				<p><span class="text-left">社保：</span><span style="float: right;">{$data.socialSecurity}</span></p>
+			</div>
+		</div>
+		<!-- 用户基础信息 结束-->
+
+		<!-- 初始隐藏部分 点击才会展开 开始-->
+		<div class="information container" id="div2" style="display: block">
+			<div class="">
+				<div class="top">				
+					<img src="{$Think.const.IMG_URL}vertical.png" alt="" class="left">
+					<span>基本信息</span>
+					<!-- 点击展开收起按钮 -->
+					<button onclick="show2('div2')"><img src="{$Think.const.IMG_URL}Pack up.png" alt="" class="right"></button>
+				</div>
+
+
+				<div class="text">
+					<p><span class="text-left">征信查询情况：</span><span style="float: right;" >{$data.credit}</span></p>
+					
+					<p><span class="text-left">公积金：</span><span style="float: right;">{$data.accumulationFund}</span></p>
+					<p><span class="text-left">公积金基数：</span><span style="float: right;">{$data.accumulationFundBasics}</span></p>
+					<p><span class="text-left">社保：</span><span style="float: right;">{$data.socialSecurity}</span></p>
+					<p><span class="text-left">社保基数：</span><span style="float: right;">{$data.socialSecurityBasics}</span></p>
+					<p><span class="text-left">房产：</span><span style="float: right;">{$data.houseBuyType}</span></p>
+				</div>
+			</div>
+			<hr style="margin-top: 5px;margin-bottom: 5px;">
+			<div class="">
+				<div class="top">				
+					<img src="{$Think.const.IMG_URL}vertical.png" alt="" class="left">
+					<span>房产信息</span>
+				</div>
+				<div class="text">
+					<p><span class="text-left">房产购置方式：</span><span style="float: right;" >{$data.houseBuyType}</span></p>
+					<p><span class="text-left">房产城市：</span><span style="float: right;">{$data.houseArea}</span></p>
+					<p><span class="text-left">房产面积：</span><span style="float: right;">{$data.houseArea}</span></p>
+					<p><span class="text-left">房产估值：</span><span style="float: right;">{$data.houseValue}</span></p>
+					<p><span class="text-left">房产类型：</span><span style="float: right;">{$data.houseType}</span></p>
+
+				</div>
+			</div>
+			<hr style="margin-top: 5px;margin-bottom: 5px;">
+			<div class="">
+				<div class="top">				
+					<img src="{$Think.const.IMG_URL}vertical.png" alt="" class="left">
+					<span>车辆信息</span>
+				</div>
+				<div class="text">
+					<p><span class="text-left">汽车购置方式：</span><span style="float: right;" >{$data.vehicleBuyType}</span></p>
+					<p><span class="text-left">可接受车贷类型：</span><span style="float: right;">{$data.vehicleLoanType}</span></p>
+					<p><span class="text-left">车牌身份：</span><span style="float: right;">{$data.licensePlateProvince}</span></p>
+					<p><span class="text-left">车辆用途：</span><span style="float: right;">{$data.vehicleUse}</span></p>
+					<p><span class="text-left">车辆价格：</span><span style="float: right;">{$data.vehiclePrice}</span></p>
+					<p><span class="text-left">车辆年龄：</span><span style="float: right;">{$data.vehicleAge}</span></p>
+					<p><span class="text-left">车辆车险：</span><span style="float: right;">{$data.vehicleInsurance}</span></p>
+					<p><span class="text-left">车险保额：</span><span style="float: right;">{$data.carInsuranceAmount}</span></p>
+				</div>
+			</div>
+			<hr style="margin-top: 5px;margin-bottom: 5px;">
+			<div class="">
+				<div class="top">				
+					<img src="{$Think.const.IMG_URL}vertical.png" alt="" class="left">
+					<span>保单信息</span>
+				</div>
+	
+				<div class="text">
+					<p><span class="text-left">保单承保公司：</span><span style="float: right;" >{$data.insuranceName}</span></p>
+					<p><span class="text-left">保单类型：</span><span style="float: right;">{$data.insuranceType}</span></p>
+					<p><span class="text-left">保单有效时间：</span><span style="float: right;">{$data.insuranceTime}</span></p>
+					<p><span class="text-left">保单缴费方式：</span><span style="float: right;">{$data.insurancePaymentMethod}</span></p>
+					<p><span class="text-left">保单已缴费年限：</span><span style="float: right;">{$data.insuranceAgeLimit}</span></p>
+					<p><span class="text-left">保单单次缴费：</span><span style="float: right;">{$data.insurancePrice}</span></p>
+				</div>
+			</div>
+			<hr style="margin-top: 5px;margin-bottom: 5px;">
+			<div class="">
+				<div class="top">				
+					<img src="{$Think.const.IMG_URL}vertical.png" alt="" class="left">
+					<span>个人企业信息</span>
+				</div>
+
+				<div class="text">
+					<p><span class="text-left">个人或企业收入：</span><span style="float: right;" >{$data.income}</span></p>
+					<p><span class="text-left">学历：</span><span style="float: right;">{$data.education}</span></p>
+					<p><span class="text-left">拥有公司：</span><span style="float: right;">{$data.company}</span></p>
+					<p><span class="text-left">个税缴纳情况：</span><span style="float: right;">{$data.tax}</span></p>
+					<p><span class="text-left">工龄：</span><span style="float: right;">{$data.seniority}</span></p>
+					<p><span class="text-left">信用卡额度：</span><span style="float: right;">{$data.creditLimit}</span></p>
+					<p><span class="text-left">芝麻信用：</span><span style="float: right;">{$data.zhimaCredit}</span></p>
+					<p><span class="text-left">微粒贷授信额度：</span><span style="float: right;">{$data.tinyGrainLoan}</span></p>
+				</div>
+			</div>
+		</div>
+		<!-- 初始隐藏部分 点击才会展开 结束-->
+
+		<div style="border:6px dotted #F0F0F0;background:#F0F0F0; margin-top:5pt;"></div>
+
+		<!-- 用户意向产品 开始-->
+		<div class="userIntention container">
+			<h5>用户意向产品</h5>
+			<hr style="margin-top: 10px;margin-bottom: 15px;">
+			<div class="bank">
+				<div class="logo">
+					<img src="{$data.logo}">
+				</div>
+				<div class="text">
+					<p class="name">{$data.goodName}</p>
+					<div class="quota">
+						<p><a style="margin-right: 10px">额度：<span>{$data.limit}</span></a>
+						<a>月利息：<span>{$data.accrual}</span></a></p>
+						<a>期限：<span>{$data.agelimit}</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 用户意向产品 结束-->
+		<div style="border:6px dotted #F0F0F0;background:#F0F0F0; margin-top:5pt;"></div>
+
+		<!-- 飞单补充原因 开始-->
+		<div class="reason container">
+			<h5>飞单补充原因</h5>
+			<hr style="margin-top: 10px;margin-bottom: 10px;">
+			<p>{$data.lastmessage}</p>
+		</div>
+		<!-- 飞单补充原因 结束-->
+	</div> 
+
+	<script type="text/javascript">
+
+		function show1(obj){
+			var obj1=document.getElementById("div1"); //获得id为b的容器
+			var obj2=document.getElementById("div2");
+			//如果下面的内容显示的话就隐藏
+			if(obj1.style.display=="block"){
+			obj2.style.display="block";
+			obj1.style.display="none";
+			}else 
+				obj1.style.display="block";	
+		}
+		function show2(obj){
+			var obj1=document.getElementById("div1");
+			var obj2=document.getElementById("div2"); //获得id为b的容器
+			
+			//如果下面的内容显示的话就隐藏
+			if(obj2.style.display=="block"){
+			obj1.style.display="block";
+			obj2.style.display="none";
+			}else
+				obj2.style.display="none";	
+		}
+
+	 	window.onload=function()
+		  {
+		      //获取两个div
+		      var oDiv1=document.getElementById("div1");
+		      var oDiv2=document.getElementById("div2");
+		      //判断div1是显示或者隐藏(block---显示,none--隐藏)
+		      if(oDiv1.style.display=="block")
+		      {
+		          oDiv2.style.display="none";
+		      }
+		      else if(oDiv1.style.display="none")		      
+		      {
+		         oDiv2.style.display="block";
+		      }
+		  }
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="icon" href="{$Think.const.BACK_IMG_URL}web/icon.png" type="image/jpeg"/>
+	<link rel="stylesheet" type="text/css" href="{$Think.const.BACK_CSS_URL}bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{$Think.const.BACK_CSS_URL}web/mortgagecalculatorv1.0.css">
+	<link rel="stylesheet" type="text/css" href="{$Think.const.BACK_CSS_URL}web/publicv1.0.css">
+	<link rel="stylesheet" type="text/css" href="{$Think.const.BACK_CSS_URL}web/rightv1.0.css">
+	<title></title>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div class="top">
+		<div class="container">
+			<p>客服热线 :020-3847-2070</p>
+		</div>
+	</div>
+
+	<!-- 导航栏 开始 -->
+	<div class="navbar " role="navigation">
+	    <nav class="container">
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+	                data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	            <a href="https://www.8haoqianzhuang.com/"><img src="{$Think.const.BACK_IMG_URL}web/中瀛官网LOGO.png" alt=""></a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="ture">
+				<ul class="nav navbar-nav">
+					<li><a href="/index/index/index/index.html" class="">首页</a></li>
+					<li><a href="/index/index/download/downlad.html" class="">下载APP</a></li>
+					<li><a href="/index/index/journalism/journalism.html" class="">新闻资讯</a></li>
+					<li><a href="/index/index/aboutus/aboutus.html" class="">关于我们</a></li>
+				</ul>
+	        </div>
+	    </nav>
+	</div>
+	<!-- 导航栏 结束 -->
+
+	<div class="banner">
+		<div class="bg-img"></div>
+	</div>
+	<main>
+		<div class="bg-color">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 col-md-12 col-xs-12 col-sm-12 bg-white">
+						<div class=" content">
+							  <!-- Nav tabs -->
+							  <ul class="nav nav-pills bg-white" role="tablist">
+							    <li role="presentation" class="active" id="fan" ><a href="#mortgageCalculator" aria-controls="mortgageCalculator" role="tab" data-toggle="tab">房贷计算器</a></li>
+							    <li role="presentation" class="" id="che"><a href="#vehiclevaluation" aria-controls="vehiclevaluation" role="tab" data-toggle="tab">车辆价格评估</a></li>
+							    <li role="presentation" class="" id="shui"><a href="#taxCalculator" aria-controls="taxCalculator" role="tab" data-toggle="tab">税费计算器</a></li>
+							  </ul>
+
+							  <!-- Tab panes -->
+							  <div class="tab-content ">
+							    <div role="tabpanel" class="tab-pane active" id="mortgageCalculator">
+							    	<div class="dataone room">
+							    		<div class="title">
+							    			<h2>》输入数据</h2>
+							    		</div>
+							    		<table border="0">
+											<tr>
+											    <td class="text">单价</td>
+											   	<td><div class="input-group">
+												  <input type="text" id="unitPrice" name="unitPrice" class="form-control"aria-describedby="basic-addon2">
+												  <span class="input-group-addon" id="basic-addon2">万</span>
+												</div></td>
+											</tr>
+											<tr>
+											    <td class="text">面积</td>
+											    <td><div class="input-group">
+												  <input type="text" id="area" name="area" class="form-control"aria-describedby="basic-addon2">
+												  <span class="input-group-addon" id="basic-addon2">平方米</span>
+												</div></td>
+											</tr>
+											<tr>
+												<td class="text">按揭成数</td>
+											    <td>
+												    <select id="plies" name="plies">
+												    	<option value="0.7" selected="selected">7成</option>
+													  	<option value="0.9">9成</option>
+													  	<option value="0.8">8成</option>
+													  	<option value="0.7">7成</option>
+													  	<option value="0.6">6成</option>
+													  	<option value="0.5">5成</option>
+													  	<option value="0.4">4成</option>
+													  	<option value="0.3">3成</option>
+													  	<option value="0.2">2成</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+											    <td class="text">按揭年数</td>
+											    <td>
+													<select id="year" name="year">
+														<option value="1" selected="selected">1年（12期）</option>
+														<option value="2">2年（24期）</option>
+														<option value="3">3年（36期）</option>
+														<option value="4">4年（48期）</option>
+														<option value="5">5年（60期）</option>
+														<option value="6">6年（72期）</option>
+														<option value="7">7年（84期）</option>
+														<option value="8">8年（96期）</option>
+														<option value="9">9年（108期）</option>
+														<option value="10">10年（120期）</option>
+														<option value="11">11年（132期）</option>
+														<option value="12">12年（144期）</option>
+														<option value="13">13年（156期）</option>
+														<option value="14">14年（168期）</option>
+														<option value="15">15年（180期）</option>
+														<option value="16">16年（192期）</option>
+														<option value="17">17年（204期）</option>
+														<option value="18">18年（216期）</option>
+														<option value="19">19年（228期）</option>
+														<option value="20">20年（240期）</option>
+														<option value="25">25年（300期）</option>
+														<option value="30">30年（360期）</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+											    <td class="text">贷款利率</td>
+											    <td>
+												    <select id="interestRate" name="interestRate">
+													    <option value="10">2018年1月1日利率上限（1.3倍）</option>
+													    <option value="9">2018年1月1日利率上限（1.2倍）</option>
+													    <option value="8">2018年1月1日利率上限（1.1倍）</option>
+													    <option value="7">2018年1月1日利率下限（85折）</option>
+													    <option value="6">2018年1月1日利率下限（7折）</option>
+													    <option value="5" selected="selected" >2018年1月1日基准利率</option>
+								     				</select>
+												</td>
+											</tr>
+											<tr>
+											    <td colspan=2><button id="housecount" class="btn">开始计算</button></td>
+											</tr>
+										</table>
+							    	</div>
+
+							    	<div class="datatwo col-md-12">
+							    		<div class="title">
+							    			<h2>》输出数据</h2><span>此结果仅供参考，实际应缴费以当地为准</span>
+							    		</div>
+							    		<div class="col-md-12 col-sm-12 col-xs-12">
+							    			<!-- <p>每月等额还款</p> -->
+							    			<div class="input-group">
+											  <span class="input-group-addon qian">房款总额</span>
+											  <input type="text" id="houseRental" name="houseRental" class="form-control" aria-label="Amount (to the nearest dollar)">
+											  <span class="input-group-addon">万</span>
+											</div>
+											<div class="input-group">
+											  <span class="input-group-addon qian">贷款总额</span>
+											  <input type="text" id="loansRental" name="loansRental" class="form-control" aria-label="Amount (to the nearest dollar)">
+											  <span class="input-group-addon">万</span>
+											</div>
+											<div class="input-group">
+											  <span class="input-group-addon qian">支付利息</span>
+											  <input type="text" id="interest" name="interest" class="form-control" aria-label="Amount (to the nearest dollar)">
+											  <span class="input-group-addon">元</span>
+											</div>
+											<div class="input-group">
+											  <span class="input-group-addon qian">首期</span>
+											  <input type="text" id="downPayment" name="downPayment" class="form-control" aria-label="Amount (to the nearest dollar)">
+											  <span class="input-group-addon">元</span>
+											</div>
+							    		</div>
+							    		<div class="col-md-6 col-sm-12 col-xs-12 two">
+							    			<!-- <p>逐月递减还款</p> -->
+							    			<div class="input-group">
+											  <span class="input-group-addon qian">还款总额</span>
+											  <input type="text" id="refundRental" name="refundRental" class="form-control" aria-label="Amount (to the nearest dollar)">
+											  <span class="input-group-addon">元</span>
+											</div>
+											<div class="input-group">
+											  <span class="input-group-addon qian">贷款月数</span>
+											  <input type="text" id="month" name="month" class="form-control" aria-label="Amount (to the nearest dollar)">
+											  <span class="input-group-addon">月</span>
+											</div>
+											<div class="input-group">
+											  <span class="input-group-addon qian">月均还款</span>
+											  <input type="text" id="average" name="average" class="form-control" aria-label="Amount (to the nearest dollar)">
+											  <span class="input-group-addon">元</span>
+											</div>
+											<!-- <div class="input-group">
+											  <span class="input-group-addon qian">总支付利息</span>
+											  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+											  <span class="input-group-addon">月</span>
+											</div> -->
+							    		</div>
+							    	</div>
+
+							    	<div class="toolProfile">
+							    		<div class="title">
+							    			<h2> &nbsp </h2>
+							    		</div>
+							    	</div>
+									<div class="toolProfile">
+							    		<div class="title">
+							    			<h2>》工具简介</h2>
+							    		</div>
+							    		<div class="">
+							    			<p>房贷计算器用于计算用户在申请商业贷款的情况下，选择等额本金和等额本息两种不同的还款方式后，每一期需偿还商业贷款的月供，以及利息总额和还款总额。</p>
+							    		</div>
+							    	</div>
+
+							    </div>
+									<!-- 二手车辆价值评估 -->
+							    <div role="tabpanel" class="tab-pane" name="vehiclevaluation" id="vehiclevaluation">
+									<div class="dataone vehicle">
+							    		<div class="title">
+							    			<h2>》输入数据</h2>
+							    		</div>
+							    		<table border="0">
+											<tr>
+											    <td class="text">车牌所在地</td>
+											   	<td><div class="input-group chepai">
+												  <input type="text" id="city" name="city" class="form-control" placeholder="例如：广州市" aria-describedby="basic-addon2">
+
+												</div></td>
+											</tr>
+											<tr>
+													<td class="text">品牌</td>
+													<td><div class="input-group pinpai">
+													<input type="text" id="brand" name="brand" class="form-control" placeholder="例如：本田" aria-describedby="basic-addon2">
+
+												</div></td>
+											</tr>
+											<tr>
+											    <td class="text">行驶公里</td>
+											    <td><div class="input-group">
+												  <input type="text" id="kilometre" name="kilometre" class="form-control"aria-describedby="basic-addon2">
+												  <span class="input-group-addon" id="basic-addon2">公里</span>
+												</div></td>
+											</tr>
+											<tr>
+												<td class="text">车辆发票价</td>
+											    <td>
+												   <div class="input-group">
+												  <input type="text" id="price" name="price" class="form-control"aria-describedby="basic-addon2">
+												  <span class="input-group-addon" id="basic-addon2">万元</span>
+												</div>
+												</td>
+											</tr>
+											<tr>
+											    <td class="text">车龄</td>
+											    <td>
+													 <div class="input-group">
+												  <input type="text" id="carage" name="carage" class="form-control"aria-describedby="basic-addon2">
+												  <span class="input-group-addon" id="basic-addon2">年</span>
+												</div>
+												</td>
+											</tr>
+											<tr>
+											    <td colspan=2><button id="carcount" class="btn">开始计算</button></td>
+											</tr>
+										</table>
+							    	</div>
+							    	<div class="datatwo col-md-12">
+							    		<div class="title">
+							    			<h2>》输出数据</h2><span>此结果仅供参考，实际应按车辆现场实施评估为准</span>
+							    		</div>
+							    		<div class="jieguo">
+							    			<span>车辆总现价</span>
+							    			<p name="cared" id="cared">0</p>
+							    			<b>万元</b>
+							    		</div>
+							    	</div>
+
+							    	<div class="toolProfile">
+							    		<div class="title">
+							    			<h2> &nbsp </h2>
+							    		</div>
+							    	</div>
+									<div class="toolProfile">
+							    		<div class="title">
+							    			<h2>》工具简介</h2>
+							    		</div>
+							    		<div class="">
+							    			<p>车辆价格评估是根据您名下车辆行驶公里数做等速折旧法得出数据，您可以以此数据作为参考。</p>
+							    		</div>
+							    	</div>
+							    </div>
+							    <div role="tabpanel" class="tab-pane" id="taxCalculator">
+									<!-- 个税计算 -->
+									<div class="dataone tax">
+							    		<div class="title">
+							    			<h2>》输入数据</h2>
+							    		</div>
+							    		<table border="0">
+											<tr>
+											    <td class="text">税前工资</td>
+											   	<td><div class="input-group">
+												  <input type="text" id="salary" name="salary" class="form-control"aria-describedby="basic-addon2">
+												 <span class="input-group-addon" id="basic-addon2">元</span>
+												</div></td>
+											</tr>
+											<tr>
+											    <td class="text wight">各项社会保险费</td>
+											    <td><div class="input-group">
+												  <input type="text" id="insurance" name="insurance" class="form-control"aria-describedby="basic-addon2">
+												  <span class="input-group-addon" id="basic-addon2">元</span>
+												</div></td>
+											</tr>
+											<tr>
+												<td class="text">起征点</td>
+											    <td>
+												   <select id="threshold" name="threshold">
+												    	<option value="3500" selected="selected">3500</option>
+													  	<!-- <option value="3500">3500</option> -->
+													  	<option value="4800">4800</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+											    <td colspan=2> <button id="count" class="btn">开始计算</button></td>
+											</tr>
+										</table>
+							   		</div>
+
+							    	<div class="datatwo col-md-12">
+							    		<div class="title">
+							    			<h2>》输出数据</h2><span>此结果仅供参考，实际应缴费以当地为准</span>
+							    		</div>
+							    		<p>税费结果</p>
+							    		<div class="jieguo col-md-4 left">
+							    			<span>税后工资</span>
+							    			<p name="wage" id="wage">0</p>
+							    			<b>元</b>
+							    		</div>
+							    		<div class="jieguo col-md-4 col-md-offset-2 right">
+							    			<span>个人所得税</span>
+							    			<p name="wages" id="wages">0</p>
+							    			<b>元</b>
+							    		</div>
+							    		<img src="{$Think.const.BACK_IMG_URL}web/税率梯间.png" alt="">
+							    		<div class="remarks">
+								    		<p>1、本表所列含税级距与不含税级距，均为按照税法规定减除有关费用后的所得额；<br>
+											2、含税级距适用于由纳税人负担税款的工资、薪金所得；不含税级距适用于由他人(单位)代付税款的工资、薪金所得。</p>
+										</div>
+							    	</div>
+
+							    	<div class="toolProfile">
+							    		<div class="title">
+							    			<h2> &nbsp </h2>
+							    		</div>
+							    	</div>
+									<div class="toolProfile">
+							    		<div class="title">
+							    			<h2>》工具简介</h2>
+							    		</div>
+							    		<div class="">
+							    			<p>应纳个人所得税税额= 应纳税所得额× 适用税率- 速算扣除数<br>
+												扣除标准3500元/月（2011年9月1日起正式执行）（工资、薪金所得适用）</p>
+							    		</div>
+							    	</div>
+							    </div>
+
+							  </div>
+					</div>
+
+					</div>
+					<div class="col-lg-3 hidden-md hidden-xs hidden-sm">
+							<div class="right">
+							<!-- 借款申请 -->
+								<div class="Apply bg-white">
+									<form action="" class="form form-horizontal" name="myform" onsubmit="return checkpost();">
+									 <h3>借款申请</h3>
+									 <div class="padding-top form-group form-horizontal1 col-md-12">
+										 <select class="select" name="selectname">
+													 <option value="个人"selected="selected">个人</option>
+													 <!-- <option value="">个人</option> -->
+													 <option value="公务员">公务员</option>
+													 <option value="业主">业主</option>
+										 </select>
+									 </div>
+									 <div class=" form-group form-horizontal1 col-md-12">
+											<select class="select" id="city" name="city">
+													<option value="广州"selected="selected">广州</option>
+													<option value="深圳">深圳</option>
+													<option value="珠海">珠海</option>
+													<option value="杭州">杭州</option>
+											</select>
+										</div>
+									 <div class="form-group form-horizontal1 col-md-12">
+											 <input type="text" placeholder="请输入您的真实姓名" id="name" name="name"></input>
+									 </div>
+									 <div class="form-group form-horizontal1 col-md-12">
+											 <input type="text" placeholder="请输入11位手机号码" id="phone" name="phone"></input>
+									 </div>
+									 <div class="form-group form-horizontal1">
+										 <div class="col-md-6 text">
+												 <input type="text" id="verfifcation" name="verfifcation" placeholder="请填写验证码" style=""></input>
+										 </div>
+											<div class="col-md-6 ">
+												 <button  id="phonecode" class="btn btn1" type="button" value="获取验证码" style="width: 69px;height: 35px; font-size: 12px;text-align: center; margin-left: 25px;">获取验证码</button>
+													<!-- <input type="button" class="btn btn1" value="获取验证码" onclick="sendCode(this)" style="width: 69px; font-size: 12px;text-align: center; margin-left: 25px;"/> -->
+											</div>
+									 </div>
+									 <div class="form-group form-horizontal radio">
+										<div class="col-md-4 col-md-offset">
+											 <input  type="radio" value="房押贷" name="identity" checked="checked">房押贷</input>
+										 </div>
+										 <div class="col-md-4 col-md-offset ">
+											 <input  type="radio" value="车押贷" name="identity">车押贷</input>
+										 </div>
+										 <div class="col-md-4 col-md-offset ">
+											 <input  type="radio" value="薪金贷" name="identity">薪金贷</input>
+										 </div>
+									 </div>
+									 <div class="form-group">
+											 <div class="col-md-12">
+											 <button type="button" id="submit" class="btn btn-primary col-md-11"  style="background-color: #377BEE">立即申请</button>
+											 </div>
+									 </div>
+									 <div class="form-group form-horizontal " style="margin-left: 1px;margin-bottom: 0;">
+										 <!-- <p><input type="checkbox" name="vehicle" value="Car" checked="checked" />我已阅读并同意<a href="">《鑫易贷服务条约》</a></p> -->
+										 <p><input type="checkbox" name="vehicle" value="Car" checked="checked" />我已阅读并同意<a href="/index/index/serviceagreement/serviceagreement.html" style="color:#377BEE;">《用户服务条约》</a></p>
+
+									 </div>
+								 </form>
+				       </div>
+		               <!-- 实用小工具 -->
+		                <div class="tool bg-white">
+		                	<div class="tool-head">
+		                		<h3>实用小工具</h3>
+		                		<div class="images-text-right">
+		                		<a href="/index/index/mortgageCalculator/mortgagecalculator.html"><span>更多</span><img src="{$Think.const.BACK_IMG_URL}web/进入.png" alt="" class="gengduo"></a>
+		                		</div>
+		                	</div>
+		                	<div class="block">
+							 	<div class="col-md-6 col-sm-6 col-xs-6">
+							 		<a href="/index/index/mortgageCalculator/mortgagecalculator.html"><div class="houdingLoan">
+
+							 		</div></a>
+							 	</div>
+							 	<div class="col-md-6 col-sm-6 col-xs-6">
+							 		<a href="/index/index/mortgageCalculator/mortgagecalculator.html"><div class="vehicle">
+
+							 		</div></a>
+							 	</div>
+							 	<div class="col-md-6 col-sm-6 col-xs-6">
+							 		<a href="/index/index/mortgageCalculator/mortgagecalculator.html"><div class="taxation">
+
+							 		</div></a>
+							 	</div>
+							</div>
+		                </div>
+
+		                <!-- 常见问题 -->
+		                <div class="problem bg-white">
+		                	<div class="problem-head">
+		                		<h3>常见问题</h3>
+		                		<div class="images-text-right">
+		                		<a href="/index/index/problemList/problemList.html"><span>更多</span></a><img src="{$Think.const.BACK_IMG_URL}web/进入.png" alt="" class="gengduo">
+		                		</div>
+		                	</div>
+		                	<div class="problem-content">
+												<ul>
+													{volist name="lit" id="vo"}
+				                		<a href="/index/index/commonproblem?id={$vo.issue_id}"><li>{$vo.headline}</li></a>
+
+													{/volist}
+                				</ul>
+		                	</div>
+		                </div>
+
+		                <!-- 关于我们 -->
+		                <div class="about bg-white">
+		                	<div class="about-head">
+		                		<h3>关于我们</h3>
+		                		<div class="images-text-right">
+		                		<a href="/index/index/aboutus/aboutus.html"><span>更多</span></a><img src="{$Think.const.BACK_IMG_URL}web/进入.png" alt="" class="gengduo">
+		                		</div>
+		                	</div>
+		                	<div class="about-content">
+                				<div class="shang"></div>
+	                					<div class="xia"></div>
+		                	</div>
+		                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- 下载 -->
+
+	<!-- 下载 -->
+	<div class="downlad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-12 col-sm-12">
+					<div class="col-sm-3 text-center" >
+						<h5 class="hidden-xs hidden-sm">关于我们</h5>
+						<ul class="list-unstyled ">
+							<li><a href="/index/index/aboutus/aboutus.html#companyprofile">公司简介</a></li>
+							<li><a href="/index/index/aboutus/aboutus.html#productadvantage">产品优势</a></li>
+							<li><a href="/index/index/aboutus/aboutus.html#businessmodel">联系我们</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 text-center">
+						<h5 class="hidden-xs hidden-sm">下载APP</h5>
+						<ul class="list-unstyled">
+							<li class="hidden-lg hidden-md"><a href="/index/index/download/downlad.html">下载APP</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 text-center">
+						<h5 class="hidden-xs hidden-sm">新闻资讯</h5>
+						<ul class="list-unstyled">
+							<li><a href="/index/index/problemList/problemList.html">常见问题</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 text-center">
+						<h5 class="hidden-xs hidden-sm">用户声明</h5>
+						<ul class="list-unstyled">
+							<li><a href="#">免责声明</a></li>
+							<li><a href="/index/index/privacy/privacy.html">隐私协议</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-4 hidden-md hidden-xs hidden-sm scavenging">
+					<div class="thumbnail">
+				      <img src="{$Think.const.BACK_IMG_URL}web/公众号.jpg" alt="">
+				        <span style="text-align: center;">微信公众号</span>
+				    </div>
+					<div class="thumbnail">
+				      <img src="{$Think.const.BACK_IMG_URL}web/Android.png" alt="">
+				        <span style="text-align: center;">APP下载</span>
+				    </div>
+				</div>
+				<div class="col-lg-3 text-right hidden-md hidden-xs hidden-sm">
+					<p style="font-size: 22px;color: #979A9D">客服热线</p>
+					<p style="font-size: 28px;color: #377BEE;">020-3847-2070</p>
+					<p style="font-size: 20px;color: #979A9D">（09:00~18：00）</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 尾部 -->
+	<footer class="text-center container" style="width: 100%; background-color: #423D47">
+		<div class="container" style="padding-top: 20px;padding-bottom: 10px">
+			<!-- <p style="color: #fff; font-size: 13px;">版权所有深圳市鑫易贷互联网金融有限公司/ICP备案号：<a href="http://www.beianbeian.com/s?keytype=5&q=%E7%B2%A4ICP%E5%A4%8715104065%E5%8F%B7-1"  style="color:#377BEE;">粤ICP备15104065号-1</a></p> -->
+			<p style="color: #fff; font-size: 13px;">版权所有广州中瀛信息科技有限公司/ICP备案号：<a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action;jsessionid=qC41-hFNd8uMSIPcb0E6b67GlknQaSnxyHhTe-Zcnlt8LioAolzG!495133832"  style="color:#377BEE;">粤ICP备17053318号-1</a></p>
+
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="{$Think.const.BACK_JS_URL}jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="{$Think.const.BACK_JS_URL}bootstrap.min.js"></script>
+	<script type="text/javascript" src="{$Think.const.BACK_JS_URL}web/indexsend.js"></script>
+	<script type="text/javascript" src="{$Think.const.BACK_JS_URL}web/count.js"></script>
+
+
+</body>
+</html>

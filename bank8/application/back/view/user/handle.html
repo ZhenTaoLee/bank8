@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="{$Think.const.BACK_CSS_URL}style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">升级为经办</a></li>
+    <li><a href="#">表单</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+    
+    <div class="formtitle"><span>基本信息</span></div>
+    <form action="handle" method="post" enctype="multipart/form-data">
+
+    <ul class="forminfo">
+    	
+    	<input type="hidden" name="id" id="id" value="<?php echo $_GET['id'];?>" />
+    <li><label>姓名</label><input name="name" type="text" class="dfinput" /><i></i></li>
+    <li><label>电话</label><input name="phone" type="text" class="dfinput" /><i></i></li>
+    <li><label>真实姓名</label><input name="bname" type="text" class="dfinput" /><i></i></li>
+    <li><label>头像</label><input name="img" type="file" class="dfinput" /></li>
+    <li><label >所属银行</label><cite>
+    	<select name="bankid" class="dfinput" >
+    		{volist name="list" id="vo"}
+			<option value="{$vo.b_id}">{$vo.bankname}</option>
+			{/volist}   
+
+		</select>
+    </cite></li>
+    <li><label>&nbsp;</label><input name="" type="submit" class="btn" value="确认保存"/></li>
+    </ul>
+     </form>   
+    
+    </div>
+
+
+</body>
+
+</html>
+
+

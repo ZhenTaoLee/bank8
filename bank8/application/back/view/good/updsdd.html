@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="{$Think.const.BACK_CSS_URL}style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">表单</a></li>
+    </ul>
+    </div>
+    
+    <div class="formbody">
+
+    <div class="formtitle"><span>基本信息
+    	<<input style="margin-left: 200px;padding: 5px 10px 5px 10px; color: #F0F0EE; background-color: #DC4E00;" type='button' name='Submit' onclick='javascript:history.back(-1);' value='返回'></span></div>
+    	
+    	
+    <form action="" method="post" id="test_form">
+
+
+    <ul class="forminfo">
+    <li><label>产品名</label><h1>{$listss.goodName}</h1></li>
+    
+    <input type="hidden" name="goods_pair_id" id="goods_id" value="{$list.goods_pair_id}" />
+    
+    <input type="hidden" name="good_id" id="good_id" value="{$list.good_id}" />
+    
+ <div style="height: 20px; border-bottom: 1px black solid; margin-bottom: 20px;"></div>
+   <div style="font-size: 80px;  height: 20; "><h1>基本信息:</h1></div>
+
+  <li><label>学历</label><cite>
+    	<input type="hidden" name="educationGoods" id="educationGoods" value=""  />
+    	<?php if(strpos($list['educationGood'],'1') !== false){?>
+    	<input name="educationGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+		<input name="educationGood" type="checkbox" value="1"  />
+		<?php }?>
+    	本科以下&nbsp;&nbsp;&nbsp;&nbsp;
+		<?php if(strpos($list['educationGood'],'2') !== false){?>
+		<input name="educationGood" type="checkbox" value="2" checked="checked" />
+		<?php }else{?>
+			<input name="educationGood" type="checkbox" value="2" />
+		<?php }?>
+		本科以上
+		    </cite></li>
+   
+    <li><label>微粒贷</label><cite>
+    	<input type="hidden" name="weilidaiGoods" id="weilidaiGoods" value=""  />
+    	<?php if(strpos($list['weilidaiGood'],'1') !== false){?>
+    		<input name="weilidaiGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    		<input name="weilidaiGood" type="checkbox" value="1"  />
+    	<?php }?>	
+    	有&nbsp;&nbsp;
+&nbsp;&nbsp;
+<?php if(strpos($list['weilidaiGood'],'2') !== false){?>
+<input name="weilidaiGood" type="checkbox" value="2" checked="checked" />
+<?php }else{?>
+<input name="weilidaiGood" type="checkbox" value="2"/>	
+	<?php }?>
+无
+    </cite></li>
+
+    <li><label>职业</label><cite>
+    	<input type="hidden" name="occupationGoods" id="occupationGoods" value=""  />
+    	
+    	<?php if(strpos($list['occupationGood'],'1') !== false){?>
+    	<input name="occupationGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    	<input name="occupationGood" type="checkbox" value="1"/>	
+    	<?php } ?>	
+    	上班族&nbsp;&nbsp;
+&nbsp;&nbsp;
+
+<?php if(strpos($list['occupationGood'],'2') !== false){?>
+    	<input name="occupationGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    	<input name="occupationGood" type="checkbox" value="2"/>	
+    	<?php }?>	
+生意人
+    </cite></li>
+    
+    <li><label>社保</label><cite>
+    	<input type="hidden" name="socialSecurityGoods" id="socialSecurityGoods" value=""  />
+    	
+    	<?php if(strpos($list['socialSecurityGood'],'1') !== false){?>
+    	<input name="socialSecurityGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    	<input name="socialSecurityGood" type="checkbox" value="1" />
+    	<?php }?>
+    	有&nbsp;&nbsp;
+&nbsp;&nbsp;
+		<?php if(strpos($list['socialSecurityGood'],'2') !== false){?>
+    	<input name="socialSecurityGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    	<input name="socialSecurityGood" type="checkbox" value="2" />
+    	<?php }?>
+无
+    </cite></li>
+
+    <li><label>公积金</label><cite>
+    	<input type="hidden" name="accumulationFundGoods" id="accumulationFundGoods" value=""  />
+    	
+    	<?php if(strpos($list['accumulationFundGood'],'1') !== false){?>
+    	<input name="accumulationFundGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    	<input name="accumulationFundGood" type="checkbox" value="1" />
+    	<?php }?>	
+    	有&nbsp;&nbsp;&nbsp;&nbsp;
+		<?php if(strpos($list['accumulationFundGood'],'2') !== false){?>
+    	<input name="accumulationFundGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    	<input name="accumulationFundGood" type="checkbox" value="2" />
+    	<?php }?>	无
+    </cite></li>
+    
+    <li><label>工资</label><cite>
+    	<input type="hidden" name="salaryGoods" id="salaryGoods" value=""  />
+    	<?php if(strpos($list['salaryGood'],'1') !== false){?>
+    	<input name="salaryGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    	<input name="salaryGood" type="checkbox" value="1" />
+    		<?php }?>
+    	5000以下&nbsp;&nbsp;&nbsp;&nbsp;
+
+<?php if(strpos($list['salaryGood'],'2') !== false){?>
+    	<input name="salaryGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    	<input name="salaryGood" type="checkbox" value="2" />
+    	<?php }?>
+
+5000以上
+    </cite></li>
+
+    <li><label>执照</label><cite>
+    	<input type="hidden" name="licenseGoods" id="licenseGoods" value=""  />
+    	<input name="licenseGood" type="checkbox" value="1" checked="checked" />有&nbsp;&nbsp;
+&nbsp;&nbsp;<input name="licenseGood" type="checkbox" value="2" checked="checked" />无
+    </cite></li>
+    
+    <li><label>流水</label><cite>
+    	<input type="hidden" name="runningWaterGoods" id="runningWaterGoods" value=""  />
+    	<input name="runningWaterGood" type="checkbox" value="1" checked="checked" />50万以下&nbsp;&nbsp;
+&nbsp;&nbsp;<input name="runningWaterGood" type="checkbox" value="2" checked="checked" />50万以上
+    </cite></li>
+  
+    <li><label>房产类型</label><cite>
+    	<input type="hidden" name="houseTypeGoods" id="houseTypeGoods" value=""  />
+    	<input name="houseTypeGood" type="checkbox" value="1" checked="checked" />商品房&nbsp;&nbsp;
+&nbsp;&nbsp;<input name="houseTypeGood" type="checkbox" value="2" checked="checked" />其它
+    </cite></li>
+    
+    <li><label>房产购置方式</label><cite>
+    	<input type="hidden" name="houseBuyGoods" id="houseBuyGoods" value=""  />
+    	<input name="houseBuyGood" type="checkbox" value="1" checked="checked" />全款&nbsp;&nbsp;
+&nbsp;&nbsp;<input name="houseBuyGood" type="checkbox" value="2" checked="checked" />月供
+    </cite></li>
+    
+    <li><label>房产价值</label><cite>
+    	<input type="hidden" name="propertyValuesGoods" id="propertyValuesGoods" value=""  />
+    	<input name="propertyValuesGood" type="checkbox" value="1" checked="checked" />80万以下&nbsp;&nbsp;
+&nbsp;&nbsp;<input name="propertyValuesGood" type="checkbox" value="2" checked="checked" />80万以上
+    </cite></li>
+    
+    <li><label>房产月供额</label><cite>
+    	<input type="hidden" name="monthlyPaymentGoods" id="monthlyPaymentGoods" value=""  />
+    	<input name="monthlyPaymentGood" type="checkbox" value="1" checked="checked" />5000以下&nbsp;&nbsp;
+&nbsp;&nbsp;<input name="monthlyPaymentGood" type="checkbox" value="2" checked="checked" />5000以上
+    </cite></li>
+    
+    <li><label>保单类型</label><cite>
+    	<input type="hidden" name="insuranceTypeGoods" id="insuranceTypeGoods" value=""  />
+    	<input name="insuranceTypeGood" type="checkbox" value="1" checked="checked" />传统型&nbsp;&nbsp;
+&nbsp;&nbsp;<input name="insuranceTypeGood" type="checkbox" value="2" checked="checked" />分红型
+    </cite></li>
+  
+    <li><label>保单缴费方式</label><cite>
+    	<input type="hidden" name="insurancePaymentMethodGoods" id="insurancePaymentMethodGoods" value=""  />
+    	<input name="insurancePaymentMethodGood" type="checkbox" value="1" checked="checked" />年缴&nbsp;&nbsp;
+&nbsp;&nbsp;<input name="insurancePaymentMethodGood" type="checkbox" value="2" checked="checked" />月缴
+    </cite></li>
+    
+      <li><label>保单缴费年限</label><cite>
+    	<input type="hidden" name="insuranceAgeLimitGoods" id="insuranceAgeLimitGoods" value=""  />
+    	<input name="insuranceAgeLimitGood" type="checkbox" value="1" checked="checked" />3年以下&nbsp;&nbsp;
+&nbsp;&nbsp;<input name="insuranceAgeLimitGood" type="checkbox" value="2" checked="checked" />3年以上
+    </cite></li>
+    
+
+      <li><label>汽车购置方式</label><cite>
+    	<input type="hidden" name="vehicleBuyTypeGoods" id="vehicleBuyTypeGoods" value=""  />
+    	<input name="vehicleBuyTypeGood" type="checkbox" value="1" checked="checked" />全款&nbsp;&nbsp;
+&nbsp;&nbsp;<input name="vehicleBuyTypeGood" type="checkbox" value="2" checked="checked" />月供
+    </cite></li>
+    
+      <li><label>最低汽车价格(/万)</label><input value="{$list.minVehiclePriceGood}" name="minVehiclePriceGoods" type="text" class="dfinput" /></li>
+    
+      <li><label>车龄</label><cite>
+    	<input type="hidden" name="vehicleAgeGoods" id="vehicleAgeGoods" value=""  />
+    	<input name="vehicleAgeGood" type="checkbox" value="1" checked="checked" />8年以下&nbsp;&nbsp;
+&nbsp;&nbsp;<input name="vehicleAgeGood" type="checkbox" value="2" checked="checked" />8年以上
+    </cite></li>
+  
+
+
+
+
+
+
+    <li><label>&nbsp;</label><input name="" type="button" id="btn" value="确认保存" style="padding: 10px 20px 10px 20px;  background: #DC4E00; color: #F0F0EE;"/></li>
+    
+
+    </ul>
+    
+    </form>
+    
+    </div>
+
+
+</body>
+
+<script src="http://www.jq22.com/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">window.onload = function() {
+	
+		var arra = new Array();
+		var arrb = new Array();
+		var arrc = new Array();
+		var arrd = new Array();
+		var arre = new Array();
+		var arrf = new Array();
+		var arrg = new Array();
+		var arrh = new Array();
+		var arri = new Array();
+		var arrj = new Array();
+		var arrk = new Array();
+		var arro = new Array();
+		var arrm = new Array();
+		var arrn = new Array();
+		var arro = new Array();
+		var arrp = new Array();
+		var arrq = new Array();
+		var arrr = new Array();
+		var arrs = new Array();
+		var arrt = new Array();
+		var arru = new Array();
+		var arrv = new Array();
+		var arrw = new Array();
+		var arrs = new Array();
+		var arry = new Array();
+		var arrz = new Array();
+		
+
+		var btnObj = document.getElementById("btn");
+                btnObj.onclick = function() {
+              
+                 	
+     			
+                          	
+
+//`educationGood` varchar(255) NOT NULL COMMENT '学历0为本科以下2为本科以上',
+ 				var educationGood = document.getElementsByName("educationGood");
+                   for (var i = 0; i < educationGood.length; i++) {
+                        if (educationGood[i].checked) {
+                            arra.push(educationGood[i].value);
+                        }
+                   }
+                   document.getElementById("educationGoods").value = arra.join(" | ");    
+//`weilidaiGood` varchar(255) NOT NULL COMMENT '微粒贷1有2无0空',
+ 				var weilidaiGood = document.getElementsByName("weilidaiGood");
+                   for (var i = 0; i < weilidaiGood.length; i++) {
+                        if (weilidaiGood[i].checked) {
+                            arrb.push(weilidaiGood[i].value);
+                        }
+                   }
+                   document.getElementById("weilidaiGoods").value = arrb.join(" | ");    
+//`occupationGood` varchar(255) NOT NULL COMMENT '职业1为上班族2为生意人',
+ 				var occupationGood = document.getElementsByName("occupationGood");
+                   for (var i = 0; i < occupationGood.length; i++) {
+                        if (occupationGood[i].checked) {
+                            arrc.push(occupationGood[i].value);
+                        }
+                   }
+                   document.getElementById("occupationGoods").value = arrc.join(" | ");    
+//`socialSecurityGood` varchar(255) NOT NULL COMMENT '社保，0为没填，1为有，2无',
+ 				var socialSecurityGood = document.getElementsByName("socialSecurityGood");
+                   for (var i = 0; i < socialSecurityGood.length; i++) {
+                        if (socialSecurityGood[i].checked) {
+                            arrd.push(socialSecurityGood[i].value);
+                        }
+                   }
+                   document.getElementById("socialSecurityGoods").value = arrd.join(" | ");    
+                   
+//`accumulationFundGood` varchar(255) NOT NULL COMMENT '公积金，0为没填，1为有，2为无',
+ 				var accumulationFundGood = document.getElementsByName("accumulationFundGood");
+                   for (var i = 0; i < accumulationFundGood.length; i++) {
+                        if (accumulationFundGood[i].checked) {
+                            arre.push(accumulationFundGood[i].value);
+                        }
+                   }
+                   document.getElementById("accumulationFundGoods").value = arre.join(" | ");    
+//`salaryGood` varchar(255) NOT NULL COMMENT '工资，0没填，1为5000以下，2为5000以上',
+ 				var salaryGood = document.getElementsByName("salaryGood");
+                   for (var i = 0; i < salaryGood.length; i++) {
+                        if (salaryGood[i].checked) {
+                            arrf.push(salaryGood[i].value);
+                        }
+                   }
+                   document.getElementById("salaryGoods").value = arrf.join(" | ");    
+//`licenseGood` varchar(255) NOT NULL COMMENT '执照，0为没填，1为有，2为无',
+ 				var licenseGood = document.getElementsByName("licenseGood");
+                   for (var i = 0; i < licenseGood.length; i++) {
+                        if (licenseGood[i].checked) {
+                            arrg.push(licenseGood[i].value);
+                        }
+                   }
+                   document.getElementById("licenseGoods").value = arrg.join(" | ");    
+//`runningWaterGood` varchar(255) NOT NULL COMMENT '流水，0没填，1为50万以下，2为50万以上',
+ 				var runningWaterGood = document.getElementsByName("runningWaterGood");
+                   for (var i = 0; i < runningWaterGood.length; i++) {
+                        if (runningWaterGood[i].checked) {
+                            arrh.push(runningWaterGood[i].value);
+                        }
+                   }
+                   document.getElementById("runningWaterGoods").value = arrh.join(" | ");    
+//`houseTypeGood` varchar(255) NOT NULL COMMENT '房产类型，0为没填，1为商品房，2为其它',
+ 				var houseTypeGood = document.getElementsByName("houseTypeGood");
+                   for (var i = 0; i < houseTypeGood.length; i++) {
+                        if (houseTypeGood[i].checked) {
+                            arri.push(houseTypeGood[i].value);
+                        }
+                   }
+                   document.getElementById("houseTypeGoods").value = arri.join(" | ");    
+//`houseBuyGood` varchar(255) NOT NULL COMMENT '房产购置方式，0没填，1全款，2月供',
+ 				var houseBuyGood = document.getElementsByName("houseBuyGood");
+                   for (var i = 0; i < houseBuyGood.length; i++) {
+                        if (houseBuyGood[i].checked) {
+                            arrk.push(houseBuyGood[i].value);
+                        }
+                   }
+                   document.getElementById("houseBuyGoods").value = arrk.join(" | ");    
+//`propertyValuesGood` varchar(255) NOT NULL COMMENT '房产价值，0没填，1为80万以下，80万以上（全款特有）',
+ 				var propertyValuesGood = document.getElementsByName("propertyValuesGood");
+                   for (var i = 0; i < propertyValuesGood.length; i++) {
+                        if (propertyValuesGood[i].checked) {
+                            arrj.push(propertyValuesGood[i].value);
+                        }
+                   }
+                   document.getElementById("propertyValuesGoods").value = arrj.join(" | ");    
+//`monthlyPaymentGood` varchar(255) NOT NULL COMMENT '房产月供额，0为没填，1为5000以下，2为5000以上',
+ 				var monthlyPaymentGood = document.getElementsByName("monthlyPaymentGood");
+                   for (var i = 0; i < monthlyPaymentGood.length; i++) {
+                        if (monthlyPaymentGood[i].checked) {
+                            arro.push(monthlyPaymentGood[i].value);
+                        }
+                   }
+                   document.getElementById("monthlyPaymentGoods").value = arro.join(" | ");    
+//`insuranceTypeGood` varchar(255) NOT NULL COMMENT '保单类型,0为没填，1为传统型，2为分红型',
+ 				var insuranceTypeGood = document.getElementsByName("insuranceTypeGood");
+                   for (var i = 0; i < insuranceTypeGood.length; i++) {
+                        if (insuranceTypeGood[i].checked) {
+                            arrm.push(insuranceTypeGood[i].value);
+                        }
+                   }
+                   document.getElementById("insuranceTypeGoods").value = arrm.join(" | ");    
+//`insurancePaymentMethodGood` varchar(255) NOT NULL COMMENT '保单缴费方式，0为没填，1为年缴，2为月缴',
+ 				var insurancePaymentMethodGood = document.getElementsByName("insurancePaymentMethodGood");
+                   for (var i = 0; i < insurancePaymentMethodGood.length; i++) {
+                        if (insurancePaymentMethodGood[i].checked) {
+                            arrn.push(insurancePaymentMethodGood[i].value);
+                        }
+                   }
+                   document.getElementById("insurancePaymentMethodGoods").value = arrn.join(" | ");    
+//`insuranceAgeLimitGood` varchar(255) NOT NULL COMMENT '保单缴费年限，0为没填，1为3年以下，2为3年以上',
+ 				var insuranceAgeLimitGood = document.getElementsByName("insuranceAgeLimitGood");
+                   for (var i = 0; i < insuranceAgeLimitGood.length; i++) {
+                        if (insuranceAgeLimitGood[i].checked) {
+                            arrp.push(insuranceAgeLimitGood[i].value);
+                        }
+                   }
+                   document.getElementById("insuranceAgeLimitGoods").value = arrp.join(" | ");    
+//`vehicleBuyTypeGood` varchar(255) NOT NULL COMMENT '汽车购置方式，0为没填，1为全款，2为月供',
+ 				var vehicleBuyTypeGood = document.getElementsByName("vehicleBuyTypeGood");
+                   for (var i = 0; i < vehicleBuyTypeGood.length; i++) {
+                        if (vehicleBuyTypeGood[i].checked) {
+                            arrq.push(vehicleBuyTypeGood[i].value);
+                        }
+                   }
+                   document.getElementById("vehicleBuyTypeGoods").value = arrq.join(" | ");    
+
+//`vehicleAgeGood` varchar(255) NOT NULL COMMENT '车龄，0为没填，1为8年以下，2为8年以上',	
+ 				var vehicleAgeGood = document.getElementsByName("vehicleAgeGood");
+                   for (var i = 0; i < vehicleAgeGood.length; i++) {
+                        if (vehicleAgeGood[i].checked) {
+                            arru.push(vehicleAgeGood[i].value);
+                        }
+                   }
+                   document.getElementById("vehicleAgeGoods").value = arru.join(" | ");    
+                	
+                	
+ 				
+var form = document.getElementById('test_form');
+//再次修改input内容
+
+form.submit();
+
+                };
+ 					    
+                    
+                
+            };
+</script>
+</html>

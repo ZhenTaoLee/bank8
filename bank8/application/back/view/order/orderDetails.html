@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>订单详情</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="js/select-ui.min.js"></script>
+<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+  
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345			  
+	});
+	$(".select2").uedSelect({
+		width : 167  
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+<style type="text/css">
+    .text-left{line-height: 30px;}
+    .text-left p{margin-left: 40px;font-size: 14px;}  
+</style>
+</head>
+
+<body>
+	<div class="place">
+        <span>位置：</span>
+        <ul class="placeul">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">系统设置</a></li>
+        </ul>
+    </div>    
+    <div class="formbody">
+
+    <!--<div id="tab1" class="tabson">   
+        <div class="formtext">Hi，<b>admin</b>，欢迎您试用信息发布功能！</div>   
+    </div>  -->
+    
+    <div class="text-left">
+        <div >
+            <h6>基本信息</h6>
+            <p>订单城市：广州</p>
+            <p>订单编号：121314323565</p>
+            <p>下单时间：2018-09-09  12:23:45</p>
+            <p>订单状态：待沟通</p>
+            <p>手机号：13688982341</p>
+            <p>姓名：庄鹏泽</p>
+            <p>匹配资料：<a href="">查看详情</a></p>
+            <p>真实放款金额：--</p>
+            <p>真实放款利率：--   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>这三项在放款后经办填写后才显示</u></p>  
+            <p>真实放款期数：--</p>
+            <p>服务费：待支付</p>
+        </div>
+
+          <div>
+            <h6>订单产品信息</h6>
+            <p>产品分类：</p>
+            <p>产品机构：</p>
+            <p>产品名字：</p>
+            <p>额度：</p>
+            <p>利息：</p>
+            <p>期限：</p>
+            <p>具体情况：<a href="">产品详情</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">产品匹配规则</a></p>
+        </div>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <h6>匹配信息</h6>
+            <p>咨询费： 未支付 已支付 杭州订单无需支付</p>
+            <p>匹配编号：121314323565</p>
+            <p>匹配时间：2018-09-09  12:23:45</p>            
+        </div>
+    </div>
+
+  	<div id="tab2" class="tabson">   
+        <table class="tablelist" style="width: 1000px; margin-left: 40px;">
+        	<thead>
+        	<tr>
+            <!-- <th><input name="" type="checkbox" value="" checked="checked"/></th> -->
+            <th>序号<!-- <i class="sort"><img src="images/px.gif" /></i> --></th>
+            <th>产品分类</th>
+            <th>推荐产品</th>
+            <th>产品机构</th>
+            <th>额度</th>
+            <th>利息</th>
+            <th>期限</th>
+            <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <!-- <td><input name="" type="checkbox" value="" /></td> -->
+            <td>1</td>
+            <td>房贷</td>
+            <td>产品名字</td>
+            <td>机构名字</td>
+            <td>2~50万</td>
+            <td>年利率0.3%-2%</td>
+            <td>12/24/36期</td>
+            <td><a href="#" class="tablelink">产品详情</a></td>
+            </tr>
+            
+            <tr>
+            <!-- <td><input name="" type="checkbox" value="" /></td> -->
+            <td>1</td>
+            <td>房贷</td>
+            <td>产品名字</td>
+            <td>机构名字</td>
+            <td>2~50万</td>
+            <td>年利率0.3%-2%</td>
+            <td>12/24/36期</td>
+            <td><a href="#" class="tablelink">产品详情</a></td>
+            </tr>
+            
+            <tr>
+            <!-- <td><input name="" type="checkbox" value="" /></td> -->
+            <td>1</td>
+            <td>房贷</td>
+            <td>产品名字</td>
+            <td>机构名字</td>
+            <td>2~50万</td>
+            <td>年利率0.3%-2%</td>
+            <td>12/24/36期</td>
+            <td><a href="#" class="tablelink">产品详情</a></td>
+            </tr>
+            </tbody>
+        </table>   
+    </div>  
+       
+	</div> 
+ 
+	<script type="text/javascript"> 
+      $("#usual1 ul").idTabs(); 
+    </script>
+    
+    <script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+	</script>      
+    </div>
+</body>
+
+</html>

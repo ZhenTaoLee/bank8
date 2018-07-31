@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>工具管理-车评估</title>
+<link href="{$Think.const.BACK_CSS_URL}style.css" rel="stylesheet" type="text/css" />
+<link href="{$Think.const.BACK_CSS_URL}select.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}jquery.js"></script>
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}jquery.idTabs.min.js"></script>
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}select-ui.min.js"></script>
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}editor/kindeditor.js"></script>
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}laydate/laydate.js"></script>
+<link href="{$Think.const.BACK_CSS_URL}css.css" rel="stylesheet"><!--分页样式-->
+<script type="text/javascript">
+    KE.show({
+        id : 'content7',
+        cssPath : './index.css'
+    });
+  </script>
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $(".select1").uedSelect({
+		width : 345
+	});
+	$(".select2").uedSelect({
+		width : 167
+	});
+	$(".select3").uedSelect({
+		width : 100
+	});
+});
+</script>
+<style type="text/css">
+    .tabson ul li{margin-right: 50px;}
+</style>
+</head>
+
+<body>
+	<div class="place">
+        <span>位置：</span>
+        <ul class="placeul">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">系统设置</a></li>
+        </ul>
+    </div>
+    <div class="formbody">
+
+<!--       <div id="tab1" class="tabson">
+        <div class="formtext">Hi，<b>admin</b>，欢迎您试用信息发布功能！</div>
+    </div>  -->
+
+
+  	<div id="tab2" class="tabson">
+  		 <form action="" method="get">
+        <ul class="seachform">
+            <li><label>手机号</label><input name="phone" type="text" class="scinput" /></li>
+            <li><label>品牌</label><input name="brand" type="text" class="scinput" /></li>
+            <li><label>时间：</label>
+            <input placeholder="请输入开始日期" name="time1" class="laydate-icon timeUstyle stateUTime" onclick="laydate({istime: true,format:'YYYY-MM-DD hh:mm'})">
+						~<input placeholder="请输入结束日期" name="time2" class="laydate-icon timeUstyle stateUTime" onclick="laydate({istime: true,format:'YYYY-MM-DD hh:mm'})">
+            </li>
+            <li><label>&nbsp;</label><input name="" type="submit" class="scbtn" value="搜索"/></li>
+        </ul>
+ </form>
+
+    <table class="tablelist">
+    	<thead>
+    	<tr>
+        <!-- <th><input name="" type="checkbox" value="" checked="checked"/></th> -->
+        <th>序号<!-- <i class="sort"><img src="images/px.gif" /></i> --></th>
+        <th>手机号</th>
+        <th width="200px">汽车(品牌+车系+车型)</th>
+        <th>上牌地区</th>
+        <th>启动时间</th>
+        <th>车况</th>
+        <th>车辆用途</th>
+        <th>行驶公里</th>
+        <th>购买价/万</th>
+        <th>二手车行收购</th>
+        <th>个人交易价</th>
+        <th>二手车商行售价</th>
+        <th>评估时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <!-- <td><input name="" type="checkbox" value="" /></td> -->
+				<?php $arr = ['1'=>'优秀', '2'=>'一般', '3'=>'较差'];?>
+				<?php $ass = ['1'=>'自用', '2'=>'公务商用', '3'=>'营运'];?>
+
+				{volist name="list" id="res"}
+        <td>{$res.vehicle_id}</td>
+        <td>{$res.phone}</td>
+        <td>{$res.brand} &nbsp; {$res.series} &nbsp; {$res.model}</td>
+        <td>{$res.site}</td>
+        <td>{$res.starttime}</td>
+        <td>{$arr[$res.condition]}</td>
+        <td>{$ass[$res.purpose]}</td>
+        <td>{$res.mileage}</td>
+        <td>{$res.price}万</td>
+        <td>{$res.purchase}万</td>
+        <td>{$res.bargainprice}万</td>
+        <td>{$res.sellingprice}万</td>
+        <td><?php echo date('Y-m-d H:i:s',$res['addtime']);?></td>
+        </tr>
+				{/volist}
+
+        </tbody>
+    </table>
+<div class="page">
+	<table style="margin:0 auto;text-align: center;">
+		<tr>
+			{$list->render()}
+		</tr>
+	</table>
+</div>
+    </div>
+
+	</div>
+
+	<script type="text/javascript">
+      $("#usual1 ul").idTabs();
+    </script>
+
+    <script type="text/javascript">
+	$('.tablelist tbody tr:odd').addClass('odd');
+	</script>
+
+    </div>
+
+
+</body>
+
+</html>

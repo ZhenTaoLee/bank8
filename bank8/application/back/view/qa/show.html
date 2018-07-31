@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Qa展示</title>
+<link href="{$Think.const.BACK_CSS_URL}style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}jquery.js"></script>
+<link href="{$Think.const.BACK_CSS_URL}css.css" rel="stylesheet"><!--分页样式-->
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".click").click(function(){
+  $(".tip").fadeIn(200);
+  });
+
+  $(".tiptop a").click(function(){
+  $(".tip").fadeOut(200);
+});
+
+  $(".sure").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+  $(".cancel").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+});
+</script>
+
+
+</head>
+
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">数据表</a></li>
+    <li><a href="#">基本内容</a></li>
+    </ul>
+    </div>
+
+    <div class="rightinfo">
+
+    <div class="tools">
+
+    	<ul class="toolbar">
+        <a href="add"><li class="click"><span><img src="{$Think.const.BACK_IMG_URL}t01.png" /></span>添加</li></a>
+
+        </ul>
+
+
+        <ul class="toolbar1">
+        <li><span><img src="{$Think.const.BACK_IMG_URL}t05.png" /></span>设置</li>
+        </ul>
+
+    </div>
+
+
+    <table class="tablelist" style="table-layout: fixed;width: 100 px">
+    	<thead>
+    	   <tr>
+
+        <th>编号</th>
+        <th>问题分类</th>
+        <th>问题</th>
+        <th>答案</th>
+        <th>状态</th>
+        <th>录入时间</th>
+        <th>点击率</th>
+        <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+          <?php $arr = ['1'=>'借款相关', '2'=>'审核相关', '3'=>'放款相关', '4'=>'还款和费用相关', '5'=>'其他问题'];?>
+          <?php $statearr = ['0'=>'旧内容','1'=>'上架', '2'=>'下架'];?>
+        	{volist name="list" id="vo"}
+
+
+        <tr>
+
+        <td>{$vo.issue_id}</td>
+        <td>{$arr[$vo.type]}</td>
+        <td style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">{$vo.headline} </td>
+        <td style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">{$vo.webtest}</td>
+        <td>{$statearr[$vo.state]}</td>
+        <td><?php echo date('Y-m-d H:i:s',$vo['addtime']);?></td>
+        <td>{$vo.click}</td>
+
+        <td>
+
+          <!-- <a href="update?id={$vo.issue_id}" class="tablelink"> 编辑</a> -->
+        	<a href="delete?id={$vo.issue_id}" class="tablelink" onClick="delcfm()"> 删除</a>
+
+        </td>
+
+        </tr>
+         {/volist}
+
+        </tbody>
+    </table>
+<div class="page">
+	<table style="margin:0 auto;text-align: center;">
+		<tr>
+			{$list->render()}
+		</tr>
+	</table>
+</div>
+
+
+
+
+
+
+    </div>
+
+    <script type="text/javascript">
+    	 function delcfm() {
+        if (!confirm("确认要删除？")) {
+            window.event.returnValue = false;
+        }
+    }
+	$('.tablelist tbody tr:odd').addClass('odd');
+	</script>
+
+</body>
+
+</html>

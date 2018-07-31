@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>展示</title>
+<link href="{$Think.const.BACK_CSS_URL}style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}jquery.js"></script>
+<link href="{$Think.const.BACK_CSS_URL}css.css" rel="stylesheet"><!--分页样式-->
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".click").click(function(){
+  $(".tip").fadeIn(200);
+  });
+
+  $(".tiptop a").click(function(){
+  $(".tip").fadeOut(200);
+});
+
+  $(".sure").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+  $(".cancel").click(function(){
+  $(".tip").fadeOut(100);
+});
+
+});
+</script>
+
+
+</head>
+
+
+<body>
+
+	<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">数据表</a></li>
+    <li><a href="#">基本内容</a></li>
+    </ul>
+  </div>
+
+    <div class="rightinfo">
+
+    <div class="tools">
+
+    	<ul class="toolbar">
+        <a href="add"><li class="click"><span><img src="{$Think.const.BACK_IMG_URL}t01.png" /></span>添加</li></a>
+
+      </ul>
+
+        <ul class="toolbar">
+    <!-- <a href="add"><li class="click"><span><img src="{$Think.const.BACK_IMG_URL}t01.png" /></span>添加</li></a> -->
+        <li>
+          <label></label>
+
+           <form action="" method="get">
+
+              <!-- <input name="city" type="text" class="scinput" placeholder="城市"/>&nbsp;&nbsp;&nbsp; -->
+
+              <select name="type" class="scinput" >
+                <option value="">全部分类</option>
+                <option value="1">所有用户</option>
+                <option value="2">经办</option>
+                <!-- <option value="深圳">深圳</option>
+                <option value="珠海">珠海</option> -->
+              </select>
+              <select name="status" class="scinput" >
+                <option value="">全部状态</option>
+                <option value="1">通过</option>
+                <option value="0">审核中</option>
+                <option value="2">待发送</option>
+                <option value="3">已发送</option>
+                <!-- <option value="深圳">深圳</option>
+                <option value="珠海">珠海</option> -->
+              </select>
+
+              <!-- <input name="name" type="text" class="scinput" placeholder="姓名"/>&nbsp;&nbsp;&nbsp; -->
+              <input placeholder="请输入开始日期" name="time1" class="laydate-icon timeUstyle stateUTime" onclick="laydate({istime: true,format:'YYYY-MM-DD hh:mm'})">
+              ~<input placeholder="请输入结束日期" name="time2" class="laydate-icon timeUstyle stateUTime" onclick="laydate({istime: true,format:'YYYY-MM-DD hh:mm'})">
+              <input name="" type="submit" class="sure" value="查询"/>
+          </form>
+        </li>
+
+        <li>
+            <form action="daochu" method="get">
+
+            <input type="hidden" name="city" id="city" value="<?php echo input('get.city'); ?>" />
+            <input type="hidden" name="name" id="name" value="<?php echo input('get.name'); ?>" />
+            <input type="hidden" name="time1" id="time1" value="<?php echo input('get.time1'); ?>" />
+            <input type="hidden" name="time2" id="time2" value="<?php echo input('get.time2'); ?>" />
+
+              <input name="" type="submit" class="sure" value="导出"/>
+
+            </form>
+
+        </li>
+
+        </ul>
+
+
+        <ul class="toolbar1">
+        <li><span><img src="{$Think.const.BACK_IMG_URL}t05.png" /></span>设置</li>
+        </ul>
+
+    </div>
+
+
+    <table class="tablelist" style="table-layout: fixed;width: 100 px">
+    	<thead>
+    	   <tr>
+
+        <th>编号</th>
+        <th>通知分类</th>
+        <th>通知内容</th>
+        <th>状态</th>
+        <th>通知时间</th>
+        <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+
+          <?php $arr = ['0'=>'审核中', '1'=>'通过', '2'=>'待发送', '3'=>'已发送'];?>
+          <?php $statearr = ['1'=>'所有用户', '2'=>'经办'];?>
+        	{volist name="list" id="vo"}
+
+
+        <tr>
+
+        <td>{$vo.notice_id}</td>
+        <td>{$statearr[$vo.type]}</td>
+        <td style="white-space: nowrap;text-overflow: ellipsis;overflow: hidden;">{$vo.noticetext} </td>
+
+        <td>{$arr[$vo.status]}</td>
+        <td><?php echo date('Y-m-d H:i:s',$vo['addtime']);?></td>
+
+
+        <td>
+
+          <a href="upd?id={$vo.notice_id}" class="tablelink"> 审核通过并推送</a>
+          <a href="update?id={$vo.notice_id}" class="tablelink"> 编辑</a>
+        	<a href="delete?id={$vo.notice_id}" class="tablelink" onClick="delcfm()"> 删除</a>
+
+        </td>
+
+        </tr>
+         {/volist}
+
+        </tbody>
+    </table>
+<div class="page">
+	<table style="margin:0 auto;text-align: center;">
+		<tr>
+			{$list->render()}
+		</tr>
+	</table>
+</div>
+
+
+
+    </div>
+
+    <script type="text/javascript">
+    	 function delcfm() {
+        if (!confirm("确认要删除？")) {
+            window.event.returnValue = false;
+        }
+    }
+	$('.tablelist tbody tr:odd').addClass('odd');
+	</script>
+
+</body>
+
+</html>

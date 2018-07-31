@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>八号钱庄</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<link rel="icon" href="{$Think.const.BACK_IMG_URL}web/icon.png" type="image/jpeg"/>
+	<meta name="description" content="八号钱庄是我司目前的主要产品，集成“智能匹配+产品推荐+链接银行+客服协助“于一身的新商业模式，入口端为app，与线上官网咨询，通过服务端在线客服团队引流到app准入。">
+	<meta name="keywords" content="八号钱庄,八号助手,金融工具,中瀛科技,鑫易贷,">
+	<link rel="stylesheet" type="text/css" href="{$Think.const.BACK_CSS_URL}bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{$Think.const.BACK_CSS_URL}web/extend.css">
+
+</head>
+<body>
+	<!-- banner -->
+	<main class="main">
+		<div class="topbanner">
+			<div class="logo">
+				<img src="{$Think.const.BACK_IMG_URL}web/logo.png" alt="">
+			</div>
+		</div>
+		<!-- 快速申请 -->
+		<div class="Apply">
+			<img src="{$Think.const.BACK_IMG_URL}web/Apply.png" alt="">
+			<div class="container">
+				<div class="row">
+					<form action="" class="form form-horizontal" name="myform">
+						<table>
+						<tr>
+							<td colspan=3>
+								<!-- <input class="chang" type="text" placeholder="请输入您的所在城市" id="city" name="city"></input> -->
+								<select class="select" id="city" name="city">
+									<option value="广州"selected="selected">广州</option>
+									<option value="深圳">深圳</option>
+									<option value="珠海">珠海</option>
+									<option value="杭州">杭州</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan=3>
+								<input class="chang" type="text" placeholder="请输入您的真实姓名" id="name" name="name"></input>
+							</td>
+						</tr>
+						<tr>
+							<td colspan=3>
+								 <input class="chang" type="text" placeholder="请输入11位手机号码" id="phone" name="phone"></input>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan=2>
+								<input class="duan" type="text" id="verfifcation" name="verfifcation" placeholder="请填写验证码" ></input>
+							</td>
+							<td>
+								<button id="phonecode" class="btn verificationcode" type="button" value="获取验证码" >获取验证码</button>
+							</td>
+						</tr>
+						<tr>
+							<td colspan=3>
+								<button type="button" id="submit" class="button">提交</button>
+							</td>
+						</tr>
+						</table>
+					</form>
+				</div>
+				</div>
+			</div>
+			<div class="loan">
+				<img class="loanimg" src="{$Think.const.BACK_IMG_URL}web/loan.png" alt="">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<img src="{$Think.const.BACK_IMG_URL}web/注册app.png" alt="">
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<img src="{$Think.const.BACK_IMG_URL}web/智能匹配.png" alt="">
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<img src="{$Think.const.BACK_IMG_URL}web/银行审批.png" alt="">
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<img src="{$Think.const.BACK_IMG_URL}web/放款成功.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="downlad">
+				<a href="/index/index/download/downlad.html"><button name="num" id="but" class="button">立即下载</button></a>
+			</div>
+		<div class="footer text-center">
+			<p>杜绝借款犯罪，倡导合法借贷，信守借款合约</p>
+			<p>市场有风险，投资需谨慎</p>
+			<!-- <p>深圳市易网联科技有限公司</p> -->
+			<p>广州中瀛信息科技有限公司</p>
+			<p>ICP备案号：粤ICP备17053318号-1</p>
+			<!-- <p>粤ICP备: 17002348号-2</p> -->
+		</div>
+	</main>
+	<script type="text/javascript" src="{$Think.const.BACK_JS_URL}jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="{$Think.const.BACK_JS_URL}web/extend.js"></script>
+	<script type="text/javascript" src="{$Think.const.BACK_JS_URL}web/downclickv1.0.js"></script>
+	<script type="text/javascript">
+	</script>
+</body>
+</html>

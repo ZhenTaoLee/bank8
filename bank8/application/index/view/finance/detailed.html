@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" href="{$Think.const.BACK_CSS_URL}bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{$Think.const.BACK_CSS_URL}detailed.css">
+</head>
+<body>
+	<div class="bg_color">
+		<!-- 银行 -->
+		<div class="bank container">
+			<!-- logo -->
+			<div class="img">
+				<img src="{$list.logo}">
+			</div>
+			<div class="name">
+				<!-- 产品名称 -->
+				<h1>{$list.goodName}</h1>
+				<!-- 标签 -->
+				<div class="tab">
+				{$list.label}
+				</div>
+			</div>
+			<div class="">
+				<img src="{$Think.const.BACK_IMG_URL}tu1.png" class="img-left">
+				<div class="text-right">
+					<p><img src="{$Think.const.BACK_IMG_URL}tu2.png" alt="" ><span>月利息：{$list.accrual}</span></p>
+					<p><img src="{$Think.const.BACK_IMG_URL}tu3.png" alt=""><span>额度：{$list.limit}</span></p>
+					<p><img src="{$Think.const.BACK_IMG_URL}tu4.png" alt=""><span>期限：{$list.agelimit}</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div style="border:6px dotted #F0F0F0;background:#F0F0F0; margin-top:10pt;"></div>
+		<!-- 申请条件 -->
+		<div class="condition container">
+			<h3>申请条件</h3>
+			{$list.condition}
+		</div>
+		<div style="border:6px dotted #F0F0F0;background:#F0F0F0; margin-top:10pt;"></div>
+
+		<div class="container">
+			<!-- 准备资料-->
+			<div class="data">
+				<h3>准备资料</h3>
+				{$list.datum}
+			</div>
+
+			<!-- 注意事项 -->
+			<div class="matter">
+				<h3>注意事项</h3>
+				{$list.notice}
+			</div>
+		</div>
+		<!--<div style="border:6px dotted #F0F0F0;background:#F0F0F0; margin-top:10pt;"></div>-->
+		<!-- 类似产品 -->
+		
+		<!--<div class="similars container">
+			<h3>类似产品</h3>
+			<ul>
+				<li>
+
+			
+					<div class="img">
+						<img src="">
+					</div>
+					<div class="name">
+						<h2>}</h2>
+						<div class="quota">
+							<a>额度：<span></span></a>
+							<a>月利息：<span></span></a>
+							<a>期限：<span></span></a>
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+		</div>-->
+		<!--<div style="border:6px dotted #F0F0F0;background:#F0F0F0; margin-top:10pt;"></div>-->
+	</div>
+</body>
+</html>

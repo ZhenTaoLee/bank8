@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>客服聊天</title>
+
+<link rel="stylesheet" type="text/css" href="{$Think.const.BACK_CSS_URL}qq.css">
+
+</head>
+<body>
+
+	<input type="hidden" name="" id="sid" value="<?php echo $id; ?>" />
+	<input type="hidden" name="" id="appkey" value="<?php echo $appkey; ?>" />
+	<input type="hidden" name="" id="timestamp" value="<?php echo $timestamp; ?>" />
+	<input type="hidden" name="" id="random_str" value="<?php echo $random_str; ?>" />
+	<input type="hidden" name="" id="signature" value="<?php echo $signature; ?>" />
+	<input type="hidden" name="" id="username" value="<?php echo $username; ?>" />
+	<input type="hidden" name="" id="pas" value="<?php echo $pas; ?>" />
+	<input type="hidden" name="" id="nickname" value="<?php echo $nickname; ?>" />
+	<input type="hidden" name="" id="usernemesd" value="<?php echo $usernemesd; ?>" />
+
+	<input type="hidden" name="" id="11" value="">
+
+
+
+
+
+
+<div class="qqBox">
+	<div class="BoxHead">
+		<div class="headImg">
+			<img src="https://zykj.8haoqianzhuang.cn/eab23201801171402146088.png">
+		</div>
+		<div class="internetName">客服</div></br>&nbsp<div class="internetName"><?php echo $nickname; ?></div>
+	</div>
+	<div class="context">
+		<div class="conLeft">
+			<ul id="query_content">
+
+				{volist name="list" id="vo"}
+				<a href="https://www.8haoqianzhuang.com/index.php/index/im/services.html?sid=<?php echo $id; ?>&username={$vo.username}" >
+				<li>
+
+					<div class="liLeft"><img src="https://zykj.8haoqianzhuang.cn/d40e2201801191809169667.png"></div>
+					<div class="liRight">
+						<span class="intername">{$vo.nickname}</span>
+						<?php if($vo['sum']>0){ ?>
+						<span class="sdkssss">{$vo.sum}</span>
+						<?php } ?>
+
+
+					</div>
+				</li>
+				</a>
+				{/volist}
+
+
+
+			</ul>
+		</div>
+		<div class="conRight">
+			<div class="Righthead">
+				<div class="headName"><?php echo $nicknames['nickname']; ?></div>
+				<input type="hidden" name="" id="appkeys" value="<?php echo $nicknames['appkeys']; ?>" />
+				<div class="headConfig">
+					<ul>
+						<!-- <li><img src="img/20170926103645_06.jpg"></li>
+						<li><img src="img/20170926103645_08.jpg"></li>
+						<li><img src="img/20170926103645_10.jpg"></li>
+						<li><img src="img/20170926103645_12.jpg"></li> -->
+					</ul>
+				</div>
+			</div>
+			<div class="RightCont" id="content">
+
+
+				<ul class="newsList" id="newss">
+
+
+					{volist name="lists" id="vo"}
+
+					<?php if($vo['stype']==2){ ?>
+					<!-- 右边聊天 -->
+					<li>
+
+						<div class="answerHead"><img src="https://zykj.8haoqianzhuang.cn/eab23201801171402146088.png"/></div>
+					<div class="answers"><img class="jiao" src="">
+						{$vo.content}
+					</div>
+
+
+					</li>
+					<?php }elseif($vo['stype']==1){ ?>
+				<!-- 左边聊天 -->
+
+					<li>
+
+					<div class="newsdate">
+						<?php echo  date("Y-m-d H:i",$vo['addtime']); ?>
+					</div>
+
+					<div class="nesHead"><img src="https://zykj.8haoqianzhuang.cn/d40e2201801191809169667.png"/></div>
+					<div class="news"><img class="jiao" src="">
+						{$vo.content}
+					</div>
+
+
+
+
+					</li>
+					<?php } ?>
+				{/volist}
+
+				</ul>
+			</div>
+			<div class="RightFoot">
+				<div class="emjon">
+					<ul>
+						<!-- <li><img src="img/em_02.jpg"></li>
+						<li><img src="img/em_05.jpg"></li>
+						<li><img src="img/em_07.jpg"></li>
+						<li><img src="img/em_12.jpg"></li>
+						<li><img src="img/em_14.jpg"></li>
+						<li><img src="img/em_16.jpg"></li>
+						<li><img src="img/em_20.jpg"></li>
+						<li><img src="img/em_23.jpg"></li>
+						<li><img src="img/em_25.jpg"></li>
+						<li><img src="img/em_30.jpg"></li>
+						<li><img src="img/em_31.jpg"></li>
+						<li><img src="img/em_33.jpg"></li>
+						<li><img src="img/em_37.jpg"></li>
+						<li><img src="img/em_38.jpg"></li>
+						<li><img src="img/em_40.jpg"></li>
+						<li><img src="img/em_45.jpg"></li>
+						<li><img src="img/em_47.jpg"></li>
+						<li><img src="img/em_48.jpg"></li>
+						<li><img src="img/em_52.jpg"></li>
+						<li><img src="img/em_54.jpg"></li>
+						<li><img src="img/em_55.jpg"></li> -->
+					</ul>
+				</div>
+				<!-- <div class="footTop">
+					<ul>
+						<li><img src="img/20170926103645_31.jpg"></li>
+						<li class="ExP"><img src="img/20170926103645_33.jpg"></li>
+						<li><img src="img/20170926103645_35.jpg"></li>
+						<li><img src="img/20170926103645_37.jpg"></li>
+						<li><img src="img/20170926103645_39.jpg"></li>
+						<li><img src="img/20170926103645_41.jpg" alt="" /></li>
+						<li><img src="img/20170926103645_43.jpg"></li>
+						<li><img src="img/20170926103645_45.jpg"></li>
+					</ul>
+				</div> -->
+				<div class="inputBox">
+					<textarea id="dope" style="width: 99%;height: 75px; border: none;outline: none;" name="" rows="" cols=""></textarea>
+					<button class="sendBtn">发送(s)</button>
+				</div>
+
+
+			</div>
+		</div>
+
+		<div class="conLefts">
+			<ul>
+				<li class="fc" style="width: 100%; text-align: center; color: #0188FB;">
+					<div class=""  style="width: 100%; text-align: center; color: #0188FB;">
+						<span class="" style="width: 100%; text-align: center; color: #0188FB;">常用语句</span>
+					</div>
+				</li>
+			{volist name="record" id="vo"}
+				<li title="{$vo.content}" class="fccc">
+					<div class="liRights">
+						<span class="internames"><?php echo$vo['content'] ?></span><input type="hidden" class="bss" name="" id="" value="{$vo.content}" />
+					</div>
+				</li>
+			{/volist}
+
+
+			</ul>
+
+			<div class="asss">
+			<textarea id="beizhi" name="" rows="" cols="" placeholder="备注"></textarea>
+			<input type="button" id="buttee" value="保存" />
+			</div>
+
+		</div>
+	</div>
+
+</div>
+<?php if($type==1){?>
+<div id="sssbbb">下线</div>
+<div id="ssbb" style="display: none;">上线</div>
+<?php }elseif($type==0){?>
+	<div id="sssbbb" style="display: none;">下线</div>
+<div id="ssbb">上线</div>
+
+<?php } ?>
+
+
+<audio id="myaudio" src="https://zykj.8haoqianzhuang.cn/7683a201801231437407506.mp3" controls="controls" loop="false" hidden="true" >
+</audio>
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}jquery.min.js"></script>
+<script type="text/javascript" src="{$Think.const.BACK_JS_URL}chats2.js"></script>
+
+
+
+<script src='{$Think.const.BACK_JS_URL}jmessage-sdk-web.2.5.0.min.js'></script>
+<script src="{$Think.const.BACK_JS_URL}jquery.js"></script>
+<script type="text/javascript">
+
+
+document.onkeyup = function (e) {
+    var code = e.charCode || e.keyCode;
+    if (code == 13) {
+
+        $('.sendBtn').click();
+    }
+}
+
+//$('.RightCont').scrollTop($('.RightCont')[0].scrollHeight );
+
+// var JIM = new JMessage();
+$('#content').scrollTop( $('#newss').height()+10000 );
+    window.JIM = new JMessage({
+        debug : true
+    });
+
+
+
+//初始化
+      JIM.init({
+           "appkey" : $(" #appkey ").val(),
+           "random_str" : $(" #random_str ").val(),
+            "signature" : $(" #signature ").val(),
+            "timestamp" : $(" #timestamp ").val(),
+            "flag" : 1
+        }).onSuccess(function(data) {
+           //data.code 返回码
+           //data.message 描述
+
+           // alert(data.code);
+
+      		//登录
+	        	 JIM.login({
+			    'username' : $(" #username ").val(),
+			    'password' : $(" #pas ").val(),
+				}).onSuccess(function(data) {
+
+					// alert(data.code);
+				     //data.code 返回码
+				     //data.message 描述
+				}).onFail(function(data){
+					// alert(data.code);
+				  //同上
+				});
+          }).onFail(function(data) {
+          	alert(data.code);
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+	// data:{"content":"data.content","username":"data.from_username"}
+
+
+
+
+	JIM.onMsgReceive(function(data) {
+//		alert(data.messages[0].content.msg_body.text);
+
+		// alert(data.ctime_ms);
+var bbts=data.messages[0].from_username;
+var bsts=data.messages[0].content.msg_body.text;
+var btsbbb=data.messages[0].from_appkey;
+		// console.log(data.messages[0].content);
+			// appendToDashboard('接收消息:' + data.messages[0].content);
+			// 		data = JSON.stringify(data);
+   //              console.log('msg_receive:' + data);
+
+   		 JIM.getUserInfo({
+            'username' : data.messages[0].from_username,
+              'appkey' : btsbbb
+        }).onSuccess(function(data) {
+        	var ss=data.user_info.nickname;
+
+        	$.ajax({
+		    url: "https://www.8haoqianzhuang.com/index.php/index/Im/otheradd",
+		    type: 'post',
+		    dataType: 'json',
+		    data: {
+		    appkeys:btsbbb,
+		    nickname:ss,
+		     username:bbts,
+		     content:bsts,
+		     sid:$(" #sid").val()
+		    },
+		    success: function(text){
+
+					$.ajax({
+				    url: "https://www.8haoqianzhuang.com/index.php/index/Im/left",
+				    type: 'post',
+				    dataType: 'json',
+				    data: {
+				     sid:$(" #sid").val()
+				    },
+				    success: function(text){
+				    	var myAuto = document.getElementById('myaudio');
+						myAuto.play();
+				    	// text.state;
+				    	// text.data;
+							// text.mesg;
+							// alert(text.mesg);
+							console.log(text[0].username);
+
+
+							var sHtml1 = "";
+				            var x = "";
+				            var n=text.length;
+				            //alert(n)
+				            for(var i=0;i<n;i++){
+
+				            	var mm = text[i].username;
+				            	var sum = text[i].sum;
+				            	var nickname= text[i].nickname;
+				            	if(sum==0){
+				            		 sHtml1 +=
+												'<a href="https://www.8haoqianzhuang.com/index.php/index/im/services.html?sid='+$(" #sid ").val()+'&username='+text[i].username+'">'
+											+'<li>'+'<div class="liLeft"><img src="https://zykj.8haoqianzhuang.cn/d40e2201801191809169667.png"></div>'
+													+'<div class="liRight"><span class="intername">'+nickname+'</span></div>'+'</li>'+'</a>';
+				            	}else{
+				            	 sHtml1 +=
+												'<a href="https://www.8haoqianzhuang.com/index.php/index/im/services.html?sid='+$(" #sid ").val()+'&username='+text[i].username+'">'
+											+'<li>'+'<div class="liLeft"><img src="https://zykj.8haoqianzhuang.cn/d40e2201801191809169667.png"></div>'
+													+'<div class="liRight"><span class="intername">'+nickname+'</span><span class="sdkssss">'+sum+'</span></div>'+'</li>'+'</a>';
+				            	}
+
+
+				             	$("#query_content").html(sHtml1);
+
+							}
+
+
+
+				    },
+				    error: function(){
+				       alert( "出错123");
+				    }
+				 });
+
+
+
+
+
+
+				 $.ajax({
+				    url: "https://www.8haoqianzhuang.com/index.php/index/Im/content",
+				    type: 'post',
+				    dataType: 'json',
+				    data: {
+				    usernemesd:$(" #usernemesd ").val(),
+				    sid:$(" #sid").val()
+				    },
+				    success: function(text){
+
+
+				    	if(text.services_id==0){
+
+
+				    	}else{
+				    		console.log(text[0].username);
+
+
+							var sHtml1 = "";
+				            var x = "";
+				            var n=text.length;
+				            //alert(n)
+				            for(var i=0;i<n;i++){
+
+				            	var mm = text[i].content;
+				            	var stype = text[i].stype;
+				            	if(stype==2){
+				            		 sHtml1 +=
+
+									'<li>'+
+									'<div class="answerHead"><img src="https://zykj.8haoqianzhuang.cn/eab23201801171402146088.png"/></div>'+
+									'<div class="answers"><img class="jiao" src="">'+mm+'</div>'+
+									'</li>';
+
+				            	}else{
+				            	 sHtml1 +=
+
+									'<li>'+
+									'<div class="nesHead"><img src="https://zykj.8haoqianzhuang.cn/d40e2201801191809169667.png"/></div>'+
+									'<div class="news"><img class="jiao" src="">'+mm+'</div>'+'</li>';
+
+
+				            	}
+
+				             	$("#newss").html(sHtml1);
+
+							}
+				    	}
+$('#content').scrollTop( $('#newss').height()+10000 );
+
+
+
+
+				    },
+				    error: function(){
+				       alert( "出错456");
+				    }
+				 });
+
+
+
+
+
+
+		    },
+
+
+
+		    error: function(){
+		       alert( "出错789");
+		    }
+		 });
+
+
+            //data.code 返回码
+            //data.message 描述
+            //data.user_info.username
+            //data.user_info.appkey
+            //data.user_info.nickname
+            //data.user_info.avatar 头像
+            //data.user_info.birthday 生日，默认空
+            //data.user_info.gender 性别 0 - 未知， 1 - 男 ，2 - 女
+            //data.user_info.signature 用户签名
+            //data.user_info.region 用户所属地区
+            //data.user_info.address 用户地址
+            //data.user_info.mtime 用户信息最后修改时间
+            //data.extras 自定义json字段
+          }).onFail(function(data) {
+            //data.code 返回码
+            //data.message 描述
+        });
+
+
+
+
+
+
+   // data.messages[]
+   // data.messages[].ctime_ms
+   // data.messages[].msg_type 会话类型
+   // data.messages[].msg_id
+   // data.messages[].from_appey 单聊有效
+   // data.messages[].from_username 单聊有效
+   // data.messages[].from_gid 群聊有效
+   // data.messages[].need_receipt
+   // data.messages[].content
+   // data.messages[].custom_notification.enabled
+   // data.messages[].custom_notification.title
+   // data.messages[].custom_notification.alert
+   // data.messages[].custom_notification.at_prefix
+
+});
+//下线
+			$("#sssbbb").click(function(){
+				$.ajax({
+				    url: "https://www.8haoqianzhuang.com/index.php/index/Im/type0",
+				    type: 'post',
+				    dataType: 'json',
+				    data: {
+				     sid:$(" #sid ").val()
+				    },
+				    success: function(text){
+				    	if(text==1){
+				    		alert('目前客服只剩你一人了，请继续坚持')
+				    	}else{
+				    		alert('已下线');
+				    		$("#ssbb").show();
+				    		$("#sssbbb").hide();
+
+				    	}
+
+				    },
+				    error: function(){
+				       alert( "出错1112");
+				    }
+				 });
+			});
+	//上线
+			$("#ssbb").click(function(){
+				$.ajax({
+				    url: "https://www.8haoqianzhuang.com/index.php/index/Im/type1",
+				    type: 'post',
+				    dataType: 'json',
+				    data: {
+				     sid:$(" #sid ").val()
+				    },
+				    success: function(text){
+						alert('已上线');
+						$("#sssbbb").show();
+				        $("#ssbb").hide();
+
+				    },
+				    error: function(){
+				       alert( "出错1314");
+				    }
+				 });
+			});
+
+			$("#buttee").click(function(){
+
+				$.ajax({
+				    url: "https://www.8haoqianzhuang.com/index.php/index/Im/shortcut",
+				    type: 'post',
+				    dataType: 'json',
+				    data: {
+				     content:$(" #beizhi ").val(),
+				     sid:$(" #sid ").val()
+				    },
+				    success: function(text){
+						alert('已保存');
+						$("#beizhi").val(' ');
+
+				    },
+				    error: function(){
+				       alert( "出错1718");
+				    }
+				 });
+			});
+
+			$(".liRights").click(function(){
+				$("#dope").val($(this).children('.bss').val());
+
+			});
+
+
+
+
+
+</script>
+
+</body>
+</html>
