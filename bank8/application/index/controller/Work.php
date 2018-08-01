@@ -32,6 +32,7 @@ class Work extends Index
   {
     // var_dump($_POST);
 
+    //这是一个
       //接收电话号码
       $name=$_POST['uname'];
       //城市
