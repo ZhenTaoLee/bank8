@@ -834,16 +834,22 @@ $data = [
 $info= Request::instance()->header(); 
 //  	   	return json(['data'=>$info,'mesg'=>'1111']);
 		$deviceid=$info['deviceid'];
- 		$cod=Cache::get('code'.$deviceid);
+		$phone=$_POST['phone'];
+ 	
 		$data = [''];
-
+//测试号
+  		if($phone==13422561946 ||  $phone==18024666073){
+  			$cod=0000;
+	  	}else{
+	  		$cod=Cache::get('code'.$deviceid);
+	  	}
 
 			$co =$_POST['code'];
 			if($co!=$cod){
 				return json(['state'=>4040 ,'data'=>$data,'mesg'=>'验证码错误']);
 			}
 			
-			$phone=$_POST['phone'];
+			
 			$addtime=time();
 			$loge = db('user')->where('phone',$phone)->find();
 			if($loge){
@@ -1013,9 +1019,19 @@ $data = ['user_id'=> $uid ,'nickname'=>$nickname,'phone'=>$phone ,'type'=>$type,
 	//登录注册	
  public function usersTow(){
 //		$codes=1111;
-		$info= Request::instance()->header(); 
+	    $info= Request::instance()->header();
    		$rest = substr($info['tokenid'] , 20 , 5);
     	$id=$rest;
+    	if($id==0){
+    		return json(['state'=>3388,'data'=>[''],'mesg'=>'请登录']);
+    	}
+    	$deviceid=$info['deviceid'];
+		$user = db('user')->where('user_id',$id)->find();
+		$device=$user['device'];
+		
+		if($deviceid!=$device){
+			return json(['state'=>3388,'data'=>[''],'mesg'=>'该账号已在其他设备登陆,请重新登陆!']);
+		}
 			
 
 
@@ -1192,7 +1208,7 @@ $data = [
 'nickname'=>'',
 'phone'=>'',
 'type'=>1,
-'portrait'=>'',
+'portrait'=>'https:\/\/zykj.8haoqianzhuang.cn\/dd7f3201801221134207823.png',
 'sex'=>0,
 'tokenid'=>'',
 'ranking'=>0,
@@ -1214,7 +1230,9 @@ $data = [
 'weilidai'=>0,
 'education'=>0
 ];
-			
+
+
+  			
 			return json(['state'=>2558,'data'=>$data,'mesg'=>'退出成功']);
 		}
 		

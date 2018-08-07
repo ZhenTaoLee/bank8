@@ -122,6 +122,10 @@ if($qianxian=='管理员' || $qianxian=='总经理' || $qianxian=='总部助理'
            			 $matchingvehicle = db('matchingvehicle')
            			->where('matching_id',$id)
            			->find();
+           			
+           			 $matching_pair = db('matching_pair')
+           			->where('matching_id',$id)
+           			->find();
 
 //	    var_dump($list);
 $this->assign('user', $user);
@@ -130,6 +134,7 @@ $this->assign('matchinghouse', $matchinghouse);
 $this->assign('matchinginsurance', $matchinginsurance);
 $this->assign('matchingpersonage', $matchingpersonage);
 $this->assign('matchingvehicle', $matchingvehicle);
+$this->assign('matching_pair', $matching_pair);
     	return $this->fetch();
 
 

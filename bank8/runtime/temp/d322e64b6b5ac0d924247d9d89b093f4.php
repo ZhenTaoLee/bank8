@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/finance/hotdetails.html";i:1532590412;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/finance/hotdetails.html";i:1533031648;}*/ ?>
 <!DOCTYPE html>
 <head lang="en">
 	<meta charset="UTF-8">
@@ -78,7 +78,7 @@
     <!-- 费用利率 -->
     <div class="layer orange">
    		<h2 class="title">费用利率</h2>
-   		<p><?php echo $list['interest']; ?></p>
+   		<p><?php echo $list['accrual']; ?></p>
     </div>
     <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>
     <!-- 贷款期限 -->

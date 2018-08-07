@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:87:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/good/updsdd.html";i:1533008224;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:87:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/good/updsdd.html";i:1533020525;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -135,77 +135,216 @@
     	<?php }else{?>
     	<input name="salaryGood" type="checkbox" value="2" />
     	<?php }?>
-
 5000以上
     </cite></li>
 
     <li><label>执照</label><cite>
     	<input type="hidden" name="licenseGoods" id="licenseGoods" value=""  />
-    	<input name="licenseGood" type="checkbox" value="1" checked="checked" />有&nbsp;&nbsp;
-&nbsp;&nbsp;<input name="licenseGood" type="checkbox" value="2" checked="checked" />无
+    	
+    	<?php if(strpos($list['licenseGood'],'1') !== false){?>
+    	<input name="licenseGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    			<input name="licenseGood" type="checkbox" value="1"/>
+    	<?php }?>
+    	有&nbsp;&nbsp;&nbsp;&nbsp;
+		<?php if(strpos($list['licenseGood'],'2') !== false){?>
+    	<input name="licenseGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    			<input name="licenseGood" type="checkbox" value="2"/>
+    	<?php }?>
+
+无
     </cite></li>
     
     <li><label>流水</label><cite>
     	<input type="hidden" name="runningWaterGoods" id="runningWaterGoods" value=""  />
-    	<input name="runningWaterGood" type="checkbox" value="1" checked="checked" />50万以下&nbsp;&nbsp;
-&nbsp;&nbsp;<input name="runningWaterGood" type="checkbox" value="2" checked="checked" />50万以上
+    	<?php if(strpos($list['runningWaterGood'],'1') !== false){?>
+    	<input name="runningWaterGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    	<input name="runningWaterGood" type="checkbox" value="1"/>
+    	<?php }?>	
+    	50万以下&nbsp;&nbsp;&nbsp;&nbsp;
+
+<?php if(strpos($list['runningWaterGood'],'2') !== false){?>
+    	<input name="runningWaterGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    	<input name="runningWaterGood" type="checkbox" value="2"/>
+    	<?php }?>	
+
+50万以上
     </cite></li>
   
     <li><label>房产类型</label><cite>
     	<input type="hidden" name="houseTypeGoods" id="houseTypeGoods" value=""  />
-    	<input name="houseTypeGood" type="checkbox" value="1" checked="checked" />商品房&nbsp;&nbsp;
-&nbsp;&nbsp;<input name="houseTypeGood" type="checkbox" value="2" checked="checked" />其它
+    	
+    	<?php if(strpos($list['houseTypeGood'],'1') !== false){?>
+    	<input name="houseTypeGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    	<input name="houseTypeGood" type="checkbox" value="1" />	
+    	<?php }?>		
+    	商品房&nbsp;&nbsp;&nbsp;&nbsp;
+
+<?php if(strpos($list['houseTypeGood'],'2') !== false){?>
+    	<input name="houseTypeGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    	<input name="houseTypeGood" type="checkbox" value="2" />	
+    	<?php }?>	
+其它
     </cite></li>
     
     <li><label>房产购置方式</label><cite>
     	<input type="hidden" name="houseBuyGoods" id="houseBuyGoods" value=""  />
-    	<input name="houseBuyGood" type="checkbox" value="1" checked="checked" />全款&nbsp;&nbsp;
-&nbsp;&nbsp;<input name="houseBuyGood" type="checkbox" value="2" checked="checked" />月供
+    	
+    	<?php if(strpos($list['houseBuyGood'],'1') !== false){?>
+    	<input name="houseBuyGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    	<input name="houseBuyGood" type="checkbox" value="1" />
+    	<?php }?>
+    	全款&nbsp;&nbsp;&nbsp;&nbsp;
+
+<?php if(strpos($list['houseBuyGood'],'2') !== false){?>
+    	<input name="houseBuyGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    	<input name="houseBuyGood" type="checkbox" value="2" />
+    	<?php }?>
+
+月供
     </cite></li>
     
     <li><label>房产价值</label><cite>
     	<input type="hidden" name="propertyValuesGoods" id="propertyValuesGoods" value=""  />
-    	<input name="propertyValuesGood" type="checkbox" value="1" checked="checked" />80万以下&nbsp;&nbsp;
-&nbsp;&nbsp;<input name="propertyValuesGood" type="checkbox" value="2" checked="checked" />80万以上
+    	
+    	<?php if(strpos($list['propertyValuesGood'],'1') !== false){?>
+    	<input name="propertyValuesGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    	<input name="propertyValuesGood" type="checkbox" value="1"  />	
+    	<?php }?>
+    	80万以下&nbsp;&nbsp;&nbsp;&nbsp;
+
+<?php if(strpos($list['propertyValuesGood'],'2') !== false){?>
+    	<input name="propertyValuesGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    	<input name="propertyValuesGood" type="checkbox" value="2"  />	
+    	<?php }?>
+
+80万以上
     </cite></li>
     
     <li><label>房产月供额</label><cite>
     	<input type="hidden" name="monthlyPaymentGoods" id="monthlyPaymentGoods" value=""  />
-    	<input name="monthlyPaymentGood" type="checkbox" value="1" checked="checked" />5000以下&nbsp;&nbsp;
-&nbsp;&nbsp;<input name="monthlyPaymentGood" type="checkbox" value="2" checked="checked" />5000以上
+    	
+    	<?php if(strpos($list['monthlyPaymentGood'],'1') !== false){?>
+    	<input name="monthlyPaymentGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    	<input name="monthlyPaymentGood" type="checkbox" value="1"/>	
+    	<?php }?>
+    5000以下&nbsp;&nbsp;&nbsp;&nbsp;
+    
+  <?php if(strpos($list['monthlyPaymentGood'],'2') !== false){?>
+    	<input name="monthlyPaymentGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    	<input name="monthlyPaymentGood" type="checkbox" value="2"/>	
+    	<?php }?>
+    5000以上
     </cite></li>
     
     <li><label>保单类型</label><cite>
     	<input type="hidden" name="insuranceTypeGoods" id="insuranceTypeGoods" value=""  />
-    	<input name="insuranceTypeGood" type="checkbox" value="1" checked="checked" />传统型&nbsp;&nbsp;
-&nbsp;&nbsp;<input name="insuranceTypeGood" type="checkbox" value="2" checked="checked" />分红型
+    	<?php if(strpos($list['insuranceTypeGood'],'1') !== false){?>
+    	<input name="insuranceTypeGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    		<input name="insuranceTypeGood" type="checkbox" value="1"/>
+    	<?php }?>	
+    	传统型&nbsp;&nbsp;&nbsp;&nbsp;
+
+<?php if(strpos($list['insuranceTypeGood'],'2') !== false){?>
+    	<input name="insuranceTypeGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    		<input name="insuranceTypeGood" type="checkbox" value="2"/>
+    	<?php }?>	
+
+分红型
     </cite></li>
   
     <li><label>保单缴费方式</label><cite>
     	<input type="hidden" name="insurancePaymentMethodGoods" id="insurancePaymentMethodGoods" value=""  />
-    	<input name="insurancePaymentMethodGood" type="checkbox" value="1" checked="checked" />年缴&nbsp;&nbsp;
-&nbsp;&nbsp;<input name="insurancePaymentMethodGood" type="checkbox" value="2" checked="checked" />月缴
+    	
+    	<?php if(strpos($list['insurancePaymentMethodGood'],'1') !== false){?>
+    	<input name="insurancePaymentMethodGood" type="checkbox" value="1" checked="checked" />
+    		<?php }else{?>
+    	<input name="insurancePaymentMethodGood" type="checkbox" value="1"/>		
+    	<?php }?>			
+    	年缴&nbsp;&nbsp;&nbsp;&nbsp;
+
+		<?php if(strpos($list['insurancePaymentMethodGood'],'2') !== false){?>
+    	<input name="insurancePaymentMethodGood" type="checkbox" value="2" checked="checked" />
+    		<?php }else{?>
+    	<input name="insurancePaymentMethodGood" type="checkbox" value="2"/>		
+    	<?php }?>
+
+月缴
     </cite></li>
     
       <li><label>保单缴费年限</label><cite>
     	<input type="hidden" name="insuranceAgeLimitGoods" id="insuranceAgeLimitGoods" value=""  />
-    	<input name="insuranceAgeLimitGood" type="checkbox" value="1" checked="checked" />3年以下&nbsp;&nbsp;
-&nbsp;&nbsp;<input name="insuranceAgeLimitGood" type="checkbox" value="2" checked="checked" />3年以上
+    	
+    	
+    	<?php if(strpos($list['insuranceAgeLimitGood'],'1') !== false){?>
+    	<input name="insuranceAgeLimitGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    		<input name="insuranceAgeLimitGood" type="checkbox" value="1"/>
+    		
+    	<?php }?>	
+    	3年以下&nbsp;&nbsp;&nbsp;&nbsp;
+		<?php if(strpos($list['insuranceAgeLimitGood'],'2') !== false){?>
+    	<input name="insuranceAgeLimitGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    		<input name="insuranceAgeLimitGood" type="checkbox" value="2"/>
+    		
+    	<?php }?>
+		3年以上
     </cite></li>
     
 
       <li><label>汽车购置方式</label><cite>
     	<input type="hidden" name="vehicleBuyTypeGoods" id="vehicleBuyTypeGoods" value=""  />
-    	<input name="vehicleBuyTypeGood" type="checkbox" value="1" checked="checked" />全款&nbsp;&nbsp;
-&nbsp;&nbsp;<input name="vehicleBuyTypeGood" type="checkbox" value="2" checked="checked" />月供
+    	<?php if(strpos($list['vehicleBuyTypeGood'],'1') !== false){?>
+    	<input name="vehicleBuyTypeGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    		<input name="vehicleBuyTypeGood" type="checkbox" value="1" />
+    	<?php }?>	
+    		
+    	全款&nbsp;&nbsp;
+&nbsp;&nbsp;
+
+<?php if(strpos($list['vehicleBuyTypeGood'],'2') !== false){?>
+    	<input name="vehicleBuyTypeGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    		<input name="vehicleBuyTypeGood" type="checkbox" value="2" />
+    	<?php }?>
+
+月供
     </cite></li>
     
       <li><label>最低汽车价格(/万)</label><input value="<?php echo $list['minVehiclePriceGood']; ?>" name="minVehiclePriceGoods" type="text" class="dfinput" /></li>
     
       <li><label>车龄</label><cite>
     	<input type="hidden" name="vehicleAgeGoods" id="vehicleAgeGoods" value=""  />
-    	<input name="vehicleAgeGood" type="checkbox" value="1" checked="checked" />8年以下&nbsp;&nbsp;
-&nbsp;&nbsp;<input name="vehicleAgeGood" type="checkbox" value="2" checked="checked" />8年以上
+    	
+    	<?php if(strpos($list['vehicleAgeGood'],'1') !== false){?>
+    	<input name="vehicleAgeGood" type="checkbox" value="1" checked="checked" />
+    	<?php }else{?>
+    	<input name="vehicleAgeGood" type="checkbox" value="1" />	
+    	<?php }?>	
+    	8年以下&nbsp;&nbsp;&nbsp;&nbsp;
+
+<?php if(strpos($list['vehicleAgeGood'],'2') !== false){?>
+    	<input name="vehicleAgeGood" type="checkbox" value="2" checked="checked" />
+    	<?php }else{?>
+    	<input name="vehicleAgeGood" type="checkbox" value="2" />	
+    	<?php }?>	
+
+8年以上
     </cite></li>
   
 
