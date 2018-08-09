@@ -225,25 +225,39 @@ use think\Request;
               // $device->getAliasDevices('alias');
 
 
-                $client = new Movement();
+              $client = new Push();
               // //向特定用户进行推送—单播
               // //$deviceid可以是一个单个deviceid组成的字符串，也可以是多个deviceid组成的数组
-              // $deviceid = '20304347b7d5f50344bbe0a55';
-              // $data['content'] = '欢迎来到八号钱庄';//是你所需要推送的内容
-              // // $client->sendNotifySpecial($deviceid, $data['content']);
+              $deviceid = '20304347b7d5f50344bbe0a55';
+              $data['content'] = '推送测试';//是你所需要推送的内容
+              // $client->sendNotifySpecial($deviceid, $data['content']);
               //
               //
-              // try {
-              //       $client->sendNotifySpecial($deviceid, $data['content']);
-              // } catch (\JPush\Exceptions\JPushException $e) {
-              //     // try something else here
-              //     // print $e;
-              // }
+              try {
+                    $client->sendNotifySpecial($deviceid, $data['content']);
+              } catch (\JPush\Exceptions\JPushException $e) {
+                  // try something else here
+                  // print $e;
+              }
 
-              $data['content'] = '欢迎来到八号钱庄';//是你所需要推送的内容
+
+
+
+
+
+
+
+
+              // $data['content'] = '推送测试';//是你所需要推送的内容
 
               //想所有用户进行推送—广播
-              $client->sendNotifyAll($data['content']);
+              // $client->sendNotifyAll($data['content']);
+
+
+
+
+
+
 
 
              //  $tag = array(

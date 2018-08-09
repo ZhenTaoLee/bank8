@@ -64,7 +64,206 @@ $(document).ready(function(e) {
         <p>公积金：{$matching.accumulationFund}</p>
         <p>公积金基数：{$matching.accumulationFundBasics}</p>
         <p>房产购置方式：{$matching.houseBuyType}</p>
+        	<div style="border: solid #000088 1px;"></div>
+         <h2>2.5版本</h2>
+<p>年龄区间：{$matching_pair.ageSection}</p>
 
+<p>学历：
+	<?php if($matching_pair['education']==1){
+			echo '本科以下';
+		}elseif($matching_pair['education']==2){
+			echo '本科以上';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	
+
+</p>
+<p>微粒贷：
+	<?php if($matching_pair['weilidai']==1){
+			echo '有';
+		}elseif($matching_pair['weilidai']==2){
+			echo '无';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	
+
+</p>
+<p>职业：
+	<?php if($matching_pair['occupation']==1){
+			echo '上班族';
+		}elseif($matching_pair['occupation']==2){
+			echo '生意人';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	
+</p>
+<p>社保：
+	<?php if($matching_pair['socialSecurity']==1){
+			echo '有';
+		}elseif($matching_pair['socialSecurity']==2){
+			echo '无';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	
+
+
+</p>
+<p>公积金：
+	<?php if($matching_pair['accumulationFund']==1){
+			echo '有';
+		}elseif($matching_pair['accumulationFund']==2){
+			echo '无';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	
+
+
+</p>
+<p>工资：
+	<?php if($matching_pair['salary']==1){
+			echo '5000以下';
+		}elseif($matching_pair['salary']==2){
+			echo '5000以上';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	
+	</p>
+<p>执照：
+	<?php if($matching_pair['license']==1){
+			echo '有';
+		}elseif($matching_pair['license']==2){
+			echo '无';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	
+	</p>
+<p>流水：
+	
+	<?php if($matching_pair['runningWater']==1){
+			echo '50万以下';
+		}elseif($matching_pair['runningWater']==2){
+			echo '50万以上';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	</p>
+<p>房产类型：
+	<?php if($matching_pair['houseType']==1){
+			echo '商品房';
+		}elseif($matching_pair['houseType']==2){
+			echo '其它';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	
+	</p>
+<p>房产购置方式：
+	<?php if($matching_pair['houseBuy']==1){
+			echo '全款';
+		}elseif($matching_pair['houseBuy']==2){
+			echo '月供';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	</p>
+<p>房产价值：
+	
+	<?php if($matching_pair['propertyValues']==1){
+			echo '80万以下';
+		}elseif($matching_pair['propertyValues']==2){
+			echo '80万以上';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	
+	</p>
+<p>房产月供额：
+	
+	<?php if($matching_pair['monthlyPayment']==1){
+			echo '5000以下';
+		}elseif($matching_pair['monthlyPayment']==2){
+			echo '5000以上';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	</p>
+<p>保单类型：
+	<?php if($matching_pair['insuranceType']==1){
+			echo '传统型';
+		}elseif($matching_pair['insuranceType']==2){
+			echo '分红型';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	
+	</p>
+<p>保单缴费方式：
+	<?php if($matching_pair['insurancePaymentMethod']==1){
+			echo '年缴';
+		}elseif($matching_pair['insurancePaymentMethod']==2){
+			echo '月缴';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	</p>
+<p>保单缴费年限：
+	
+	<?php if($matching_pair['insuranceAgeLimit']==1){
+			echo '3年以下';
+		}elseif($matching_pair['insuranceAgeLimit']==2){
+			echo '3年以上';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	
+	</p>
+<p>汽车购置方式：
+		
+	<?php if($matching_pair['vehicleBuyType']==1){
+			echo '全款';
+		}elseif($matching_pair['vehicleBuyType']==2){
+			echo '月供';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	
+	</p>
+<p>汽车价格：{$matching_pair.vehiclePrice}/万</p>
+<p>车龄：
+	<?php if($matching_pair['vehicleAge']==1){
+			echo '8年以下';
+		}elseif($matching_pair['vehicleAge']==2){
+			echo '8年以上';
+		}else{
+			echo ' '; 
+		} 
+	?>
+	
+	</p>
+	<div style="border: solid #000088 1px;"></div>
 			<?php if($matching['ownHouse']==1){ ?>
 				
 				<p>房产城市：{$matchinghouse.houseCity}</p>

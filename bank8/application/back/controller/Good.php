@@ -1045,7 +1045,17 @@ public function updsdd()
 
 			}
 		$id=$_GET['id'];	
-		$list = db('goods_pair')->where('good_id',$id)->find();
+		
+		$listdff = db('goods_pair')->where('good_id',$id)->find();
+		if($listdff){			
+			$datdda = [
+			'good_id'=>$id,
+			];
+			$goodaddsss = db('goods_pair')->insert($datdda);
+			$list = db('goods_pair')->where('good_id',$id)->find();	
+		}else{
+			$list = db('goods_pair')->where('good_id',$id)->find();	
+		}
 		$listss = db('good')->where('good_id',$id)->find();	
 		
         $this->assign('list', $list);

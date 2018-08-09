@@ -165,7 +165,7 @@ use think\Request;
        $id = $_GET['id'];
       //查询产品表
       $list = db('hot_good')
-      ->field('goodName,hot_id,limit,interest,popularity,drawingOne,drawingTwo,drawingThree,rank,logo,label,agelimit,location,carask,perask,miso,liabilities,datum,mode,rate')
+      ->field('goodName,hot_id,limit,accrual,popularity,drawingOne,drawingTwo,drawingThree,rank,logo,label,agelimit,location,carask,perask,miso,liabilities,datum,mode,rate')
       ->where('hot_id',$id)
       ->find();
       //var_dump($list);die();

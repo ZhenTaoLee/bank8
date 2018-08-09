@@ -1,0 +1,67 @@
+---------------------------------------------------------------
+[ 2018-07-01T01:03:41+08:00 ] 61.151.218.119 GET /index.php/index/Goodstestredis/cesji.html
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji.html [运行时间：0.014810s][吞吐率：67.52req/s] [内存消耗：1,117.98kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'cesji',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; rv:11.0) like Gecko',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->cesji[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/goodstestredis/cesji.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-01T21:29:20+08:00 ] 106.11.227.115 GET /
+[ info ] test2.8haoqianzhuang.com/ [运行时间：0.024860s][吞吐率：40.23req/s] [内存消耗：1,774.69kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'test2.8haoqianzhuang.com',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept-encoding' => 'gzip',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/index/index.html [ array (
+  0 => 'list',
+  1 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000232s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_issue` [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_issue` WHERE  `state` = 1 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT `issue_id`,`headline` FROM `ba_issue` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 0,5 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_journalism` [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT `journalism_id`,`picture`,`headline`,`webtext`,`addtime` FROM `ba_journalism` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 1 [ RunTime:0.000201s ]

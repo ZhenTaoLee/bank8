@@ -439,73 +439,71 @@ class Ordertwopointfive extends Index{
 	$data = db('order')
 	->field('order_id,han_id,addtime,good_id,orderNumber,orderType,matching_id')
 	->where('order_id',$order_id)
-	->select();
+	->find();
 
 
 	foreach ($data as $key => $val) {
 		
 	$matching = db('matching')
 	->field('city')
-	->where('matching_id',$data[$key]['matching_id'])
+	->where('matching_id',$data['matching_id'])
 	->find();
-	
-	
-	
+
 	if($matching['city']=='广州'){
 	
-		$data[$key]['finallyPrice']=899;
+		$data['finallyPrice']=899;
 
 	}elseif($matching['city']=='深圳' ){
 	
-		$data[$key]['finallyPrice']=1499;
+		$data['finallyPrice']=1499;
 
 	}else{
-		$data[$key]['finallyPrice']=0;
+		$data['finallyPrice']=0;
 	}
-		$data[$key]['onePrice']=0;
-		$data[$key]['subscription']=0;
-		$data[$key]['payment']=0;//1是0否显示隐藏
-		$data[$key]['tailPayment']=0;
+		$data['onePrice']=0;
+		$data['subscription']=0;
+		$data['payment']=0;//1是0否显示隐藏
+		$data['tailPayment']=0;
 
-		if($data[$key]['han_id']==0){
+		if($data['han_id']==0){
 
-			$data[$key]['handleName']=" ";
-			$data[$key]['phone']="02038472080";
-			$data[$key]['portrait']="https://zykj.8haoqianzhuang.cn/c2748201804281811474329.png";
-			$data[$key]['makeABargain']=0;
-			$data[$key]['loan']=0;	
-			$data[$key]['belong']='八号钱庄';
+			$data['handleName']=" ";
+			$data['phone']="02038472080";
+			$data['portrait']="https://zykj.8haoqianzhuang.cn/c2748201804281811474329.png";
+			$data['makeABargain']=0;
+			$data['loan']=0;	
+			$data['belong']='八号钱庄';
 
 		}else{
 		$handle = db('handle')
-		->where('han_id',$data[$key]['han_id'])
+		->where('han_id',$data['han_id'])
 		->find();
-		$data[$key]['handleName']=$handle['name'];
-		$data[$key]['phone']=$handle['phone'];
-		$data[$key]['portrait']=$handle['portrait'];
-		$data[$key]['makeABargain']=$handle['makeABargain'];
-		$data[$key]['loan']=$handle['limit'];	
-		$data[$key]['reputations']=$handle['reputations'];	
+		$data['handleName']=$handle['name'];
+		$data['phone']=$handle['phone'];
+		$data['portrait']=$handle['portrait'];
+		$data['makeABargain']=$handle['makeABargain'];
+		$data['loan']=$handle['limit'];	
+		$data['reputations']=$handle['reputations'];	
 	
 	$bank = db('bank')
 		->where('b_id',$handle['bank_id'])
 		->find();
 		
-		$data[$key]['belong']=$bank['bankname'];
+		$data['belong']=$bank['bankname'];
 		}
 
 	$good = db('good')
    	->join('bank','bankid = ba_bank.b_id','left')
-	->field('goodName,label,agelimit,accrual,limit,ba_bank.bankname,ba_bank.logo')->where('good_id',$data[$key]['good_id'])->find();
+	->field('goodName,label,agelimit,accrual,limit,ba_bank.bankname,ba_bank.logo')->where('good_id',$data['good_id'])->find();
 
-	$data[$key]['goodName']=$good['goodName'];
-	$data[$key]['label']=$good['label'];
-	$data[$key]['agelimit']=$good['agelimit'];
-	$data[$key]['accrual']=$good['accrual'];
-	$data[$key]['limit']=$good['limit'];
-	$data[$key]['bankname']=$good['bankname'];
-	$data[$key]['logo']=$good['logo'];
-	$data[$key]['addtimes']=date('Y-m-d', $data[$key]['addtime']);
+	$data['goodName']=$good['goodName'];
+	$data['label']=$good['label'];
+	$data['agelimit']=$good['agelimit'];
+	$data['accrual']=$good['accrual'];
+	$data['limit']=$good['limit'];
+	$data['bankname']=$good['bankname'];
+	$data['logo']=$good['logo'];
+	$data['addtimes']=date('Y-m-d', $data['addtime']);
 
 				}
 
