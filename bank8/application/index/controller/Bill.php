@@ -365,4 +365,45 @@ public function delete()
     }
     
     
+    	  public function feedback()
+    {
+	
+	$info= Request::instance()->header();
+	if(array_key_exists('tokenid', $info)===false){
+    	$rest = substr($info['tokenid'] , 20 , 5);
+		$id=$rest;	
+ 	}else{
+ 		$id=0;
+ 	}
+						
+
+		$type=$_POST['type'];
+		$content=$_POST['content'];
+		$groupPhoto=$_POST['groupPhoto'];
+		$relation=$_POST['relation'];
+
+
+			$data = [
+			'type'=>$type,
+			'content'=>$content,
+			'groupPhoto'=>$groupPhoto,
+			'relation'=>$relation,
+			'user_id'=>$id,
+			'addtime' =>time()
+			];
+			
+			$feedback = db('feedback')->insert($data);
+	
+
+	if($feedback){
+		return json(['state'=>2558,'data'=>[''],'mesg'=>'操作完成']);
+	}else{
+		return json(['state'=>4040,'data'=>[''],'mesg'=>'网络错误']);
+	}
+	
+	
+    
+}
+
+
 }

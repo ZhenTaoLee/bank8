@@ -100,7 +100,7 @@ $info= Request::instance()->header();
    	->join('bank','bankid = ba_bank.b_id','left')
 	->field('goodName,good_id,goodtype,label,picture,ba_bank.bankname,ba_bank.logo,putaway,popularity,limit,accrual,hot')
 	->order('ratio asc')
-	->limit(2)
+	->limit(6)
 	->where($map)
 	->select();
 

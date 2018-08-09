@@ -95,7 +95,7 @@ if($aaa[0]==$ccc[0]){
     //iosshop
 	  public function qrcodeupgrade()
     {
-		$version='1.0.0';
+		$version=$_POST['version'];
     	$ios = db('ier_configuration')->field('id,iosversion,iosrape,iosurl,iosdescribe')->where('iosversion',$version)->find();
     	
     	$iosss = db('ier_configuration')->order('id desc')->select();
@@ -223,13 +223,17 @@ if($aaa[0]==$ccc[0]){
     	}elseif($aaa[0]<$ccc[0]){
     		$ansrape=1;
     	}
-    	if($fff==0){  		
-    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
-    	}elseif($fff==1){  		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    	if($fff==0){  
+    				
+    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    			
+    	}elseif($fff==1){  	
+    			
+    		$data=['anversion'=>$anversion,'displayBug'=>1,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		
     	}elseif($fff==2){
     		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>1,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
     
     	}
 
@@ -292,13 +296,17 @@ if($aaa[0]==$ccc[0]){
     	}elseif($aaa[0]<$ccc[0]){
     		$ansrape=1;
     	}
-    	if($fff==0){  		
-    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
-    	}elseif($fff==1){  		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    	if($fff==0){  
+    				
+    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    			
+    	}elseif($fff==1){  	
+    			
+    		$data=['anversion'=>$anversion,'displayBug'=>1,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		
     	}elseif($fff==2){
     		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>1,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
     
     	}
 
@@ -361,13 +369,17 @@ if($aaa[0]==$ccc[0]){
     	}elseif($aaa[0]<$ccc[0]){
     		$ansrape=1;
     	}
-    	if($fff==0){  		
-    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
-    	}elseif($fff==1){  		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    	if($fff==0){  
+    				
+    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    			
+    	}elseif($fff==1){  	
+    			
+    		$data=['anversion'=>$anversion,'displayBug'=>1,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		
     	}elseif($fff==2){
     		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>1,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
     
     	}
 
@@ -431,13 +443,17 @@ if($aaa[0]==$ccc[0]){
     	}elseif($aaa[0]<$ccc[0]){
     		$ansrape=1;
     	}
-    	if($fff==0){  		
-    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
-    	}elseif($fff==1){  		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    	if($fff==0){  
+    				
+    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    			
+    	}elseif($fff==1){  	
+    			
+    		$data=['anversion'=>$anversion,'displayBug'=>1,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		
     	}elseif($fff==2){
     		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>1,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
     
     	}
 
@@ -500,13 +516,17 @@ if($aaa[0]==$ccc[0]){
     	}elseif($aaa[0]<$ccc[0]){
     		$ansrape=1;
     	}
-    	if($fff==0){  		
-    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
-    	}elseif($fff==1){  		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    	if($fff==0){  
+    				
+    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    			
+    	}elseif($fff==1){  	
+    			
+    		$data=['anversion'=>$anversion,'displayBug'=>1,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		
     	}elseif($fff==2){
     		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>1,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
     
     	}
 
@@ -569,13 +589,17 @@ if($aaa[0]==$ccc[0]){
     	}elseif($aaa[0]<$ccc[0]){
     		$ansrape=1;
     	}
-    	if($fff==0){  		
-    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
-    	}elseif($fff==1){  		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    	if($fff==0){  
+    				
+    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    			
+    	}elseif($fff==1){  	
+    			
+    		$data=['anversion'=>$anversion,'displayBug'=>1,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		
     	}elseif($fff==2){
     		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>1,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
     
     	}
 
@@ -638,13 +662,17 @@ if($aaa[0]==$ccc[0]){
     	}elseif($aaa[0]<$ccc[0]){
     		$ansrape=1;
     	}
-    	if($fff==0){  		
-    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
-    	}elseif($fff==1){  		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    	if($fff==0){  
+    				
+    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    			
+    	}elseif($fff==1){  	
+    			
+    		$data=['anversion'=>$anversion,'displayBug'=>1,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		
     	}elseif($fff==2){
     		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>$ansrape,'isForceUpdate'=>1,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>1,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
     
     	}
 

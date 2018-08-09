@@ -912,8 +912,12 @@ if(Session::has('name')==null){
            			 $matchingvehicle = db('matchingvehicle')
            			->where('matching_id',$id)
            			->find();
-
+           			
+ 					$matching_pair = db('matching_pair')
+           			->where('matching_id',$id)
+           			->find();
 //	    var_dump($list);
+$this->assign('matching_pair', $matching_pair);
 $this->assign('user', $user);
 $this->assign('matching', $matching);
 $this->assign('matchinghouse', $matchinghouse);

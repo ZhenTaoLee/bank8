@@ -1,0 +1,601 @@
+---------------------------------------------------------------
+[ 2018-07-21T01:56:27+08:00 ] 101.226.89.12 GET /
+[ info ] test2.8haoqianzhuang.com/ [运行时间：0.023513s][吞吐率：42.53req/s] [内存消耗：1,774.17kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5	.6',
+  'connection' => 'close',
+  'host' => 'test2.8haoqianzhuang.com',
+  'accept-encoding' => 'identity',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/index/index.html [ array (
+  0 => 'list',
+  1 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000212s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_issue` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_issue` WHERE  `state` = 1 LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SELECT `issue_id`,`headline` FROM `ba_issue` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 0,5 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_journalism` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT `journalism_id`,`picture`,`headline`,`webtext`,`addtime` FROM `ba_journalism` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 1 [ RunTime:0.000170s ]
+---------------------------------------------------------------
+[ 2018-07-21T10:19:49+08:00 ] 101.199.108.120 GET /index.php/index/News/finance
+[ info ] test2.8haoqianzhuang.com/index.php/index/News/finance [运行时间：0.124538s][吞吐率：8.03req/s] [内存消耗：1,110.81kb] [文件加载：40]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'News',
+    2 => 'finance',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-charset' => 'iso-8859-1,*,utf-8',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->finance[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T11:35:38+08:00 ] 101.199.108.118 GET /index.php/index/News/finance
+[ info ] test2.8haoqianzhuang.com/index.php/index/News/finance [运行时间：0.125119s][吞吐率：7.99req/s] [内存消耗：1,110.81kb] [文件加载：40]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'News',
+    2 => 'finance',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-charset' => 'iso-8859-1,*,utf-8',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->finance[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T12:53:12+08:00 ] 101.199.108.120 GET /index.php/index/News/finance
+[ info ] test2.8haoqianzhuang.com/index.php/index/News/finance [运行时间：0.133827s][吞吐率：7.47req/s] [内存消耗：1,110.81kb] [文件加载：40]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'News',
+    2 => 'finance',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-charset' => 'iso-8859-1,*,utf-8',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->finance[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T15:10:04+08:00 ] 101.199.110.112 GET /index.php/index/News/finance
+[ info ] test2.8haoqianzhuang.com/index.php/index/News/finance [运行时间：0.128298s][吞吐率：7.79req/s] [内存消耗：1,110.81kb] [文件加载：40]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'News',
+    2 => 'finance',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-charset' => 'iso-8859-1,*,utf-8',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->finance[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T15:52:10+08:00 ] 101.199.112.49 GET /index.php/index/News/finance
+[ info ] test2.8haoqianzhuang.com/index.php/index/News/finance [运行时间：0.134896s][吞吐率：7.41req/s] [内存消耗：1,110.81kb] [文件加载：40]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'News',
+    2 => 'finance',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-charset' => 'iso-8859-1,*,utf-8',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->finance[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T17:13:48+08:00 ] 101.199.112.54 GET /index.php/index/News/finance
+[ info ] test2.8haoqianzhuang.com/index.php/index/News/finance [运行时间：0.123845s][吞吐率：8.07req/s] [内存消耗：1,110.81kb] [文件加载：40]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'News',
+    2 => 'finance',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-charset' => 'iso-8859-1,*,utf-8',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->finance[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T17:26:47+08:00 ] 106.11.227.248 GET /
+[ info ] test2.8haoqianzhuang.com/ [运行时间：0.024783s][吞吐率：40.35req/s] [内存消耗：1,774.67kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'test2.8haoqianzhuang.com',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept-encoding' => 'gzip',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/index/index.html [ array (
+  0 => 'list',
+  1 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000224s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_issue` [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_issue` WHERE  `state` = 1 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT `issue_id`,`headline` FROM `ba_issue` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 0,5 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_journalism` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT `journalism_id`,`picture`,`headline`,`webtext`,`addtime` FROM `ba_journalism` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 1 [ RunTime:0.000181s ]
+---------------------------------------------------------------
+[ 2018-07-21T18:52:47+08:00 ] 101.199.110.112 GET /index.php/index/News/finance
+[ info ] test2.8haoqianzhuang.com/index.php/index/News/finance [运行时间：0.131278s][吞吐率：7.62req/s] [内存消耗：1,110.81kb] [文件加载：40]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'News',
+    2 => 'finance',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-charset' => 'iso-8859-1,*,utf-8',
+  'accept-encoding' => 'gzip,deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->finance[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T20:59:45+08:00 ] 118.31.184.1 POST /index.php?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+disable_functions%3D%22%22+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dphp%3A%2F%2Finput+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n
+[ info ] test2.8haoqianzhuang.com/index.php?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+disable_functions%3D%22%22+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dphp%3A%2F%2Finput+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n [运行时间：0.024856s][吞吐率：40.23req/s] [内存消耗：1,775.21kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '32',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.6.2333.33 Safari/537.36',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '-d_allow_url_include=on_-d_safe_mode=off_-d_suhosin_simulation=on_-d_disable_functions=""_-d_open_basedir=none_-d_auto_prepend_file=php://input_-d_cgi_force_redirect=0_-d_cgi_redirect_status_env=0_-n' => '',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/index/index.html [ array (
+  0 => 'list',
+  1 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000209s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_issue` [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_issue` WHERE  `state` = 1 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT `issue_id`,`headline` FROM `ba_issue` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 0,5 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_journalism` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT `journalism_id`,`picture`,`headline`,`webtext`,`addtime` FROM `ba_journalism` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 1 [ RunTime:0.000171s ]
+---------------------------------------------------------------
+[ 2018-07-21T20:59:45+08:00 ] 118.31.184.1 POST /cgi-bin/php?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+disable_functions%3D%22%22+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dphp%3A%2F%2Finput+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n
+[ info ] test2.8haoqianzhuang.com/cgi-bin/php?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+disable_functions%3D%22%22+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dphp%3A%2F%2Finput+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n [运行时间：0.013532s][吞吐率：73.90req/s] [内存消耗：838.32kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cgi-bin',
+    1 => 'php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '32',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.6.2333.33 Safari/537.36',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '-d_allow_url_include=on_-d_safe_mode=off_-d_suhosin_simulation=on_-d_disable_functions=""_-d_open_basedir=none_-d_auto_prepend_file=php://input_-d_cgi_force_redirect=0_-d_cgi_redirect_status_env=0_-n' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T20:59:45+08:00 ] 118.31.184.1 POST /cgi-bin/php5?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+disable_functions%3D%22%22+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dphp%3A%2F%2Finput+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n
+[ info ] test2.8haoqianzhuang.com/cgi-bin/php5?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+disable_functions%3D%22%22+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dphp%3A%2F%2Finput+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n [运行时间：0.013186s][吞吐率：75.84req/s] [内存消耗：838.32kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cgi-bin',
+    1 => 'php5',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '32',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.6.2333.33 Safari/537.36',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '-d_allow_url_include=on_-d_safe_mode=off_-d_suhosin_simulation=on_-d_disable_functions=""_-d_open_basedir=none_-d_auto_prepend_file=php://input_-d_cgi_force_redirect=0_-d_cgi_redirect_status_env=0_-n' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T20:59:45+08:00 ] 118.31.184.1 POST /cgi-bin/php-cgi?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+disable_functions%3D%22%22+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dphp%3A%2F%2Finput+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n
+[ info ] test2.8haoqianzhuang.com/cgi-bin/php-cgi?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+disable_functions%3D%22%22+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dphp%3A%2F%2Finput+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n [运行时间：0.013235s][吞吐率：75.56req/s] [内存消耗：838.57kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cgi-bin',
+    1 => 'php-cgi',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '32',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.6.2333.33 Safari/537.36',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '-d_allow_url_include=on_-d_safe_mode=off_-d_suhosin_simulation=on_-d_disable_functions=""_-d_open_basedir=none_-d_auto_prepend_file=php://input_-d_cgi_force_redirect=0_-d_cgi_redirect_status_env=0_-n' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T20:59:45+08:00 ] 118.31.184.1 POST /cgi-bin/php.cgi?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+disable_functions%3D%22%22+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dphp%3A%2F%2Finput+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n
+[ info ] test2.8haoqianzhuang.com/cgi-bin/php.cgi?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+disable_functions%3D%22%22+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dphp%3A%2F%2Finput+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n [运行时间：0.013034s][吞吐率：76.72req/s] [内存消耗：838.57kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cgi-bin',
+    1 => 'php.cgi',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '32',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.6.2333.33 Safari/537.36',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '-d_allow_url_include=on_-d_safe_mode=off_-d_suhosin_simulation=on_-d_disable_functions=""_-d_open_basedir=none_-d_auto_prepend_file=php://input_-d_cgi_force_redirect=0_-d_cgi_redirect_status_env=0_-n' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T20:59:46+08:00 ] 118.31.184.1 POST /cgi-bin/php4?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+disable_functions%3D%22%22+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dphp%3A%2F%2Finput+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n
+[ info ] test2.8haoqianzhuang.com/cgi-bin/php4?-d+allow_url_include%3Don+-d+safe_mode%3Doff+-d+suhosin.simulation%3Don+-d+disable_functions%3D%22%22+-d+open_basedir%3Dnone+-d+auto_prepend_file%3Dphp%3A%2F%2Finput+-d+cgi.force_redirect%3D0+-d+cgi.redirect_status_env%3D0+-n [运行时间：0.012470s][吞吐率：80.19req/s] [内存消耗：838.32kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cgi-bin',
+    1 => 'php4',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '32',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.6.2333.33 Safari/537.36',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  '-d_allow_url_include=on_-d_safe_mode=off_-d_suhosin_simulation=on_-d_disable_functions=""_-d_open_basedir=none_-d_auto_prepend_file=php://input_-d_cgi_force_redirect=0_-d_cgi_redirect_status_env=0_-n' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T22:33:30+08:00 ] 47.97.47.193 GET /index.php/module/aciton/param1/$%7B@print(THINK_VERSION)%7D
+[ info ] test2.8haoqianzhuang.com/index.php/module/aciton/param1/$%7B@print(THINK_VERSION)%7D [运行时间：0.012485s][吞吐率：80.10req/s] [内存消耗：837.63kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'module',
+    1 => 'aciton',
+    2 => 'param1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.6.2333.33 Safari/537.36',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T22:33:30+08:00 ] 47.97.47.193 GET /index.php/module/aciton/param1/$%7B@phpinfo()%7D
+[ info ] test2.8haoqianzhuang.com/index.php/module/aciton/param1/$%7B@phpinfo()%7D [运行时间：0.012652s][吞吐率：79.04req/s] [内存消耗：837.61kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'module',
+    1 => 'aciton',
+    2 => 'param1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.6.2333.33 Safari/537.36',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T22:33:30+08:00 ] 47.97.47.193 GET /index.php/module/aciton/param1/$%7B@function_all()%7D
+[ info ] test2.8haoqianzhuang.com/index.php/module/aciton/param1/$%7B@function_all()%7D [运行时间：0.012408s][吞吐率：80.59req/s] [内存消耗：837.61kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'module',
+    1 => 'aciton',
+    2 => 'param1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.6.2333.33 Safari/537.36',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T22:33:30+08:00 ] 47.97.47.193 GET /index.php/module/action/param1/%7B$%7Beval($_POST[s])%7D%7D
+[ info ] test2.8haoqianzhuang.com/index.php/module/action/param1/%7B$%7Beval($_POST[s])%7D%7D [运行时间：0.012357s][吞吐率：80.93req/s] [内存消耗：837.63kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'module',
+    1 => 'action',
+    2 => 'param1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.6.2333.33 Safari/537.36',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T22:59:10+08:00 ] 47.97.77.122 GET /index.php/Index/index/name/$%7B@phpinfo()%7D
+[ info ] test2.8haoqianzhuang.com/index.php/Index/index/name/$%7B@phpinfo()%7D [运行时间：0.015615s][吞吐率：64.04req/s] [内存消耗：1,144.85kb] [文件加载：40]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => 'index',
+    2 => 'name',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.6.2333.33 Safari/537.36',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-21T23:23:42+08:00 ] 47.96.251.131 GET /index.php/module/aciton/param1/$%7B@phpinfo()%7D
+[ info ] test2.8haoqianzhuang.com/index.php/module/aciton/param1/$%7B@phpinfo()%7D [运行时间：0.012590s][吞吐率：79.43req/s] [内存消耗：837.61kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'module',
+    1 => 'aciton',
+    2 => 'param1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.6.2333.33 Safari/537.36',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

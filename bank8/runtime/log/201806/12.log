@@ -1,0 +1,596 @@
+---------------------------------------------------------------
+[ 2018-06-12T15:12:41+08:00 ] 119.131.77.10 GET /index.php/index/News/finance
+[ info ] test2.8haoqianzhuang.com/index.php/index/News/finance [运行时间：0.136067s][吞吐率：7.35req/s] [内存消耗：1,112.36kb] [文件加载：40]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'News',
+    2 => 'finance',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_jzqa=1.2892605481895251500.1516428922.1516428922.1516430722.2; _ga=GA1.2.1320077874.1516428922',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\News->finance[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/News.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-12T15:28:01+08:00 ] 119.131.77.10 GET /index.php/index/Goodstestredis/cesji
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji [运行时间：0.016317s][吞吐率：61.29req/s] [内存消耗：1,243.01kb] [文件加载：41]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'cesji',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.884.400 QQBrowser/9.0.2524.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->cesji[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/goodstestredis/cesji.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-12T15:28:52+08:00 ] 125.88.21.188 GET /index.php/index/Goodstestredis/cesji
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji [运行时间：0.014305s][吞吐率：69.91req/s] [内存消耗：1,117.41kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'cesji',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.884.400 QQBrowser/9.0.2524.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->cesji[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/goodstestredis/cesji.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-12T15:29:00+08:00 ] 61.151.225.155 GET /index.php/index/Goodstestredis/cesji
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji [运行时间：0.014630s][吞吐率：68.35req/s] [内存消耗：1,117.25kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'cesji',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; OPPO R9s Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile MQQBrowser/6.9 TBS/036906 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->cesji[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/goodstestredis/cesji.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-12T15:29:53+08:00 ] 125.88.21.188 POST /index.php/index/Goodstestredis/res
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/res [运行时间：0.139528s][吞吐率：7.17req/s] [内存消耗：1,112.26kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'res',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.884.400 QQBrowser/9.0.2524.400',
+  'origin' => 'http://test2.8haoqianzhuang.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '182',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'urls' => 'stair/city',
+  'keyname' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+  ),
+  'keyvalue' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+  ),
+  'headerkey' => 
+  array (
+    0 => '',
+    1 => '',
+  ),
+  'headervalue' => 
+  array (
+    0 => '',
+    1 => '',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->res[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-12T15:31:00+08:00 ] 125.88.21.188 GET /index.php/index/Goodstestredis/cesji
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji [运行时间：0.014447s][吞吐率：69.22req/s] [内存消耗：1,117.55kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'cesji',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->cesji[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/goodstestredis/cesji.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-12T15:31:44+08:00 ] 125.88.21.188 POST /index.php/index/Goodstestredis/res
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/res [运行时间：0.018731s][吞吐率：53.39req/s] [内存消耗：1,112.06kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'res',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=269697780.354269453827621760.1528788661164.66; monitor_count=1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://test2.8haoqianzhuang.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '151',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'urls' => 'stair/city',
+  'keyname' => 
+  array (
+    0 => '',
+    1 => '',
+  ),
+  'keyvalue' => 
+  array (
+    0 => '',
+    1 => '',
+  ),
+  'headerkey' => 
+  array (
+    0 => '',
+    1 => '',
+  ),
+  'headervalue' => 
+  array (
+    0 => '',
+    1 => '',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->res[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-12T20:02:01+08:00 ] 106.11.227.140 GET /
+[ info ] test2.8haoqianzhuang.com/ [运行时间：0.027134s][吞吐率：36.85req/s] [内存消耗：1,936.84kb] [文件加载：50]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'test2.8haoqianzhuang.com',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept-encoding' => 'gzip',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/index/index.html [ array (
+  0 => 'list',
+  1 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000241s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_issue` [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_issue` WHERE  `state` = 1 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT `issue_id`,`headline` FROM `ba_issue` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 0,5 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_journalism` [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT `journalism_id`,`picture`,`headline`,`webtext`,`addtime` FROM `ba_journalism` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 1 [ RunTime:0.000181s ]
+---------------------------------------------------------------
+[ 2018-06-12T23:20:01+08:00 ] 124.15.116.102 GET /index.php/index/Goodstestredis/cesji
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji [运行时间：0.014428s][吞吐率：69.31req/s] [内存消耗：1,117.41kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'cesji',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8,en-us;q=0.6,en;q=0.5;q=0.4',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.884.400 QQBrowser/9.0.2524.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->cesji[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/goodstestredis/cesji.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-12T23:20:21+08:00 ] 124.15.116.102 GET /index.php/index/Goodstestredis/cesji
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji [运行时间：0.014432s][吞吐率：69.29req/s] [内存消耗：1,117.67kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'cesji',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5383.400 QQBrowser/10.0.1313.400',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->cesji[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/goodstestredis/cesji.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-12T23:21:00+08:00 ] 61.151.226.76 GET /index.php/index/Goodstestredis/cesji
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji [运行时间：0.013836s][吞吐率：72.28req/s] [内存消耗：1,117.25kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'cesji',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; OPPO R9s Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile MQQBrowser/6.9 TBS/036906 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->cesji[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/goodstestredis/cesji.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-12T23:23:15+08:00 ] 124.15.116.102 GET /index.php/index/
+[ info ] test2.8haoqianzhuang.com/index.php/index/ [运行时间：0.024501s][吞吐率：40.81req/s] [内存消耗：1,774.92kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5383.400 QQBrowser/10.0.1313.400',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/index/index.html [ array (
+  0 => 'list',
+  1 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000227s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_issue` [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_issue` WHERE  `state` = 1 LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT `issue_id`,`headline` FROM `ba_issue` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 0,5 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_journalism` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT `journalism_id`,`picture`,`headline`,`webtext`,`addtime` FROM `ba_journalism` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 1 [ RunTime:0.000203s ]
+---------------------------------------------------------------
+[ 2018-06-12T23:32:55+08:00 ] 120.79.205.75 POST /index.php/index/
+[ info ] test2.8haoqianzhuang.com/index.php/index/ [运行时间：0.023938s][吞吐率：41.77req/s] [内存消耗：1,775.31kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'multipart/form-data; boundary=------------------------c994bbfad22f10a0',
+  'content-length' => '234',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5383.400 QQBrowser/10.0.1313.400',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'api_key' => '123',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/index/index.html [ array (
+  0 => 'list',
+  1 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000211s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_issue` [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_issue` WHERE  `state` = 1 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT `issue_id`,`headline` FROM `ba_issue` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 0,5 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_journalism` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT `journalism_id`,`picture`,`headline`,`webtext`,`addtime` FROM `ba_journalism` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 1 [ RunTime:0.000172s ]
+---------------------------------------------------------------
+[ 2018-06-12T23:32:55+08:00 ] 124.15.116.102 POST /index.php/index/Goodstestredis/res
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/res [运行时间：0.047424s][吞吐率：21.09req/s] [内存消耗：1,112.29kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'res',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5383.400 QQBrowser/10.0.1313.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://test2.8haoqianzhuang.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '276',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'urls' => 'http://test2.8haoqianzhuang.com/index.php/index/',
+  'keyname' => 
+  array (
+    0 => '',
+    1 => 'api_key',
+    2 => '',
+  ),
+  'keyvalue' => 
+  array (
+    0 => '',
+    1 => '123',
+    2 => '',
+  ),
+  'headerkey' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+  ),
+  'headervalue' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->res[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-12T23:33:13+08:00 ] 120.79.205.75 POST /index.php/index/
+[ info ] test2.8haoqianzhuang.com/index.php/index/ [运行时间：0.023867s][吞吐率：41.90req/s] [内存消耗：1,775.31kb] [文件加载：48]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'multipart/form-data; boundary=------------------------ea22818de8a3d898',
+  'content-length' => '234',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5383.400 QQBrowser/10.0.1313.400',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'api_key' => '222',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/index/index.html [ array (
+  0 => 'list',
+  1 => 'res',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000208s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_issue` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_issue` WHERE  `state` = 1 LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT `issue_id`,`headline` FROM `ba_issue` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 0,5 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_journalism` [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT `journalism_id`,`picture`,`headline`,`webtext`,`addtime` FROM `ba_journalism` WHERE  `state` = 1 ORDER BY addtime desc LIMIT 1 [ RunTime:0.000169s ]
+---------------------------------------------------------------
+[ 2018-06-12T23:33:13+08:00 ] 124.15.116.102 POST /index.php/index/Goodstestredis/res
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/res [运行时间：0.048278s][吞吐率：20.71req/s] [内存消耗：1,112.29kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'res',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.5383.400 QQBrowser/10.0.1313.400',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://test2.8haoqianzhuang.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '276',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'urls' => 'http://test2.8haoqianzhuang.com/index.php/index/',
+  'keyname' => 
+  array (
+    0 => '',
+    1 => 'api_key',
+    2 => '',
+  ),
+  'keyvalue' => 
+  array (
+    0 => '',
+    1 => '222',
+    2 => '',
+  ),
+  'headerkey' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+  ),
+  'headervalue' => 
+  array (
+    0 => '',
+    1 => '',
+    2 => '',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->res[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ LOG ] INIT File
