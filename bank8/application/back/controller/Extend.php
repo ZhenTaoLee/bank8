@@ -91,11 +91,6 @@ class Extend extends Index
     //   var_dump($ucret);//0:uc,1:fh,2:sina
 
 
-     // $uc = $result['1']['counts'];
-     // // $fh = $result['2']['counts'];
-     // $sina = $result['5']['counts'];
-     // $toutiao = $result['3']['counts'];
-
       // var_dump($result);//0:uc,1:fh,2:sina
       $this->assign('list', $list);
 
