@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:87:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/order/qshow.html";i:1526634137;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:87:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/order/qshow.html";i:1528336515;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -70,16 +70,18 @@ $(document).ready(function(e) {
         	<tr>
             <!-- <th><input name="" type="checkbox" value="" checked="checked"/></th> -->
             <th>序号<!-- <i class="sort"><img src="images/px.gif" /></i> --></th>
-            <th>订单编号</th>
-            <th>订单城市</th>
+            <th>订单编号（其它城市）</th>
+            
             <th>手机号</th>
             <th>姓名</th>
-            <th>机构</th>
+            <!--<th>机构</th>
        
             <th>产品名字</th>
-            <th>服务费</th>
+            <th>服务费</th>-->
             <th>下单时间</th>
-            <th>订单状态</th>
+           <!-- <th>订单状态</th>-->
+            <th>更新时间</th>
+            <th width="300">备注</th>
             <th>操作</th>
             </tr>
         </thead>
@@ -89,14 +91,27 @@ $(document).ready(function(e) {
             <!-- <td><input name="" type="checkbox" value="" /></td> -->
             <td><?php echo $vo['order_id']; ?></td>
             <td><?php echo $vo['orderNumber']; ?></td>
-            <td><?php echo $vo['city']; ?></td>
+        
             <td><?php echo $vo['uphone']; ?></td>
             <td><?php echo $vo['name']; ?></td>
-            <td><?php echo $vo['bankname']; ?></td>  
+            <!--<td><?php echo $vo['bankname']; ?></td>  
             <td><?php echo $vo['goodName']; ?></td>
-            <td><?php if($vo['pay_Numbers']!=0){ echo "已支付";}else{echo "未支付";}?></td>
+            <td><?php if($vo['pay_Numbers']!=0){ echo "已支付";}else{echo "未支付";}?></td>-->
             <td><?php echo date('Y-m-d H:i:s',$vo['addtime']);?></td>
-            <td><?php echo $vo['orderType']; ?></td>
+           <!-- <td><?php echo $vo['orderType']; ?></td>-->
+                <td ><?php 
+					
+					if($vo['updtime']!=0){
+						echo date('Y-m-d H:i:s',$vo['updtime']);
+					}
+					?> </td>
+				<td>
+				<form action="updremark" method="post">
+						<input type="hidden" name="id" id="" value="<?php echo $vo['order_id']; ?>" />
+						<textarea cols="30" rows="5" name="remark"><?php echo $vo['remark']; ?></textarea>
+			
+						<input type="submit" value="更新" class="" style="color: #FFFFFF;width: 50px; height: 20px; background-color: red;" /></form>
+						</td>
             <td>
             	<a href="details?id=<?php echo $vo['matching_id']; ?>" class="tablelink">匹配项</a>
             </td>
