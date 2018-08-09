@@ -9,17 +9,18 @@ use think\Request;
 use think\Cache;
 
     //
-    class Huawei extends Index
+    class Baidu extends Index
     {
 
 
-    //华为安卓配置id=2
+
+
+       //baidu安卓配置id=8
 	  public function configuration()	  
     {
-    	
-    	$version=$_POST['version'];
+    $version=$_POST['version'];
 
-    	$android = db('a_configuration')->where('id',2)->find();
+    	$android = db('a_configuration')->where('id',8)->find();
     	$anversion=$android['anversion'];
     	$ansrapeersion=$android['ansrapeersion'];
     	$anurl=$android['anurl'];
@@ -69,9 +70,9 @@ use think\Cache;
     	}elseif($aaa[0]<$ccc[0]){
     		$ansrape=1;
     	}
-    		if($fff==0){  
+    	if($fff==0){  
     				
-    			$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
     			
     	}elseif($fff==1){  	
     			
@@ -82,10 +83,9 @@ use think\Cache;
     		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>1,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
     
     	}
+
  		return json(['state'=>2558,'data'=>$data,'mesg'=>'操作完成']);
-    }
-    
- 
+    } 
 
 
 

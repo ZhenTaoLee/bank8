@@ -9,17 +9,17 @@ use think\Request;
 use think\Cache;
 
     //
-    class Huawei extends Index
+    class Sanliulin extends Index
     {
 
 
-    //华为安卓配置id=2
+       //360安卓配置id=7
 	  public function configuration()	  
     {
     	
     	$version=$_POST['version'];
 
-    	$android = db('a_configuration')->where('id',2)->find();
+    	$android = db('a_configuration')->where('id',7)->find();
     	$anversion=$android['anversion'];
     	$ansrapeersion=$android['ansrapeersion'];
     	$anurl=$android['anurl'];
@@ -82,10 +82,12 @@ use think\Cache;
     		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>1,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
     
     	}
+
  		return json(['state'=>2558,'data'=>$data,'mesg'=>'操作完成']);
-    }
-    
- 
+    } 
+
+
+   
 
 
 
