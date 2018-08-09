@@ -155,11 +155,11 @@ if($aaa[0]==$ccc[0]){
     			
     	}elseif($fff==1){  	
     			
-    		$data=['anversion'=>$anversion,'displayBug'=>1,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
     		
     	}elseif($fff==2){
     		
-    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>0,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
+    		$data=['anversion'=>$anversion,'displayBug'=>0,'isUpdate'=>1,'isForceUpdate'=>$ansrape,'downloadUrl'=>$anurl,'notes'=>$andescribe];
     
     	}
 

@@ -35839,3 +35839,404 @@
 [ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 10192 LIMIT 1 [ RunTime:0.000164s ]
 [ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 10193 LIMIT 1 [ RunTime:0.000150s ]
 >>>>>>> 1bb6ef7522112dd8883e3a8ff0d5fa20c246b72f
+---------------------------------------------------------------
+[ 2018-08-09T14:58:35+08:00 ] 119.130.228.34 GET /index.php/back/index/left
+[ info ] test2.8haoqianzhuang.com/index.php/back/index/left [运行时间：0.016927s][吞吐率：59.08req/s] [内存消耗：1,220.59kb] [文件加载：40]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'back',
+    1 => 'index',
+    2 => 'left',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6kb53hk3o5fusm7phga868kj56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\back\controller\Index->left[ /data/wwwroot/default/zuanbaodai/bank8/application/back/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/index/left.html [ array (
+  0 => 'qianxian',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-09T14:58:38+08:00 ] 119.130.228.34 GET /index.php/back/index/index
+[ info ] test2.8haoqianzhuang.com/index.php/back/index/index [运行时间：0.014259s][吞吐率：70.13req/s] [内存消耗：1,078.14kb] [文件加载：38]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'back',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6kb53hk3o5fusm7phga868kj56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/back/index/top.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\back\controller\Index->index[ /data/wwwroot/default/zuanbaodai/bank8/application/back/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-09T14:58:38+08:00 ] 119.130.228.34 GET /index.php/back/index/left.html
+[ info ] test2.8haoqianzhuang.com/index.php/back/index/left.html [运行时间：0.036226s][吞吐率：27.60req/s] [内存消耗：1,087.01kb] [文件加载：38]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'back',
+    1 => 'index',
+    2 => 'left',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6kb53hk3o5fusm7phga868kj56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/back/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\back\controller\Index->left[ /data/wwwroot/default/zuanbaodai/bank8/application/back/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/index/left.html [ array (
+  0 => 'qianxian',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-09T14:58:38+08:00 ] 119.130.228.34 GET /index.php/back/index/top.html
+[ info ] test2.8haoqianzhuang.com/index.php/back/index/top.html [运行时间：0.040313s][吞吐率：24.81req/s] [内存消耗：1,079.64kb] [文件加载：38]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'back',
+    1 => 'index',
+    2 => 'top',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6kb53hk3o5fusm7phga868kj56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/back/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\back\controller\Index->top[ /data/wwwroot/default/zuanbaodai/bank8/application/back/controller/Index.php ]
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/index/top.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-09T14:58:38+08:00 ] 119.130.228.34 GET /index.php/back/index/inde.html
+[ info ] test2.8haoqianzhuang.com/index.php/back/index/inde.html [运行时间：0.064827s][吞吐率：15.43req/s] [内存消耗：1,769.11kb] [文件加载：45]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'back',
+    1 => 'index',
+    2 => 'inde',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6kb53hk3o5fusm7phga868kj56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/back/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\back\controller\Index->inde[ /data/wwwroot/default/zuanbaodai/bank8/application/back/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/index/inde.html [ array (
+  0 => 'ordercot',
+  1 => 'usercot',
+  2 => 'ordercotf',
+  3 => 'usercotf',
+  4 => 'userc',
+  5 => 'payc',
+  6 => 'orderc',
+  7 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000226s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_user` [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533657600' AND '1533744000' LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_order` [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` LEFT JOIN `ba_matching` `matching` ON `ba_order`.`matching_id`=`matching`.`matching_id` WHERE  `ba_order`.`addtime` BETWEEN 1533657600 AND 1533744000 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_pay` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_pay` WHERE  `paytime` BETWEEN '1533657600' AND '1533744000' LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533139200' AND '1533225600' LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` LEFT JOIN `ba_matching` `matching` ON `ba_order`.`matching_id`=`matching`.`matching_id` WHERE  `ba_order`.`addtime` BETWEEN 1533139200 AND 1533225600 LIMIT 1 [ RunTime:0.000170s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533225600' AND '1533312000' LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` LEFT JOIN `ba_matching` `matching` ON `ba_order`.`matching_id`=`matching`.`matching_id` WHERE  `ba_order`.`addtime` BETWEEN 1533225600 AND 1533312000 LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533312000' AND '1533398400' LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` LEFT JOIN `ba_matching` `matching` ON `ba_order`.`matching_id`=`matching`.`matching_id` WHERE  `ba_order`.`addtime` BETWEEN 1533312000 AND 1533398400 LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533398400' AND '1533484800' LIMIT 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` LEFT JOIN `ba_matching` `matching` ON `ba_order`.`matching_id`=`matching`.`matching_id` WHERE  `ba_order`.`addtime` BETWEEN 1533398400 AND 1533484800 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533484800' AND '1533571200' LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` LEFT JOIN `ba_matching` `matching` ON `ba_order`.`matching_id`=`matching`.`matching_id` WHERE  `ba_order`.`addtime` BETWEEN 1533484800 AND 1533571200 LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533571200' AND '1533657600' LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` LEFT JOIN `ba_matching` `matching` ON `ba_order`.`matching_id`=`matching`.`matching_id` WHERE  `ba_order`.`addtime` BETWEEN 1533571200 AND 1533657600 LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533657600' AND '1533744000' LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` LEFT JOIN `ba_matching` `matching` ON `ba_order`.`matching_id`=`matching`.`matching_id` WHERE  `ba_order`.`addtime` BETWEEN 1533657600 AND 1533744000 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1531152000' AND '1531238400' LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1531152000' AND '1531238400' LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1531238400' AND '1531324800' LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1531238400' AND '1531324800' LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1531324800' AND '1531411200' LIMIT 1 [ RunTime:0.000150s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1531324800' AND '1531411200' LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1531411200' AND '1531497600' LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1531411200' AND '1531497600' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1531497600' AND '1531584000' LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1531497600' AND '1531584000' LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1531584000' AND '1531670400' LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1531584000' AND '1531670400' LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1531670400' AND '1531756800' LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1531670400' AND '1531756800' LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1531756800' AND '1531843200' LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1531756800' AND '1531843200' LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1531843200' AND '1531929600' LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1531843200' AND '1531929600' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1531929600' AND '1532016000' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1531929600' AND '1532016000' LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1532016000' AND '1532102400' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1532016000' AND '1532102400' LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1532102400' AND '1532188800' LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1532102400' AND '1532188800' LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1532188800' AND '1532275200' LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1532188800' AND '1532275200' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1532275200' AND '1532361600' LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1532275200' AND '1532361600' LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1532361600' AND '1532448000' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1532361600' AND '1532448000' LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1532448000' AND '1532534400' LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1532448000' AND '1532534400' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1532534400' AND '1532620800' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1532534400' AND '1532620800' LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1532620800' AND '1532707200' LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1532620800' AND '1532707200' LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1532707200' AND '1532793600' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1532707200' AND '1532793600' LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1532793600' AND '1532880000' LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1532793600' AND '1532880000' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1532880000' AND '1532966400' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1532880000' AND '1532966400' LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1532966400' AND '1533052800' LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1532966400' AND '1533052800' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533052800' AND '1533139200' LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1533052800' AND '1533139200' LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533139200' AND '1533225600' LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1533139200' AND '1533225600' LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533225600' AND '1533312000' LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1533225600' AND '1533312000' LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533312000' AND '1533398400' LIMIT 1 [ RunTime:0.000146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1533312000' AND '1533398400' LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533398400' AND '1533484800' LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1533398400' AND '1533484800' LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533484800' AND '1533571200' LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1533484800' AND '1533571200' LIMIT 1 [ RunTime:0.000143s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533571200' AND '1533657600' LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1533571200' AND '1533657600' LIMIT 1 [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_user` WHERE  `regtime` BETWEEN '1533657600' AND '1533744000' LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `addtime` BETWEEN '1533657600' AND '1533744000' LIMIT 1 [ RunTime:0.000140s ]
+---------------------------------------------------------------
+[ 2018-08-09T14:58:41+08:00 ] 119.130.228.34 GET /index.php/back/common/ershowdd.html
+[ info ] test2.8haoqianzhuang.com/index.php/back/common/ershowdd.html [运行时间：0.025678s][吞吐率：38.94req/s] [内存消耗：1,871.27kb] [文件加载：51]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'back',
+    1 => 'common',
+    2 => 'ershowdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6kb53hk3o5fusm7phga868kj56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/back/index/left.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\back\controller\Common->ershowdd[ /data/wwwroot/default/zuanbaodai/bank8/application/back/controller/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/common/ershowdd.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000223s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_ierj_configuration` [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_ierj_configuration` LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_ierj_configuration` ORDER BY id desc LIMIT 0,200 [ RunTime:0.000210s ]
+---------------------------------------------------------------
+[ 2018-08-09T14:58:43+08:00 ] 119.130.228.34 GET /index.php/back/common/ershowdd.html
+[ info ] test2.8haoqianzhuang.com/index.php/back/common/ershowdd.html [运行时间：0.022730s][吞吐率：43.99req/s] [内存消耗：1,745.46kb] [文件加载：49]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'back',
+    1 => 'common',
+    2 => 'ershowdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6kb53hk3o5fusm7phga868kj56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/back/index/left.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\back\controller\Common->ershowdd[ /data/wwwroot/default/zuanbaodai/bank8/application/back/controller/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/common/ershowdd.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000219s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_ierj_configuration` [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_ierj_configuration` LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_ierj_configuration` ORDER BY id desc LIMIT 0,200 [ RunTime:0.000152s ]
+---------------------------------------------------------------
+[ 2018-08-09T14:58:43+08:00 ] 119.130.228.34 GET /index.php/back/common/ershowdd.html
+[ info ] test2.8haoqianzhuang.com/index.php/back/common/ershowdd.html [运行时间：0.022959s][吞吐率：43.56req/s] [内存消耗：1,745.46kb] [文件加载：49]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'back',
+    1 => 'common',
+    2 => 'ershowdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6kb53hk3o5fusm7phga868kj56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/back/index/left.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\back\controller\Common->ershowdd[ /data/wwwroot/default/zuanbaodai/bank8/application/back/controller/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/common/ershowdd.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000224s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_ierj_configuration` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_ierj_configuration` LIMIT 1 [ RunTime:0.000161s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_ierj_configuration` ORDER BY id desc LIMIT 0,200 [ RunTime:0.000155s ]

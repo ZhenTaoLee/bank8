@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:86:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/index/left.html";i:1531362939;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:86:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/back/view/index/left.html";i:1533797896;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -90,8 +90,9 @@ $(function(){
     </div>
     <ul class="menuson">
 
-			<li><cite></cite><a href="/index.php/back/news/show.html" target="rightFrame">资讯管理</a><i></i></li>
+        <li><cite></cite><a href="/index.php/back/news/show.html" target="rightFrame">资讯管理</a><i></i></li>
         <li><cite></cite><a href="/index.php/back/school/schoolshow.html" target="rightFrame">学堂管理</a><i></i></li>
+
 
         <li><cite></cite><a href="/index.php/back/qa/show.html" target="rightFrame">问题管理</a><i></i></li>
 
@@ -186,7 +187,8 @@ $(function(){
 		<ul class="menuson">
 
 			<li><cite></cite><a href="/index.php/back/extend/show.html" target="rightFrame">运营数据</a><i></i></li>
-			 <li><cite></cite><a href="/index.php/back/extend/downshow.html" target="rightFrame">官网下载页数据</a><i></i></li>
+			<li><cite></cite><a href="/index.php/back/extend/downshow.html" target="rightFrame">官网下载页数据</a><i></i></li>
+
 
 			</ul>
 		</dd>
@@ -201,6 +203,7 @@ $(function(){
 <?php } if($qianxian=='管理员' || $qianxian=='总经理'|| $qianxian=='苹果'){?>
     <li><cite></cite><a href="/index.php/back/common/ishow.html" target="rightFrame">苹果版本管理</a><i></i></li>
 	<li><cite></cite><a href="/index.php/back/common/ershow.html" target="rightFrame">二维码马甲版本管理</a><i></i>
+	<li><cite></cite><a href="/index.php/back/common/ershowdd.html" target="rightFrame">俊的账号版本管理</a><i></i>
 <?php } ?>
      </li>
 
@@ -216,7 +219,7 @@ $(function(){
     <ul class="menuson">
         <li><cite></cite><a href="/index.php/back/Service/show.html" target="rightFrame">我的客户管理</a><i></i></li>
         <li><cite></cite><a href="/index.php/back/Service/gkshow.html" target="rightFrame">公海池</a><i></i></li>
-
+       
         <?php if($qianxian=='管理员' || $qianxian=='总经理'|| $qianxian=='总部助理'||  $qianxian=='广州经理'|| $qianxian=='杭州经理'|| $qianxian=='深圳经理'|| $qianxian=='珠海经理'){?>
         <li><cite></cite><a href="/index.php/back/Service/jlshow.html" target="rightFrame">客户监控</a><i></i></li>
  <?php } ?>
