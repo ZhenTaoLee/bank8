@@ -21,7 +21,7 @@ class Homepage extends Index
 //八号快报
  public function journalism()
     {
-
+    		$http = $this->http();
 				$data = db('journalism')
 				->field('journalism_id,headline')
 				->where('status',1)
@@ -29,7 +29,7 @@ class Homepage extends Index
 				->select();
 			foreach ($data as $key => $val){
 		
-			$data[$key]['url'] ="http://test2.8haoqianzhuang.com";
+			$data[$key]['url'] ="$http".'/index.php/index/Finance/details?id='.$data[$key]['journalism_id'];
 	
 				}
    		return json(['state'=>2558,'data'=>$data,'mesg'=>'操作完成']);
@@ -63,6 +63,7 @@ $info= Request::instance()->header();
 if(array_key_exists('tokenid', $info)!==false){
 	$rest = substr($info['tokenid'] , 20 , 5);
 	$id=$rest;
+	if($id!=0){
 	$y=date('Y', time());
 	$m=date('m', time());
 	$s=$m+1;
@@ -74,7 +75,11 @@ if(array_key_exists('tokenid', $info)!==false){
 	$income= db('b_bill')->where('user_id',$id)->where('type',1)->where($map)->sum('money');
 	$expenditure= db('b_bill')->where('user_id',$id)->where('type',2)->where($map)->sum('money');
 	
-	$data= ['income'=>sprintf('%.2f', $income),'expenditure'=>sprintf('%.2f', $expenditure)];
+	$data= ['income'=>sprintf('%.2f', $income),'expenditure'=>sprintf('%.2f', $expenditure)];	
+	}else{
+	$data= ['income'=>0.00,'expenditure'=>0.00];
+	}
+	
 }else{
 	$data= ['income'=>0.00,'expenditure'=>0.00];
 }
@@ -443,7 +448,7 @@ $info= Request::instance()->header();
      public function goodCollects()
  	{
 		$info= Request::instance()->header(); 
-	$http = $this->http();
+		$http = $this->http();
 	
    		
     	if(array_key_exists('tokenid', $info)===false){

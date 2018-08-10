@@ -244,29 +244,30 @@ class Order extends Index{
 	->field('city')
 	->where('matching_id',$data[$key]['matching_id'])
 	->find();
-	if($matching['city']=='广州'){
-		$data[$key]['onePrice']=0;
-		$data[$key]['finallyPrice']=899;
-
-	}elseif($matching['city']=='深圳' ){
-		$data[$key]['onePrice']=0;
-		$data[$key]['finallyPrice']=1499;
-
-	}else{
+	
+//	if($matching['city']=='广州'){
+//		$data[$key]['onePrice']=0;
+//		$data[$key]['finallyPrice']=899;
+//
+//	}elseif($matching['city']=='深圳' ){
+//		$data[$key]['onePrice']=0;
+//		$data[$key]['finallyPrice']=1499;
+//
+//	}else{
 		$data[$key]['onePrice']=0;
 		$data[$key]['finallyPrice']=0;
-	}
+//	}
 
 
-	if($matching['city']=='广州' || $matching['city']=='深圳'   ){
-		if($data[$key]['orderType']=='已放款'){
-			$data[$key]['payment']=1;
-		}else{
-			$data[$key]['payment']=0;
-		}
-	}else{
+//	if($matching['city']=='广州' || $matching['city']=='深圳'   ){
+//		if($data[$key]['orderType']=='已放款'){
+//			$data[$key]['payment']=1;
+//		}else{
+//			$data[$key]['payment']=0;
+//		}
+//	}else{
 		$data[$key]['payment']=0;
-	}
+//	}
 
 		if($data[$key]['han_id']==0){
 
@@ -340,46 +341,46 @@ class Order extends Index{
 	->field('city')
 	->where('matching_id',$data[$key]['matching_id'])
 	->find();
-	if($matching['city']=='广州'){
-		if($data[$key]['orderType']=='已放款'){
-			$data[$key]['onePrice']=0;
-			$data[$key]['finallyPrice']=899;
-		}else{
-			$data[$key]['onePrice']=0;
-			$data[$key]['finallyPrice']=0;
-		}
-
-
-	}elseif($matching['city']=='深圳'  ){
-		if($data[$key]['orderType']=='已放款'){
-			$data[$key]['onePrice']=0;
-			$data[$key]['finallyPrice']=1499;
-		}else{
-			$data[$key]['onePrice']=0;
-			$data[$key]['finallyPrice']=0;
-		}
-
-
-	}else{
+//	if($matching['city']=='广州'){
+//		if($data[$key]['orderType']=='已放款'){
+//			$data[$key]['onePrice']=0;
+//			$data[$key]['finallyPrice']=899;
+//		}else{
+//			$data[$key]['onePrice']=0;
+//			$data[$key]['finallyPrice']=0;
+//		}
+//
+//
+//	}elseif($matching['city']=='深圳'  ){
+//		if($data[$key]['orderType']=='已放款'){
+//			$data[$key]['onePrice']=0;
+//			$data[$key]['finallyPrice']=1499;
+//		}else{
+//			$data[$key]['onePrice']=0;
+//			$data[$key]['finallyPrice']=0;
+//		}
+//
+//
+//	}else{
 		$data[$key]['onePrice']=0;
 		$data[$key]['finallyPrice']=0;
-	}
+//	}
 
-
-	if($matching['city']=='广州' || $matching['city']=='深圳'   ){
-
-		if($data[$key]['orderType']=='已放款' ){
-			$data[$key]['subscription']=0;
-			$data[$key]['tailPayment']=1;
-
-		}else{
-			$data[$key]['subscription']=0;
-			$data[$key]['tailPayment']=0;
-		}
-	}else{
+//
+//	if($matching['city']=='广州' || $matching['city']=='深圳'   ){
+//
+//		if($data[$key]['orderType']=='已放款' ){
+//			$data[$key]['subscription']=0;
+//			$data[$key]['tailPayment']=1;
+//
+//		}else{
+//			$data[$key]['subscription']=0;
+//			$data[$key]['tailPayment']=0;
+//		}
+//	}else{
 		$data[$key]['subscription']=0;
 		$data[$key]['tailPayment']=0;
-	}
+//	}
 
 
 	$handle = db('handle')
@@ -481,11 +482,6 @@ class Order extends Index{
 		}elseif($data[$key]['orderType']=='订单失败'){
 			$data[$key]['describe']="您的申请的产品，暂时无法办理，具体情况请联系客户经理，如有疑问请咨询8号钱庄在客服。";
 		}
-
-
-
-
-
 
 		}
 

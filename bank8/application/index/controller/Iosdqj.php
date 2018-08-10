@@ -88,6 +88,26 @@ use think\Cache;
 
     }
     
+    
+          public function fun()
+    {
+
+    		$data = db('z_fun')
+			->order('rand()')
+			->limit(3)
+			->select();
+		foreach ($data as $key => $val){
+		$data[$key]['addtime'] =date('Y-m-d',$data[$key]['addtime']);
+	$data[$key]['url'] ="http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji";
+	
+		}	
+			
+		return json(['state'=>2558,'data'=>$data,'mesg'=>'操作完成']);
+	
+		
+
+
+    }
 
 
     }

@@ -511,67 +511,64 @@ if(strlen($deviceid) > 8 && strlen($deviceid) < 32){
 	->find();
 	
 	
-	if($matching['city']=='广州' ){
-		
-		$han_id=$order['han_id'];
-		$handle = db('handle')	
-		->where('han_id',$han_id)
-		->find();
-		
-	if($handle['bank_id']==10132 ){
-	$content="恭喜恭喜！尊敬的客户您好，您的订单".$order['orderNumber']."，订单已完成！请您尽快核实并确认。";
-		
-	$user = db('user')	
-	->where('user_id',$order['user_id'])
-	->find();
-$phone=$user['phone'];
-$deviceid=$user['device'];	
-
-		$orderType='已完成';
-	
-	
-		}else{
-	$content="恭喜恭喜！尊敬的客户您好，您的订单".$order['orderNumber']."，订单已放款！请您尽快核实并确认。";//支付订单服务费
-		
-	$user = db('user')	
-	->where('user_id',$order['user_id'])
-	->find();
-		$phone=$user['phone'];
-		$deviceid=$user['device'];	
-		$orderType='已放款';	
-			
-		}
-		
-	}elseif($matching['city']=='深圳'){
-		
-	if($good['good_id']==712){
-	$content="恭喜恭喜！尊敬的客户您好，您的订单".$order['orderNumber']."，订单已完成！请您尽快核实并确认。";
-		
-	$user = db('user')	
-	->where('user_id',$order['user_id'])
-	->find();
-$phone=$user['phone'];
-$deviceid=$user['device'];	
-
-		$orderType='已完成';	
-			
-		}else{
-			
-	$content="恭喜恭喜！尊敬的客户您好，您的订单".$order['orderNumber']."，订单已放款！请您尽快核实并确认。";//支付订单服务费
-		
-	$user = db('user')	
-	->where('user_id',$order['user_id'])
-	->find();
-		$phone=$user['phone'];
-		$deviceid=$user['device'];	
-		$orderType='已放款';	
-			
-		}
-		
-	}
-	
-	
-	else{
+//	if($matching['city']=='广州' ){
+//		
+//		$han_id=$order['han_id'];
+//		$handle = db('handle')	
+//		->where('han_id',$han_id)
+//		->find();
+//		
+//	if($handle['bank_id']==10132 ){
+//	$content="恭喜恭喜！尊敬的客户您好，您的订单".$order['orderNumber']."，订单已完成！请您尽快核实并确认。";
+//		
+//	$user = db('user')	
+//	->where('user_id',$order['user_id'])
+//	->find();
+//$phone=$user['phone'];
+//$deviceid=$user['device'];	
+//
+//		$orderType='已完成';
+//	
+//	
+//		}else{
+//	$content="恭喜恭喜！尊敬的客户您好，您的订单".$order['orderNumber']."，订单已放款！请您尽快核实并确认。";//支付订单服务费
+//		
+//	$user = db('user')	
+//	->where('user_id',$order['user_id'])
+//	->find();
+//		$phone=$user['phone'];
+//		$deviceid=$user['device'];	
+//		$orderType='已放款';	
+//			
+//		}
+//		
+//	}elseif($matching['city']=='深圳'){
+//		
+//	if($good['good_id']==712){
+//	$content="恭喜恭喜！尊敬的客户您好，您的订单".$order['orderNumber']."，订单已完成！请您尽快核实并确认。";
+//		
+//	$user = db('user')	
+//	->where('user_id',$order['user_id'])
+//	->find();
+//$phone=$user['phone'];
+//$deviceid=$user['device'];	
+//
+//		$orderType='已完成';	
+//			
+//		}else{
+//			
+//	$content="恭喜恭喜！尊敬的客户您好，您的订单".$order['orderNumber']."，订单已放款！请您尽快核实并确认。";//支付订单服务费
+//		
+//	$user = db('user')	
+//	->where('user_id',$order['user_id'])
+//	->find();
+//		$phone=$user['phone'];
+//		$deviceid=$user['device'];	
+//		$orderType='已放款';	
+//			
+//		}
+//		
+//	}else{
 			
 		
 $content="恭喜恭喜！尊敬的客户您好，您的订单".$order['orderNumber']."，订单已完成！请您尽快核实并确认。";
@@ -581,12 +578,9 @@ $content="恭喜恭喜！尊敬的客户您好，您的订单".$order['orderNumb
 	->find();
 $phone=$user['phone'];
 $deviceid=$user['device'];	
-
-
-		
 		$orderType='已完成';
 	
-	}
+//	}
 	
 if(strlen($deviceid) > 8 && strlen($deviceid) < 32){
 			$push = new Movement;

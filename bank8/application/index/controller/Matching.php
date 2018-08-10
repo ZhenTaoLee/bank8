@@ -333,29 +333,29 @@ class Matching extends Index{
 		$good = db('good')->where('good_id',$good_id)->find();
 		$cityName=$good['cityName'];
 		$goodName=$good['goodName'];
-if($cityName=='广州' ){
-
-	if($goodName=='鑫易贷'){
-			$hint='';
-				$show=0;
-			}else{
-				$hint='本次贷款放款成功后，平台将收取899元信息咨询费，客户可以到我的订单进行支付。';
-			$show=1;
-			}
-}
-elseif($cityName=='深圳' ){
-		if($goodName=='鑫易贷'){
-			$hint='';
-				$show=0;
-			}else{
-				$hint='本次贷款放款成功后，平台将收取1499元信息咨询费，客户可以到我的订单进行支付。';
-			$show=1;
-			}
-}
-else{
+//if($cityName=='广州' ){
+//
+//	if($goodName=='鑫易贷'){
+//			$hint='';
+//				$show=0;
+//			}else{
+//				$hint='本次贷款放款成功后，平台将收取899元信息咨询费，客户可以到我的订单进行支付。';
+//			$show=1;
+//			}
+//}
+//elseif($cityName=='深圳' ){
+//		if($goodName=='鑫易贷'){
+//			$hint='';
+//				$show=0;
+//			}else{
+//				$hint='本次贷款放款成功后，平台将收取1499元信息咨询费，客户可以到我的订单进行支付。';
+//			$show=1;
+//			}
+//}
+//else{
 	$hint='';
 	$show=0;
-}
+//}
 
 
 

@@ -18,15 +18,17 @@ class Ordertwopointfive extends Index{
     	$info= Request::instance()->header();
    		$rest = substr($info['tokenid'] , 20 , 5);
     	$id=$rest;
-    	$deviceid=$info['deviceid'];
-		$user = db('user')->where('user_id',$id)->find();
-		$device=$user['device'];
-		if($deviceid!=$device){
-			return json(['state'=>3388,'data'=>[''],'mesg'=>'该账号已在其他设备登陆,请重新登陆!']);
-		}
     	if($id==0){
     		return json(['state'=>3388,'data'=>[''],'mesg'=>'请登录']);
     	}
+    	$deviceid=$info['deviceid'];
+		$user = db('user')->where('user_id',$id)->find();
+		$device=$user['device'];
+		
+		if($deviceid!=$device){
+			return json(['state'=>3388,'data'=>[''],'mesg'=>'该账号已在其他设备登陆,请重新登陆!']);
+		}
+    	
 
 //  $id=62;
 
@@ -55,17 +57,17 @@ class Ordertwopointfive extends Index{
 	
 	
 	
-	if($matching['city']=='广州'){
-	
-		$data[$key]['finallyPrice']=899;
-
-	}elseif($matching['city']=='深圳' ){
-	
-		$data[$key]['finallyPrice']=1499;
-
-	}else{
+//	if($matching['city']=='广州'){
+//	
+//		$data[$key]['finallyPrice']=899;
+//
+//	}elseif($matching['city']=='深圳' ){
+//	
+//		$data[$key]['finallyPrice']=1499;
+//
+//	}else{
 		$data[$key]['finallyPrice']=0;
-	}
+//	}
 		$data[$key]['onePrice']=0;
 		$data[$key]['subscription']=0;
 		$data[$key]['payment']=0;//1是0否显示隐藏
@@ -155,18 +157,18 @@ class Ordertwopointfive extends Index{
 	
 	
 	
-	if($matching['city']=='广州'){
-		$data[$key]['onePrice']=0;
-		$data[$key]['finallyPrice']=899;
-
-	}elseif($matching['city']=='深圳' ){
-		$data[$key]['onePrice']=0;
-		$data[$key]['finallyPrice']=1499;
-
-	}else{
+//	if($matching['city']=='广州'){
+//		$data[$key]['onePrice']=0;
+//		$data[$key]['finallyPrice']=899;
+//
+//	}elseif($matching['city']=='深圳' ){
+//		$data[$key]['onePrice']=0;
+//		$data[$key]['finallyPrice']=1499;
+//
+//	}else{
 		$data[$key]['onePrice']=0;
 		$data[$key]['finallyPrice']=0;
-	}
+//	}
 
 //if($data[$key]['orderType']=='已放款'){
 //			$data[$key]['subscription']=0;
@@ -264,17 +266,17 @@ class Ordertwopointfive extends Index{
 	
 	
 	
-	if($matching['city']=='广州'){
-	
-		$data[$key]['finallyPrice']=899;
-
-	}elseif($matching['city']=='深圳' ){
-	
-		$data[$key]['finallyPrice']=1499;
-
-	}else{
+//	if($matching['city']=='广州'){
+//	
+//		$data[$key]['finallyPrice']=899;
+//
+//	}elseif($matching['city']=='深圳' ){
+//	
+//		$data[$key]['finallyPrice']=1499;
+//
+//	}else{
 		$data[$key]['finallyPrice']=0;
-	}
+//	}
 		$data[$key]['tailPayment']=1;
 		$data[$key]['onePrice']=0;
 		$data[$key]['subscription']=0;
@@ -449,17 +451,17 @@ class Ordertwopointfive extends Index{
 	->where('matching_id',$data['matching_id'])
 	->find();
 
-	if($matching['city']=='广州'){
-	
-		$data['finallyPrice']=899;
-
-	}elseif($matching['city']=='深圳' ){
-	
-		$data['finallyPrice']=1499;
-
-	}else{
+//	if($matching['city']=='广州'){
+//	
+//		$data['finallyPrice']=899;
+//
+//	}elseif($matching['city']=='深圳' ){
+//	
+//		$data['finallyPrice']=1499;
+//
+//	}else{
 		$data['finallyPrice']=0;
-	}
+//	}
 		$data['onePrice']=0;
 		$data['subscription']=0;
 		$data['payment']=0;//1是0否显示隐藏

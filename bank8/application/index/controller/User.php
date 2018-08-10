@@ -863,7 +863,6 @@ $info= Request::instance()->header();
 			session('sessionid',$uid); //存session
 			session('phone',$loge['phone']); //存session	
 					
-			
 		$lo = db('user')->where('user_id',$uid )->update(['addtime' => $addtime,'device'=>$deviceid]);
 
 		$user = db('user')->where('user_id',$uid)->find();				
@@ -935,7 +934,11 @@ $info= Request::instance()->header();
 					}
 					
 					$tokenid=$str.$uid;
-					
+	if($user['sex']!=0 && $user['name']!='' && $user['ageBracket']!=''){
+		$perfect=1;
+	}else{
+		$perfect=0;
+	}					
 if($type==2){
 	$datfff = db('handle')
     ->join('user','u_id = ba_user.user_id','left')
@@ -960,11 +963,16 @@ if($type==2){
     $managerBankname=' ';
     $managerCity=' ';
 	}					
+	
+
+	
+
+	
 		
 $data = [
 'user_id'=>$uid,'nickname'=>$nickname,'phone'=>$phone,'type'=>$type,'portrait'=>$portrait,'sex'=>$sex,'tokenid'=>$tokenid,'ranking'=>$ranking,'money'=>$money,'ntype'=>$ntype,'managerBaname'=>$managerBaname,'managerSex'=>$managerSex,'managerPhone'=>$managerPhone,'managerPortrait'=>$managerPortrait,'managerExperience'=>$managerExperience,'managerBankname'=>$managerBankname,'managerCity'=>$managerCity,
 'managerName'=>$managerName,'unpaids'=>$unpaids,'allOrder'=>$allOrder,'progressOrder'=>$progressOrder,
-'name'=>$name,'ageBracket'=>$ageBracket,'weilidai'=>$weilidai,'education'=>$education];
+'name'=>$name,'ageBracket'=>$ageBracket,'weilidai'=>$weilidai,'education'=>$education,'perfect'=>$perfect];
 
 					
 		return json(['state'=>2558,'data'=>$data,'mesg'=>'登录成功']);
@@ -972,7 +980,8 @@ $data = [
 
 				
 			}else{
-				$type=1;
+				
+			$type=1;
 			$addtime=time();
 			$regtime=time();
 						
@@ -1002,7 +1011,7 @@ $data = [
 					$tokenid=$str.$uid;
 					
 $data = ['user_id'=> $uid ,'nickname'=>$nickname,'phone'=>$phone ,'type'=>$type,'portrait'=>$portrait,'sex'=>$sex ,'tokenid'=>$tokenid,'ranking'=>$ranking,'money'=>$money,'ntype'=>0,
-'managerBaname'=>0,'managerSex'=>0,'managerPhone'=>0,'managerPortrait'=>0,'managerExperience'=>0,'managerBankname'=>0,'managerCity'=>0,'managerName'=>0,'unpaids'=>0,'allOrder'=>0,'progressOrder'=>0,'name'=>'','ageBracket'=>'','weilidai'=>0,'education'=>0];
+'managerBaname'=>0,'managerSex'=>0,'managerPhone'=>0,'managerPortrait'=>0,'managerExperience'=>0,'managerBankname'=>0,'managerCity'=>0,'managerName'=>0,'unpaids'=>0,'allOrder'=>0,'progressOrder'=>0,'name'=>'','ageBracket'=>'','weilidai'=>0,'education'=>0,'perfect'=>0];
 //						cookie('code', null);
 						return json(['state'=>2558,'data'=>$data,'mesg'=>'注册完成']);
 					}else{
@@ -1016,7 +1025,7 @@ $data = ['user_id'=> $uid ,'nickname'=>$nickname,'phone'=>$phone ,'type'=>$type,
 		}
 
 
-	//登录注册	
+	//2.5	
  public function usersTow(){
 //		$codes=1111;
 	    $info= Request::instance()->header();
@@ -1129,11 +1138,15 @@ if($type==2){
     $managerBankname=' ';
     $managerCity=' ';
 	}					
-		
+	if($user['sex']!=0 && $user['name']!='' && $user['ageBracket']!=''){
+		$perfect=1;
+	}else{
+		$perfect=0;
+	}	
 $data = [
 'user_id'=>$uid,'nickname'=>$nickname,'phone'=>$phone,'type'=>$type,'portrait'=>$portrait,'sex'=>$sex,'tokenid'=>$tokenid,'ranking'=>$ranking,'money'=>$money,'ntype'=>$ntype,'managerBaname'=>$managerBaname,'managerSex'=>$managerSex,'managerPhone'=>$managerPhone,'managerPortrait'=>$managerPortrait,'managerExperience'=>$managerExperience,'managerBankname'=>$managerBankname,'managerCity'=>$managerCity,
 'managerName'=>$managerName,'unpaids'=>$unpaids,'allOrder'=>$allOrder,'progressOrder'=>$progressOrder,
-'name'=>$name,'ageBracket'=>$ageBracket,'weilidai'=>$weilidai,'education'=>$education];
+'name'=>$name,'ageBracket'=>$ageBracket,'weilidai'=>$weilidai,'education'=>$education,'perfect'=>$perfect];
 
 					
 		return json(['state'=>2558,'data'=>$data,'mesg'=>'操作成功']);
