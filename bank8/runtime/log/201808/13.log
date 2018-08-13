@@ -19778,3 +19778,129 @@
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000189s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109 LIMIT 1 [ RunTime:0.000138s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND `orderType` = '已放款' LIMIT 1 [ RunTime:0.000163s ]
+---------------------------------------------------------------
+[ 2018-08-13T10:45:28+08:00 ] 119.131.77.226 POST /index.php/index/user/users
+[ info ] test2.8haoqianzhuang.com/index.php/index/user/users [运行时间：0.027588s][吞吐率：36.25req/s] [内存消耗：1,888.93kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'users',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; OPPO R9s Build/MMB29M)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '20304347b7d5f50344bbe0a5',
+  'tokenid' => 'au2knmyHrOoC6PfGzx6z112',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->users[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000243s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_user` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_user` WHERE  `user_id` = 112 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_matching` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_matching` WHERE  `user_id` = 112  AND `good_id` > 0 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_order` [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '已放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND (  `orderType` = '已放款' OR ( `orderType` = '已完成' OR `orderType` = '订单失败' ) ) LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000187s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND `orderType` = '已放款' LIMIT 1 [ RunTime:0.000148s ]
+---------------------------------------------------------------
+[ 2018-08-13T10:45:31+08:00 ] 119.131.77.226 POST /index.php/index/user/users
+[ info ] test2.8haoqianzhuang.com/index.php/index/user/users [运行时间：0.029034s][吞吐率：34.44req/s] [内存消耗：1,888.93kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'users',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; OPPO R9s Build/MMB29M)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '20304347b7d5f50344bbe0a5',
+  'tokenid' => 'au2knmyHrOoC6PfGzx6z112',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->users[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000226s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_user` [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_user` WHERE  `user_id` = 112 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_matching` [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_matching` WHERE  `user_id` = 112  AND `good_id` > 0 LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_order` [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '已放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND (  `orderType` = '已放款' OR ( `orderType` = '已完成' OR `orderType` = '订单失败' ) ) LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112 LIMIT 1 [ RunTime:0.000142s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND `orderType` = '已放款' LIMIT 1 [ RunTime:0.000147s ]
+---------------------------------------------------------------
+[ 2018-08-13T10:45:40+08:00 ] 119.131.77.226 POST /index.php/index/user/users
+[ info ] test2.8haoqianzhuang.com/index.php/index/user/users [运行时间：0.027761s][吞吐率：36.02req/s] [内存消耗：1,888.99kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'users',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'tq28yNPPxIRbDgLM2LD5109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->users[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000219s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_user` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_user` WHERE  `user_id` = 109 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_matching` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_matching` WHERE  `user_id` = 109  AND `good_id` > 0 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_order` [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '已放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND (  `orderType` = '已放款' OR ( `orderType` = '已完成' OR `orderType` = '订单失败' ) ) LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND `orderType` = '已放款' LIMIT 1 [ RunTime:0.000151s ]
