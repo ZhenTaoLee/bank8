@@ -24697,3 +24697,69 @@
 [ info ] [ PARAM ] array (
 )
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-13T15:49:43+08:00 ] 119.131.77.226 GET /index.php/index/Finance/fundetails?id=8
+[ info ] test2.8haoqianzhuang.com/index.php/index/Finance/fundetails?id=8 [运行时间：0.024512s][吞吐率：40.80req/s] [内存消耗：1,798.89kb] [文件加载：49]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Finance',
+    2 => 'fundetails',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '8',
+)
+[ info ] [ RUN ] app\index\controller\Finance->funDetails[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Finance.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/finance/fundetails.html [ array (
+  0 => 'res',
+  1 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000216s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_z_fun` [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT `fun_id`,`headline`,`picture`,`reading`,`wedtext`,`addtime`,`num` FROM `ba_z_fun` WHERE  `fun_id` = 8 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_z_fun` WHERE  `fun_id` <> 8 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_z_fun` WHERE  `fun_id` <> 8 ORDER BY addtime desc LIMIT 0,3 [ RunTime:0.000167s ]
+---------------------------------------------------------------
+[ 2018-08-13T15:49:44+08:00 ] 119.131.77.226 GET /static/index/css/bootstrap.min.css.map
+[ info ] test2.8haoqianzhuang.com/static/index/css/bootstrap.min.css.map [运行时间：0.012445s][吞吐率：80.35req/s] [内存消耗：837.57kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
