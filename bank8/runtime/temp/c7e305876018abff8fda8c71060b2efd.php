@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:94:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/homepage/detailed.html";i:1531386852;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:94:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/homepage/detailed.html";i:1534123009;}*/ ?>
 <!DOCTYPE html>
 <head lang="en">
 	<meta charset="UTF-8">
@@ -61,7 +61,7 @@
 				<p>29886</p>
 			</div>
 			<div class="kuai left">
-				<p>下款时间 </a><img src="<?php echo IMG_URL; ?>details_icon_careful.png" alt="" id="onlyChoseAlert"></p><br>
+				<p>下款时间</p><br>
 				<p>10分钟</p>
 			</div>
 			<div class="kuai ">

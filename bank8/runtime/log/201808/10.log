@@ -31376,3 +31376,2295 @@
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000188s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112 LIMIT 1 [ RunTime:0.000139s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND `orderType` = '已放款' LIMIT 1 [ RunTime:0.000142s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:55:37+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/good
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/good [运行时间：0.025780s][吞吐率：38.79req/s] [内存消耗：1,768.48kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '27',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '广州',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->good[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000230s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1 ORDER BY ratio asc LIMIT 6 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 10407 LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 218 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 221 LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 223 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 224 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 227 LIMIT 1 [ RunTime:0.000152s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:55:47+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/good
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/good [运行时间：0.024662s][吞吐率：40.55req/s] [内存消耗：1,768.48kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '27',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '广州',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->good[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000237s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1 ORDER BY ratio asc LIMIT 6 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 10407 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 218 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 221 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 223 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 224 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 227 LIMIT 1 [ RunTime:0.000156s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:55:56+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/good
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/good [运行时间：0.024753s][吞吐率：40.40req/s] [内存消耗：1,768.48kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '27',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '广州',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->good[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000230s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1 ORDER BY ratio asc LIMIT 6 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 10407 LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 218 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 221 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 223 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 224 LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 227 LIMIT 1 [ RunTime:0.000155s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:56:00+08:00 ] 119.145.82.115 POST /index.php/index/Stair/service
+[ info ] test2.8haoqianzhuang.com/index.php/index/Stair/service [运行时间：0.026435s][吞吐率：37.83req/s] [内存消耗：1,153.31kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Stair',
+    2 => 'service',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '89',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '广州',
+)
+[ info ] [ RUN ] app\index\controller\Stair->service[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Stair.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T17:56:00+08:00 ] 119.145.82.115 POST /index.php/index/huawei/configuration
+[ info ] test2.8haoqianzhuang.com/index.php/index/huawei/configuration [运行时间：0.036340s][吞吐率：27.52req/s] [内存消耗：1,688.23kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'huawei',
+    2 => 'configuration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '87',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+  'version' => '2.5.0',
+)
+[ info ] [ RUN ] app\index\controller\Huawei->configuration[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Huawei.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000217s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_a_configuration` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_a_configuration` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000194s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:56:01+08:00 ] 119.145.82.115 POST /index.php/index/Stair/city
+[ info ] test2.8haoqianzhuang.com/index.php/index/Stair/city [运行时间：0.056504s][吞吐率：17.70req/s] [内存消耗：1,152.85kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Stair',
+    2 => 'city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Stair->city[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Stair.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T17:56:01+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/journalism
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/journalism [运行时间：0.091355s][吞吐率：10.95req/s] [内存消耗：1,759.57kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'journalism',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Homepage->journalism[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000216s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_journalism` [ RunTime:0.002779s ]
+[ sql ] [ SQL ] SELECT `journalism_id`,`headline` FROM `ba_journalism` WHERE  `status` = 1 ORDER BY addtime desc [ RunTime:0.000215s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:56:01+08:00 ] 119.145.82.115 POST /index.php/index/huawei/activity
+[ info ] test2.8haoqianzhuang.com/index.php/index/huawei/activity [运行时间：0.088833s][吞吐率：11.26req/s] [内存消耗：1,687.76kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'huawei',
+    2 => 'activity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Huawei->activity[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Huawei.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001246s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_a_configuration` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_a_configuration` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001131s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:56:01+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/property
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/property [运行时间：0.091156s][吞吐率：10.97req/s] [内存消耗：1,759.56kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'property',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Homepage->property[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001626s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_b_bill` [ RunTime:0.002236s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 109  AND `type` = 1  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.001686s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 109  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000995s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:56:01+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/good
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/good [运行时间：0.092875s][吞吐率：10.77req/s] [内存消耗：1,768.84kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '89',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '广州',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->good[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003094s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1 ORDER BY ratio asc LIMIT 6 [ RunTime:0.002449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 10407 LIMIT 1 [ RunTime:0.001087s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 218 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 221 LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 223 LIMIT 1 [ RunTime:0.001503s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 224 LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 227 LIMIT 1 [ RunTime:0.000262s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:56:59+08:00 ] 119.145.82.115 POST /index.php/index/Pair/good
+[ info ] test2.8haoqianzhuang.com/index.php/index/Pair/good [运行时间：0.030102s][吞吐率：33.22req/s] [内存消耗：1,724.15kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Pair',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '328',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'accumulationFund' => '1',
+  'cityName' => '广州',
+  'houseBuy' => '1',
+  'houseType' => '1',
+  'insuranceAgeLimit' => '0',
+  'insurancePaymentMethod' => '0',
+  'insuranceType' => '0',
+  'license' => '0',
+  'monthlyPayment' => '0',
+  'occupation' => '1',
+  'ownAutomobile' => '1',
+  'ownGuaranteeSlip' => '1',
+  'ownHouse' => '1',
+  'pattern' => '1',
+  'propertyValues' => '1',
+  'runningWater' => '0',
+  'salary' => '1',
+  'socialSecurity' => '1',
+  'vehicleAge' => '0',
+  'vehicleBuyType' => '0',
+  'vehiclePrice' => '',
+)
+[ info ] [ RUN ] app\index\controller\Pair->good[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Pair.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000257s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_user` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_user` WHERE  `user_id` = 121 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT `goodName`,`ba_good`.`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_goods_pair` `goods_pair` ON `ba_good`.`good_id`=`goods_pair`.`good_id` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `goodtype` = 1  AND `city` LIKE '%广州%'  AND `putaway` = 1  AND `goods_pair`.`houseTypeGood` LIKE '%1%'  AND `goods_pair`.`houseBuyGood` LIKE '%1%'  AND `goods_pair`.`propertyValuesGood` LIKE '%1%' ORDER BY ratio asc [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT `goodName`,`ba_good`.`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_goods_pair` `goods_pair` ON `ba_good`.`good_id`=`goods_pair`.`good_id` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `goodtype` = 1  AND `city` LIKE '%广州%'  AND `putaway` = 1  AND `goods_pair`.`houseTypeGood` LIKE '%1%'  AND `goods_pair`.`houseBuyGood` LIKE '%1%'  AND `goods_pair`.`propertyValuesGood` LIKE '%1%' ORDER BY rand() LIMIT 10 [ RunTime:0.002802s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_matching` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] INSERT INTO `ba_matching` (`good_id` , `city` , `name` , `sex` , `pattern` , `ageBracket` , `ownHouse` , `ownAutomobile` , `ownGuaranteeSlip` , `user_id` , `addtime`) VALUES (227 , '广州' , '' , '2' , 1 , '' , 1 , 1 , 1 , 121 , '1533895019') [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_matching_pair` [ RunTime:0.000496s ]
+[ sql ] [ SQL ] INSERT INTO `ba_matching_pair` (`matching_id` , `ageSection` , `education` , `weilidai` , `occupation` , `socialSecurity` , `accumulationFund` , `salary` , `license` , `runningWater` , `houseType` , `houseBuy` , `propertyValues` , `monthlyPayment` , `insuranceType` , `insurancePaymentMethod` , `insuranceAgeLimit` , `vehicleBuyType` , `vehiclePrice` , `vehicleAge`) VALUES (1172 , '' , 2 , 2 , 1 , 1 , 1 , 1 , 0 , 0 , 1 , 1 , 1 , 0 , 0 , 0 , 0 , 0 , 0 , 0) [ RunTime:0.000260s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:56:59+08:00 ] 119.145.82.115 POST /index.php/index/Pair/good
+[ info ] test2.8haoqianzhuang.com/index.php/index/Pair/good [运行时间：0.029397s][吞吐率：34.02req/s] [内存消耗：1,723.02kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Pair',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '848',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+  'occupation' => '1',
+  'socialSecurity' => '1',
+  'accumulationFund' => '1',
+  'salary' => '1',
+  'ownHouse' => '1',
+  'ownAutomobile' => '1',
+  'ownGuaranteeSlip' => '1',
+  'pattern' => '1',
+  'cityName' => '广州',
+  'houseType' => '1',
+  'houseBuy' => '1',
+  'propertyValues' => '1',
+)
+[ info ] [ RUN ] app\index\controller\Pair->good[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Pair.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000227s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_user` [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_user` WHERE  `user_id` = 109 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT `goodName`,`ba_good`.`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_goods_pair` `goods_pair` ON `ba_good`.`good_id`=`goods_pair`.`good_id` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `goodtype` = 1  AND `city` LIKE '%广州%'  AND `putaway` = 1  AND `goods_pair`.`houseTypeGood` LIKE '%1%'  AND `goods_pair`.`houseBuyGood` LIKE '%1%'  AND `goods_pair`.`propertyValuesGood` LIKE '%1%' ORDER BY ratio asc [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT `goodName`,`ba_good`.`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_goods_pair` `goods_pair` ON `ba_good`.`good_id`=`goods_pair`.`good_id` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `goodtype` = 1  AND `city` LIKE '%广州%'  AND `putaway` = 1  AND `goods_pair`.`houseTypeGood` LIKE '%1%'  AND `goods_pair`.`houseBuyGood` LIKE '%1%'  AND `goods_pair`.`propertyValuesGood` LIKE '%1%' ORDER BY rand() LIMIT 10 [ RunTime:0.002749s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_matching` [ RunTime:0.000573s ]
+[ sql ] [ SQL ] INSERT INTO `ba_matching` (`good_id` , `city` , `name` , `sex` , `pattern` , `ageBracket` , `ownHouse` , `ownAutomobile` , `ownGuaranteeSlip` , `user_id` , `addtime`) VALUES (227 , '广州' , '郑' , '2' , 1 , '18岁以下' , 1 , 1 , 1 , 109 , '1533895019') [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_matching_pair` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] INSERT INTO `ba_matching_pair` (`matching_id` , `ageSection` , `education` , `weilidai` , `occupation` , `socialSecurity` , `accumulationFund` , `salary` , `license` , `runningWater` , `houseType` , `houseBuy` , `propertyValues` , `monthlyPayment` , `insuranceType` , `insurancePaymentMethod` , `insuranceAgeLimit` , `vehicleBuyType` , `vehiclePrice` , `vehicleAge`) VALUES (1173 , '18岁以下' , 1 , 1 , 1 , 1 , 1 , 1 , 0 , 0 , 1 , 1 , 1 , 0 , 0 , 0 , 0 , 0 , 0 , 0) [ RunTime:0.000252s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:57:52+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/good
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/good [运行时间：0.025245s][吞吐率：39.61req/s] [内存消耗：1,768.48kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '27',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '广州',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->good[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000225s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1 ORDER BY ratio asc LIMIT 6 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 10407 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 218 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 221 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 223 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 224 LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 227 LIMIT 1 [ RunTime:0.000164s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:33+08:00 ] 119.145.82.115 POST /index.php/index/Pair/good
+[ info ] test2.8haoqianzhuang.com/index.php/index/Pair/good [运行时间：0.033828s][吞吐率：29.56req/s] [内存消耗：1,723.80kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Pair',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '331',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'accumulationFund' => '1',
+  'cityName' => '广州',
+  'houseBuy' => '0',
+  'houseType' => '0',
+  'insuranceAgeLimit' => '0',
+  'insurancePaymentMethod' => '0',
+  'insuranceType' => '0',
+  'license' => '0',
+  'monthlyPayment' => '0',
+  'occupation' => '1',
+  'ownAutomobile' => '1',
+  'ownGuaranteeSlip' => '1',
+  'ownHouse' => '0',
+  'pattern' => '2',
+  'propertyValues' => '0',
+  'runningWater' => '0',
+  'salary' => '2',
+  'socialSecurity' => '1',
+  'vehicleAge' => '1',
+  'vehicleBuyType' => '1',
+  'vehiclePrice' => '888',
+)
+[ info ] [ RUN ] app\index\controller\Pair->good[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Pair.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000221s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_user` [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_user` WHERE  `user_id` = 121 LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `goodName`,`ba_good`.`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_goods_pair` `goods_pair` ON `ba_good`.`good_id`=`goods_pair`.`good_id` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `goodtype` = 2  AND `city` LIKE '%广州%'  AND `putaway` = 1  AND `goods_pair`.`vehicleBuyTypeGood` LIKE '%1%'  AND `goods_pair`.`minVehiclePriceGood` <= '888'  AND `goods_pair`.`vehicleAgeGood` LIKE '%1%' ORDER BY ratio asc [ RunTime:0.002914s ]
+[ sql ] [ SQL ] SELECT `goodName`,`ba_good`.`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_goods_pair` `goods_pair` ON `ba_good`.`good_id`=`goods_pair`.`good_id` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `goodtype` = 2  AND `city` LIKE '%广州%'  AND `putaway` = 1  AND `goods_pair`.`vehicleBuyTypeGood` LIKE '%1%'  AND `goods_pair`.`minVehiclePriceGood` <= '888'  AND `goods_pair`.`vehicleAgeGood` LIKE '%1%' ORDER BY rand() LIMIT 10 [ RunTime:0.002551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_matching` [ RunTime:0.000590s ]
+[ sql ] [ SQL ] INSERT INTO `ba_matching` (`good_id` , `city` , `name` , `sex` , `pattern` , `ageBracket` , `ownHouse` , `ownAutomobile` , `ownGuaranteeSlip` , `user_id` , `addtime`) VALUES (228 , '广州' , '' , '2' , 2 , '' , 0 , 1 , 1 , 121 , '1533895113') [ RunTime:0.001847s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_matching_pair` [ RunTime:0.000510s ]
+[ sql ] [ SQL ] INSERT INTO `ba_matching_pair` (`matching_id` , `ageSection` , `education` , `weilidai` , `occupation` , `socialSecurity` , `accumulationFund` , `salary` , `license` , `runningWater` , `houseType` , `houseBuy` , `propertyValues` , `monthlyPayment` , `insuranceType` , `insurancePaymentMethod` , `insuranceAgeLimit` , `vehicleBuyType` , `vehiclePrice` , `vehicleAge`) VALUES (1174 , '' , 2 , 2 , 1 , 1 , 1 , 2 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 1 , 888 , 1) [ RunTime:0.000282s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:42+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/good
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/good [运行时间：0.025757s][吞吐率：38.82req/s] [内存消耗：1,768.48kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '27',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '广州',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->good[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000229s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1 ORDER BY ratio asc LIMIT 6 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 10407 LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 218 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 221 LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 223 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 224 LIMIT 1 [ RunTime:0.000163s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 227 LIMIT 1 [ RunTime:0.000157s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:48+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/goods
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/goods [运行时间：0.025941s][吞吐率：38.55req/s] [内存消耗：1,771.70kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '52',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '广州',
+  'goodtype' => '2',
+  'page' => '0',
+  'sort' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->goods[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000219s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1  AND `goodtype` LIKE 0 ORDER BY maxLimit desc [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 228 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 257 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 645 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 708 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 709 LIMIT 1 [ RunTime:0.000173s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 264 LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 277 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 422 LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 246 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 742 LIMIT 1 [ RunTime:0.000164s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:49+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/goods
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/goods [运行时间：0.029346s][吞吐率：34.08req/s] [内存消耗：1,771.70kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '52',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '广州',
+  'goodtype' => '2',
+  'page' => '0',
+  'sort' => '3',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->goods[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000215s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1  AND `goodtype` LIKE 0 ORDER BY maxLimit desc [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 228 LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 257 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 645 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 708 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 709 LIMIT 1 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 264 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 277 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 422 LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 246 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 742 LIMIT 1 [ RunTime:0.000171s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:49+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/good
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/good [运行时间：0.024664s][吞吐率：40.55req/s] [内存消耗：1,768.48kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '27',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '广州',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->good[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000172s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1 ORDER BY ratio asc LIMIT 6 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 10407 LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 218 LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 221 LIMIT 1 [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 223 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 224 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 227 LIMIT 1 [ RunTime:0.000167s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:54+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/goods
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/goods [运行时间：0.029553s][吞吐率：33.84req/s] [内存消耗：1,770.84kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '279',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'cityName' => '广州',
+  'goodtype' => '1',
+  'sort' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->goods[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000248s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.002314s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1  AND `goodtype` LIKE 0 ORDER BY maxLimit desc LIMIT 0,8 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 630 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 225 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 237 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 238 LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 274 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 629 LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 642 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 643 LIMIT 1 [ RunTime:0.000274s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:54+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/goods
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/goods [运行时间：0.050388s][吞吐率：19.85req/s] [内存消耗：1,770.84kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '279',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'cityName' => '广州',
+  'goodtype' => '2',
+  'sort' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->goods[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002585s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.001941s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1  AND `goodtype` LIKE 0 ORDER BY maxLimit desc LIMIT 0,8 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.003042s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 228 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 257 LIMIT 1 [ RunTime:0.002680s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 645 LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 708 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 709 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 264 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 277 LIMIT 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 422 LIMIT 1 [ RunTime:0.000231s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:54+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/goods
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/goods [运行时间：0.062622s][吞吐率：15.97req/s] [内存消耗：1,774.08kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '279',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'cityName' => '广州',
+  'goodtype' => '4',
+  'sort' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->goods[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003280s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1  AND (  `goodtype` = 4 OR `goodtype` = 5 ) ORDER BY maxLimit desc LIMIT 0,8 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 633 LIMIT 1 [ RunTime:0.001140s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 632 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 230 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 648 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 423 LIMIT 1 [ RunTime:0.002072s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 701 LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 222 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 223 LIMIT 1 [ RunTime:0.000163s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:54+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/goods
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/goods [运行时间：0.059460s][吞吐率：16.82req/s] [内存消耗：1,770.84kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '279',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'cityName' => '广州',
+  'goodtype' => '3',
+  'sort' => '2',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->goods[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003372s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1  AND `goodtype` LIKE 0 ORDER BY maxLimit desc LIMIT 0,8 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 10360 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 226 LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 292 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 644 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 10394 LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 686 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 720 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 221 LIMIT 1 [ RunTime:0.000178s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:55+08:00 ] 119.145.82.115 POST /index.php/index/Hot/carousel
+[ info ] test2.8haoqianzhuang.com/index.php/index/Hot/carousel [运行时间：0.056315s][吞吐率：17.76req/s] [内存消耗：1,111.88kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Hot',
+    2 => 'carousel',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Hot->carousel[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Hot.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T17:58:55+08:00 ] 119.145.82.115 POST /index.php/index/Hot/popThree
+[ info ] test2.8haoqianzhuang.com/index.php/index/Hot/popThree [运行时间：0.077874s][吞吐率：12.84req/s] [内存消耗：1,700.64kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Hot',
+    2 => 'popThree',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Hot->popThree[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Hot.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004323s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_hot_good` [ RunTime:0.001676s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_hot_good` ORDER BY rank asc LIMIT 3,10 [ RunTime:0.001306s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:55+08:00 ] 119.145.82.115 POST /index.php/index/Hot/popTwo
+[ info ] test2.8haoqianzhuang.com/index.php/index/Hot/popTwo [运行时间：0.076768s][吞吐率：13.03req/s] [内存消耗：1,698.38kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Hot',
+    2 => 'popTwo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Hot->popTwo[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Hot.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003267s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_hot_good` [ RunTime:0.001271s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_hot_good` ORDER BY rank asc LIMIT 1,2 [ RunTime:0.000434s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:55+08:00 ] 119.145.82.115 POST /index.php/index/Hot/popOne
+[ info ] test2.8haoqianzhuang.com/index.php/index/Hot/popOne [运行时间：0.070654s][吞吐率：14.15req/s] [内存消耗：1,706.82kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Hot',
+    2 => 'popOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Hot->popOne[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Hot.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006739s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_hot_good` [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_hot_good` [ RunTime:0.001140s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:55+08:00 ] 119.145.82.115 POST /index.php/index/user/users
+[ info ] test2.8haoqianzhuang.com/index.php/index/user/users [运行时间：0.028369s][吞吐率：35.25req/s] [内存消耗：1,888.99kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'users',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->users[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000227s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_user` [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_user` WHERE  `user_id` = 109 LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_matching` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_matching` WHERE  `user_id` = 109  AND `good_id` > 0 LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_order` [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '已放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND (  `orderType` = '已放款' OR ( `orderType` = '已完成' OR `orderType` = '订单失败' ) ) LIMIT 1 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND `orderType` = '已放款' LIMIT 1 [ RunTime:0.000152s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:58:57+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/advices
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/advices [运行时间：0.022370s][吞吐率：44.70req/s] [内存消耗：1,763.26kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'advices',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Homepage->advices[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000221s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_advices` [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_advices` WHERE  `userid` = 0 OR `userid` = 121 ORDER BY addtime desc [ RunTime:0.000260s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:59:04+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/advices
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/advices [运行时间：0.023236s][吞吐率：43.04req/s] [内存消耗：1,763.67kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'advices',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Homepage->advices[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000236s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_advices` [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_advices` WHERE  `userid` = 0 OR `userid` = 109 ORDER BY addtime desc [ RunTime:0.000230s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:59:38+08:00 ] 119.145.82.115 POST /index.php/index/user/users
+[ info ] test2.8haoqianzhuang.com/index.php/index/user/users [运行时间：0.028030s][吞吐率：35.68req/s] [内存消耗：1,888.99kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'users',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->users[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000248s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_user` [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_user` WHERE  `user_id` = 109 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_matching` [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_matching` WHERE  `user_id` = 109  AND `good_id` > 0 LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_order` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '已放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND (  `orderType` = '已放款' OR ( `orderType` = '已完成' OR `orderType` = '订单失败' ) ) LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND `orderType` = '已放款' LIMIT 1 [ RunTime:0.000151s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:59:40+08:00 ] 119.145.82.115 POST /index.php/index/user/users
+[ info ] test2.8haoqianzhuang.com/index.php/index/user/users [运行时间：0.026959s][吞吐率：37.09req/s] [内存消耗：1,888.99kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'users',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->users[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000212s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_user` [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_user` WHERE  `user_id` = 109 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_matching` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_matching` WHERE  `user_id` = 109  AND `good_id` > 0 LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_order` [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '已放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND (  `orderType` = '已放款' OR ( `orderType` = '已完成' OR `orderType` = '订单失败' ) ) LIMIT 1 [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 109  AND `orderType` = '已放款' LIMIT 1 [ RunTime:0.000147s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:59:43+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/good
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/good [运行时间：0.024424s][吞吐率：40.94req/s] [内存消耗：1,768.48kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '27',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '广州',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->good[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000216s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1 ORDER BY ratio asc LIMIT 6 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 10407 LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 218 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 221 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 223 LIMIT 1 [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 224 LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 121  AND `good_id` = 227 LIMIT 1 [ RunTime:0.000155s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:59:52+08:00 ] 119.145.82.115 POST /index.php/index/Ordertwopointfive/complete
+[ info ] test2.8haoqianzhuang.com/index.php/index/Ordertwopointfive/complete [运行时间：0.022968s][吞吐率：43.54req/s] [内存消耗：1,751.70kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Ordertwopointfive',
+    2 => 'complete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Ordertwopointfive->complete[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Ordertwopointfive.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000226s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_user` [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_user` WHERE  `user_id` = 121 LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_order` [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT `order_id`,`han_id`,`addtime`,`good_id`,`orderNumber`,`orderType`,`matching_id` FROM `ba_order` WHERE  `user_id` = 121 ORDER BY addtime desc [ RunTime:0.000192s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:59:55+08:00 ] 119.145.82.115 POST /index.php/index/Bill/bytesUsed
+[ info ] test2.8haoqianzhuang.com/index.php/index/Bill/bytesUsed [运行时间：0.022822s][吞吐率：43.82req/s] [内存消耗：1,728.02kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Bill',
+    2 => 'bytesUsed',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-Hans-CN;q=1',
+  'user-agent' => '8hao qian/2.1.2 (iPhone; iOS 10.3.3; Scale/2.00)',
+  'version' => '2.1.2',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'deviceid' => '12E924D62D82420C98B5BE5DECCA40BD',
+  'tokenid' => '7rhWghOKvKZA5OCyo3x1121',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Bill->bytesUsed[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Bill.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000225s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_c_coupons` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_c_coupons` WHERE  `uid` = 121  AND `type` = 1  AND `validity` < 1533895195 ORDER BY addtime desc [ RunTime:0.000404s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:59:58+08:00 ] 119.145.82.115 POST /index.php/index/Bill/unused
+[ info ] test2.8haoqianzhuang.com/index.php/index/Bill/unused [运行时间：0.061843s][吞吐率：16.17req/s] [内存消耗：1,728.42kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Bill',
+    2 => 'unused',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Bill->unused[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Bill.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002401s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_c_coupons` [ RunTime:0.001255s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_c_coupons` WHERE  `uid` = 109  AND `type` = 0  AND `validity` < 1533895198 ORDER BY addtime desc [ RunTime:0.000870s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:59:58+08:00 ] 119.145.82.115 POST /index.php/index/Bill/pastDue
+[ info ] test2.8haoqianzhuang.com/index.php/index/Bill/pastDue [运行时间：0.061422s][吞吐率：16.28req/s] [内存消耗：1,728.42kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Bill',
+    2 => 'pastDue',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Bill->pastDue[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Bill.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004851s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_c_coupons` [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_c_coupons` WHERE  `uid` = 109  AND `type` = 0  AND `validity` > 1533895198 ORDER BY addtime desc [ RunTime:0.001414s ]
+---------------------------------------------------------------
+[ 2018-08-10T17:59:58+08:00 ] 119.145.82.115 POST /index.php/index/Bill/bytesUsed
+[ info ] test2.8haoqianzhuang.com/index.php/index/Bill/bytesUsed [运行时间：0.067481s][吞吐率：14.82req/s] [内存消耗：1,728.44kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Bill',
+    2 => 'bytesUsed',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Bill->bytesUsed[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Bill.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000924s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_c_coupons` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_c_coupons` WHERE  `uid` = 109  AND `type` = 1  AND `validity` < 1533895198 ORDER BY addtime desc [ RunTime:0.002228s ]
+---------------------------------------------------------------
+[ 2018-08-10T18:02:38+08:00 ] 119.145.82.115 POST /index.php/index/Stair/service
+[ info ] test2.8haoqianzhuang.com/index.php/index/Stair/service [运行时间：0.030388s][吞吐率：32.91req/s] [内存消耗：1,153.31kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Stair',
+    2 => 'service',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '89',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '广州',
+)
+[ info ] [ RUN ] app\index\controller\Stair->service[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Stair.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T18:02:38+08:00 ] 119.145.82.115 POST /index.php/index/huawei/configuration
+[ info ] test2.8haoqianzhuang.com/index.php/index/huawei/configuration [运行时间：0.033708s][吞吐率：29.67req/s] [内存消耗：1,688.23kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'huawei',
+    2 => 'configuration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '87',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+  'version' => '2.5.0',
+)
+[ info ] [ RUN ] app\index\controller\Huawei->configuration[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Huawei.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000214s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_a_configuration` [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_a_configuration` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000195s ]
+---------------------------------------------------------------
+[ 2018-08-10T18:02:39+08:00 ] 119.145.82.115 POST /index.php/index/Stair/city
+[ info ] test2.8haoqianzhuang.com/index.php/index/Stair/city [运行时间：0.057527s][吞吐率：17.38req/s] [内存消耗：1,152.85kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Stair',
+    2 => 'city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Stair->city[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Stair.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T18:02:39+08:00 ] 119.145.82.115 POST /index.php/index/huawei/activity
+[ info ] test2.8haoqianzhuang.com/index.php/index/huawei/activity [运行时间：0.084528s][吞吐率：11.83req/s] [内存消耗：1,687.76kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'huawei',
+    2 => 'activity',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Huawei->activity[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Huawei.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000183s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_a_configuration` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_a_configuration` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000198s ]
+---------------------------------------------------------------
+[ 2018-08-10T18:02:39+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/journalism
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/journalism [运行时间：0.092563s][吞吐率：10.80req/s] [内存消耗：1,759.57kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'journalism',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Homepage->journalism[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005866s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_journalism` [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT `journalism_id`,`headline` FROM `ba_journalism` WHERE  `status` = 1 ORDER BY addtime desc [ RunTime:0.000182s ]
+---------------------------------------------------------------
+[ 2018-08-10T18:02:39+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/property
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/property [运行时间：0.089394s][吞吐率：11.19req/s] [内存消耗：1,759.56kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'property',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Homepage->property[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001051s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_b_bill` [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 109  AND `type` = 1  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 109  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.001125s ]
+---------------------------------------------------------------
+[ 2018-08-10T18:02:39+08:00 ] 119.145.82.115 POST /index.php/index/Homepage/good
+[ info ] test2.8haoqianzhuang.com/index.php/index/Homepage/good [运行时间：0.090130s][吞吐率：11.10req/s] [内存消耗：1,768.84kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Homepage',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '89',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 8.0.0; LLD-AL00 Build/HONORLLD-AL00)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => 'jbzDkAOcNharkiwhVWL4109',
+)
+[ info ] [ PARAM ] array (
+  'cityName' => '广州',
+)
+[ info ] [ RUN ] app\index\controller\Homepage->good[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Homepage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000191s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_good` [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SELECT `goodName`,`good_id`,`goodtype`,`label`,`picture`,`bank`.`bankname`,`bank`.`logo`,`putaway`,`popularity`,`limit`,`accrual`,`hot` FROM `ba_good` LEFT JOIN `ba_bank` `bank` ON `bankid`=`bank`.`b_id` WHERE  `city` LIKE '%广州%'  AND `putaway` = 1 ORDER BY ratio asc LIMIT 6 [ RunTime:0.001107s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_collects` [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 10407 LIMIT 1 [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 218 LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 221 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 223 LIMIT 1 [ RunTime:0.001196s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 224 LIMIT 1 [ RunTime:0.000153s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_collects` WHERE  `user_id` = 109  AND `good_id` = 227 LIMIT 1 [ RunTime:0.000149s ]
+---------------------------------------------------------------
+[ 2018-08-10T18:05:06+08:00 ] 120.79.205.75 POST /index.php/index/Iosdqj/expenditure
+[ info ] test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure [运行时间：0.014940s][吞吐率：66.93req/s] [内存消耗：1,156.41kb] [文件加载：41]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Iosdqj',
+    2 => 'expenditure',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'multipart/form-data; boundary=------------------------f73b268c6bfcabf1',
+  'content-length' => '240',
+  'tokenid' => '0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'accept' => '*/*',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '13422561946',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T18:05:06+08:00 ] 119.145.82.115 POST /index.php/index/Goodstestredis/res
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/res [运行时间：0.047469s][吞吐率：21.07req/s] [内存消耗：1,113.60kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'res',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=klldkicdni0jv2tq92u8udc5p6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://test2.8haoqianzhuang.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '222',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'urls' => 'http://test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure',
+  'keyname' => 
+  array (
+    0 => '',
+    1 => 'phone',
+  ),
+  'keyvalue' => 
+  array (
+    0 => '',
+    1 => '13422561946',
+  ),
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => '0',
+  'agent' => '',
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->res[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T18:05:17+08:00 ] 120.79.205.75 POST /index.php/index/Iosdqj/expenditure
+[ info ] test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure [运行时间：0.015290s][吞吐率：65.40req/s] [内存消耗：1,156.41kb] [文件加载：41]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Iosdqj',
+    2 => 'expenditure',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'multipart/form-data; boundary=------------------------4649fc1fc0f1870c',
+  'content-length' => '240',
+  'tokenid' => '0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'accept' => '*/*',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '13422561946',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T18:05:17+08:00 ] 119.145.82.115 POST /index.php/index/Goodstestredis/res
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/res [运行时间：0.041406s][吞吐率：24.15req/s] [内存消耗：1,113.60kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'res',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=klldkicdni0jv2tq92u8udc5p6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://test2.8haoqianzhuang.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '222',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'urls' => 'http://test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure',
+  'keyname' => 
+  array (
+    0 => '',
+    1 => 'phone',
+  ),
+  'keyvalue' => 
+  array (
+    0 => '',
+    1 => '13422561946',
+  ),
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => '0',
+  'agent' => '',
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->res[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T18:05:32+08:00 ] 120.79.205.75 POST /index.php/index/Iosdqj/expenditure
+[ info ] test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure [运行时间：0.012153s][吞吐率：82.28req/s] [内存消耗：839.79kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Iosdqj',
+    2 => 'expenditure',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'multipart/form-data; boundary=------------------------0e52ba8e799b225b',
+  'content-length' => '240',
+  'tokenid' => '0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'accept' => '*/*',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '13422561946',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected ',', expecting ']'[/data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Iosdqj.php:247]
+---------------------------------------------------------------
+[ 2018-08-10T18:05:32+08:00 ] 119.145.82.115 POST /index.php/index/Goodstestredis/res
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/res [运行时间：0.041581s][吞吐率：24.05req/s] [内存消耗：1,113.60kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'res',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=klldkicdni0jv2tq92u8udc5p6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://test2.8haoqianzhuang.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '222',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'urls' => 'http://test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure',
+  'keyname' => 
+  array (
+    0 => '',
+    1 => 'phone',
+  ),
+  'keyvalue' => 
+  array (
+    0 => '',
+    1 => '13422561946',
+  ),
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => '0',
+  'agent' => '',
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->res[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T18:06:17+08:00 ] 120.79.205.75 POST /index.php/index/Iosdqj/expenditure
+[ info ] test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure [运行时间：0.012052s][吞吐率：82.97req/s] [内存消耗：839.79kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Iosdqj',
+    2 => 'expenditure',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'multipart/form-data; boundary=------------------------d57f74cacee738a6',
+  'content-length' => '240',
+  'tokenid' => '0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'accept' => '*/*',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '13422561946',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected ',', expecting ']'[/data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Iosdqj.php:247]
+---------------------------------------------------------------
+[ 2018-08-10T18:06:17+08:00 ] 119.145.82.115 POST /index.php/index/Goodstestredis/res
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/res [运行时间：0.037808s][吞吐率：26.45req/s] [内存消耗：1,113.60kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'res',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=klldkicdni0jv2tq92u8udc5p6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://test2.8haoqianzhuang.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '222',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'urls' => 'http://test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure',
+  'keyname' => 
+  array (
+    0 => '',
+    1 => 'phone',
+  ),
+  'keyvalue' => 
+  array (
+    0 => '',
+    1 => '13422561946',
+  ),
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => '0',
+  'agent' => '',
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->res[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T18:07:24+08:00 ] 120.79.205.75 POST /index.php/index/Iosdqj/expenditure
+[ info ] test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure [运行时间：0.012637s][吞吐率：79.13req/s] [内存消耗：839.79kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Iosdqj',
+    2 => 'expenditure',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'multipart/form-data; boundary=------------------------c0f8664f11271976',
+  'content-length' => '240',
+  'tokenid' => '0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'accept' => '*/*',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '13422561946',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '工薪' (T_STRING)[/data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Iosdqj.php:313]
+---------------------------------------------------------------
+[ 2018-08-10T18:07:24+08:00 ] 119.145.82.115 POST /index.php/index/Goodstestredis/res
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/res [运行时间：0.041677s][吞吐率：23.99req/s] [内存消耗：1,113.60kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'res',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=klldkicdni0jv2tq92u8udc5p6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://test2.8haoqianzhuang.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '222',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'urls' => 'http://test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure',
+  'keyname' => 
+  array (
+    0 => '',
+    1 => 'phone',
+  ),
+  'keyvalue' => 
+  array (
+    0 => '',
+    1 => '13422561946',
+  ),
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => '0',
+  'agent' => '',
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->res[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T18:07:43+08:00 ] 120.79.205.75 POST /index.php/index/Iosdqj/expenditure
+[ info ] test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure [运行时间：0.011894s][吞吐率：84.08req/s] [内存消耗：839.88kb] [文件加载：33]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Iosdqj',
+    2 => 'expenditure',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'multipart/form-data; boundary=------------------------41e76001a252620e',
+  'content-length' => '240',
+  'tokenid' => '0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'accept' => '*/*',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '13422561946',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]语法解析错误: syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'[/data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Iosdqj.php:321]
+---------------------------------------------------------------
+[ 2018-08-10T18:07:43+08:00 ] 119.145.82.115 POST /index.php/index/Goodstestredis/res
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/res [运行时间：0.043124s][吞吐率：23.19req/s] [内存消耗：1,113.60kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'res',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=klldkicdni0jv2tq92u8udc5p6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://test2.8haoqianzhuang.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '222',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'urls' => 'http://test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure',
+  'keyname' => 
+  array (
+    0 => '',
+    1 => 'phone',
+  ),
+  'keyvalue' => 
+  array (
+    0 => '',
+    1 => '13422561946',
+  ),
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => '0',
+  'agent' => '',
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->res[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T18:08:12+08:00 ] 119.145.82.115 POST /index.php/index/Goodstestredis/res
+[ info ] test2.8haoqianzhuang.com/index.php/index/Goodstestredis/res [运行时间：0.049050s][吞吐率：20.39req/s] [内存消耗：1,113.60kb] [文件加载：39]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goodstestredis',
+    2 => 'res',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=klldkicdni0jv2tq92u8udc5p6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://test2.8haoqianzhuang.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '222',
+  'connection' => 'keep-alive',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'urls' => 'http://test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure',
+  'keyname' => 
+  array (
+    0 => '',
+    1 => 'phone',
+  ),
+  'keyvalue' => 
+  array (
+    0 => '',
+    1 => '13422561946',
+  ),
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'tokenid' => '0',
+  'agent' => '',
+)
+[ info ] [ RUN ] app\index\controller\Goodstestredis->res[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Goodstestredis.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-10T18:08:12+08:00 ] 120.79.205.75 POST /index.php/index/Iosdqj/expenditure
+[ info ] test2.8haoqianzhuang.com/index.php/index/Iosdqj/expenditure [运行时间：0.029908s][吞吐率：33.44req/s] [内存消耗：1,728.91kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Iosdqj',
+    2 => 'expenditure',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'multipart/form-data; boundary=------------------------261a08453df9ecef',
+  'content-length' => '240',
+  'tokenid' => '0',
+  'deviceid' => '305c6b382760b0f28WXNW18326000538',
+  'accept' => '*/*',
+  'host' => 'test2.8haoqianzhuang.com',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '13422561946',
+)
+[ info ] [ RUN ] app\index\controller\Iosdqj->expenditure[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/Iosdqj.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000215s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_b_bill` [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '消费'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '转账'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '娱乐'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '住房'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '餐饮'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '交通'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '购物'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '通讯'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '红包'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '取款'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '医疗'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '教育'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '汽车'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '宠物'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT SUM(money) AS tp_sum FROM `ba_b_bill` WHERE  `user_id` = 0  AND `genre` = '其他'  AND `type` = 2  AND `dtime` BETWEEN 1533052800 AND 1535731200 LIMIT 1 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2018-08-10T18:10:12+08:00 ] 119.145.82.115 POST /index.php/index/user/users
+[ info ] test2.8haoqianzhuang.com/index.php/index/user/users [运行时间：0.028446s][吞吐率：35.15req/s] [内存消耗：1,888.93kb] [文件加载：46]
+[ info ] [ LANG ] /data/wwwroot/default/zuanbaodai/bank8/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'users',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'accept-encoding' => 'gzip',
+  'host' => 'test2.8haoqianzhuang.com',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 6.0.1; OPPO R9s Build/MMB29M)',
+  'content-type' => 'multipart/form-data;boundary=AAAMVIIZZZ',
+  'accept-charset' => 'UTF-8',
+  'charset' => 'UTF-8',
+  'connection' => 'Keep-Alive',
+  'version' => '2.5.0',
+  'deviceid' => '20304347b7d5f50344bbe0a5',
+  'tokenid' => 'au2knmyHrOoC6PfGzx6z112',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->users[ /data/wwwroot/default/zuanbaodai/bank8/application/index/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000261s ] mysql:host=localhost;dbname=bank8s;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_user` [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT * FROM `ba_user` WHERE  `user_id` = 112 LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_matching` [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_matching` WHERE  `user_id` = 112  AND `good_id` > 0 LIMIT 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ba_order` [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '已放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND (  `orderType` = '已放款' OR ( `orderType` = '已完成' OR `orderType` = '订单失败' ) ) LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND (  `orderType` = '开始受理' OR ( `orderType` = '待接单' OR `orderType` = '待沟通' OR `orderType` = '准备资料' OR `orderType` = '待签约' OR `orderType` = '审核中' OR `orderType` = '待放款' OR `orderType` = '订单转移' ) ) LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112 LIMIT 1 [ RunTime:0.000141s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ba_order` WHERE  `user_id` = 112  AND `orderType` = '已放款' LIMIT 1 [ RunTime:0.000146s ]
