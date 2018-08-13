@@ -189,6 +189,34 @@ use think\Request;
     }
 
 
+   //小城趣事详情
+    public function funDetails()
+    {
+      
+      //产品详情
+
+       $id = $_GET['id'];
+      //查询产品表
+      $list = db('z_fun')
+      ->field('fun_id,headline,picture,reading,wedtext,addtime,num')
+      ->where('fun_id',$id)
+      ->find();
+
+      
+       $res=db('z_fun')->where('fun_id','<>',$id)->order('addtime desc')->paginate(3);
+
+      $this->assign('res', $res);
+
+      $this->assign('list', $list);
+    // $this->assign('lists', $lists);
+
+
+    return $this->fetch();
+
+    
+
+
+    }
 
 
 

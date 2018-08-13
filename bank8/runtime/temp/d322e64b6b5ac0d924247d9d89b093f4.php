@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/finance/hotdetails.html";i:1533031648;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/finance/hotdetails.html";i:1534143409;}*/ ?>
 <!DOCTYPE html>
 <head lang="en">
 	<meta charset="UTF-8">
@@ -81,60 +81,38 @@
    		<p><?php echo $list['accrual']; ?></p>
     </div>
     <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>
+    
     <!-- 贷款期限 -->
     <div class="layer orange">
    		<h2 class="title">贷款期限</h2>
    		<p><?php echo $list['agelimit']; ?></p>
     </div>
        
+       
+       
     <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>
     <!-- 地域 -->
     <div class="layer orange">
-   		<h2 class="title">地域</h2>
-   		<p><?php echo $list['location']; ?></p>
+   		<h2 class="title">申请条件</h2>
+   		<p><?php echo $list['condition']; ?></p>
 
     </div>
     <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>
     <!-- 车辆要求 -->
     <div class="layer">
-   		<h2 class="title orange">车辆要求</h2>
-   		<p><?php echo $list['carask']; ?></p>
-
-    </div>
-    <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>
-    <!-- 客户要求 -->
-    <div class="layer">
-   		<h2 class="title">客户要求</h2>
-   		<p><?php echo $list['perask']; ?></p>
-
-    </div>
-    <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>
-    <!-- 财力认定（4选1） -->
-    <div class="layer">
-   		<h2 class="title">财力认定（4选1）</h2>
-   		<p><?php echo $list['miso']; ?></p>
-
-    </div>
-    <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>
-    <!-- 负债 -->
-    <div class="layer">
-   		<h2 class="title">负债</h2>
-   		<p><?php echo $list['liabilities']; ?></p>
-    </div>
-    <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>
-    <!-- 申请资料 -->
-    <div class="layer">
-   		<h2 class="title">申请资料</h2>
+   		<h2 class="title orange">准备资料</h2>
    		<p><?php echo $list['datum']; ?></p>
 
     </div>
+
     <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>
-    <!-- 放款模式 -->
-    <div class="layer footer">
-   		<h2 class="title">放款模式</h2>
-   		<p><?php echo $list['mode']; ?></p>
+    <!-- 申请资料 -->
+    <div class="layer">
+   		<h2 class="title">注意事项</h2>
+   		<p><?php echo $list['notice']; ?></p>
 
     </div>
+
 
     <script src="<?php echo JS_URL; ?>jquery.min.js"></script>
 	<script src="<?php echo JS_URL; ?>simpleAlert.js"></script>

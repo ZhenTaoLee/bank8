@@ -13,7 +13,7 @@ class Stair extends Index
 		//网页地址
 		static public function http()
 		{
-				$http = "https://www.8haoqianzhuang.com";
+				$http = "http://test2.8haoqianzhuang.com";
 				return $http;
 		}
 
@@ -24,7 +24,7 @@ class Stair extends Index
 
 
 	 $data=[
-	 ['city_id'=>1,'cityName'=>'广州','phone'=>'02038472070 '],
+	 ['city_id'=>1,'cityName'=>'广州','phone'=>'02038472070'],
 	 ['city_id'=>2,'cityName'=>'深圳','phone'=>'13538298700'],
 	 ['city_id'=>3,'cityName'=>'珠海','phone'=>'07563255250'],
 	 ['city_id'=>4,'cityName'=>'杭州','phone'=>'057185228020']
@@ -136,7 +136,7 @@ class Stair extends Index
    		
 
    		foreach ($data as $key => $val) {
-				$data[$key]['url'] ="$http".'/index.php/index/Finance/problem?id='.$data[$key]['issue_id'];
+				$data[$key]['url'] ="$http".'/index.php/index/Homepage/database?id='.$data[$key]['issue_id'];
 				}
 
    	return json(['state'=>2558,'data'=>$data,'mesg'=>'操作完成']);

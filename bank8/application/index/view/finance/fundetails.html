@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{$Think.const.CSST_URL}bootstrap.min.css" >
+  <link rel="stylesheet" type="text/css" href="{$Think.const.CSST_URL}fundetails.css">
+
+</head>
+<body>
+  <div class="color">   
+    <div class="container">
+      <!--文章标题-->
+      <div class="title">
+        <h3>{$list.headline}</h3>
+      </div>
+      
+      <div class="small">
+        <!-- 发布日期 -->
+        <span class="time-left"><?php echo date('Y-m-d H:i:s',$list['addtime']);?></span>
+        <!-- 浏览次数 -->
+        <span class="read"><img src="{$Think.const.IMG_URL}look.png" alt="" class="frequency">{$list.num}</span>
+      </div>
+      <br>
+      <!-- 文章内容 -->
+      <div class="content">          
+          {$list.wedtext}
+      </div>
+
+    <div style="border:8px dotted #F0F0F0;background:#F0F0F0; margin-top:10pt;"></div>
+      
+    <!--主体 container居中-->
+    <!-- 推荐阅读 -->
+    <div class="container">
+        <div class="recommended text-left">
+            <h4><img src="" alt="" class="recommendread-img">推荐阅读</h4>
+        </div>
+        <!-- 图文 -->       
+        <!--为3的栅格系统，相对于一行放四个-->  
+         {volist name="res" id="vo"}
+        <a href="fundetails?id={$vo.fun_id}">    
+          <div class="recommended-reading">
+            <div class="recommended-img  right">
+              <img src="{$vo.picture}" class="img-responsive" alt=""/>
+            </div>
+            <div class="recommended-tilie left">
+              <!-- 标题 -->
+              <h6 style="overflow:hidden; text-overflow:ellipsis;display:-webkit-box; -webkit-box-orient:vertical;-webkit-line-clamp:2; ">{$vo.headline}</h6>                 
+            </div>
+             
+            <div class="bottom">
+              <span class="recommended-item"><?php echo date('Y-m-d',$vo['addtime']);?></span>
+              <span class="read text-right"><img src="{$Think.const.IMG_URL}look.png" alt="" class="frequency">{$vo.num}</span>
+            </div>
+          </div>
+          <hr>
+        </a> 
+          {/volist}                                          
+  
+      
+    </div>
+
+</body>
+</html>

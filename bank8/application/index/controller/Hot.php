@@ -17,9 +17,9 @@ class Hot extends Index
 	 $data=[
 [
 'picture'=>'https://zykj.8haoqianzhuang.cn/f7067201807191130438809.png',
-'url'=>'http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji.html'],	 	 
+'url'=>'https://www.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji.html'],	 	 
 ['picture'=>'https://zykj.8haoqianzhuang.cn/f7067201807191130438809.png',
-'url'=>'http://test2.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji.html']
+'url'=>'https://www.8haoqianzhuang.com/index.php/index/Goodstestredis/cesji.html']
 ];
  	return json(['state'=>2558,'data'=>$data,'mesg'=>'操作完成']);
 

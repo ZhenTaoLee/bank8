@@ -541,9 +541,9 @@ $info= Request::instance()->header();
 		if($_POST['page']>0){
 		   	$f=$_POST['page']-1;
 			$s=$f*8;
-			$data = db('i_school')->order('click desc')->limit($s,8)->select();
+			$data = db('i_school')->where('status',1)->order('click desc')->limit($s,8)->select();
 		}else{
-		   	$data = db('i_school')->order('click desc')->select();
+		   	$data = db('i_school')->where('status',1)->order('click desc')->select();
 		}
    		foreach ($data as $key => $val) {	
    			
@@ -582,7 +582,9 @@ $info= Request::instance()->header();
 	  public function schooldetailed()
     {
 		
-
+		$id = $_GET['id'];
+      	$list = db('i_school')->where('school_id',$id)->find();
+ 		$this->assign('list', $list);
 		return $this->fetch();
 
 	}

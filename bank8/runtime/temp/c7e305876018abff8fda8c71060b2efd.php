@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:94:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/homepage/detailed.html";i:1534123009;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:94:"/data/wwwroot/default/zuanbaodai/bank8/public/../application/index/view/homepage/detailed.html";i:1530589561;}*/ ?>
 <!DOCTYPE html>
 <head lang="en">
 	<meta charset="UTF-8">
@@ -61,7 +61,7 @@
 				<p>29886</p>
 			</div>
 			<div class="kuai left">
-				<p>下款时间</p><br>
+				<p>下款时间 </a><img src="<?php echo IMG_URL; ?>details_icon_careful.png" alt="" id="onlyChoseAlert"></p><br>
 				<p>10分钟</p>
 			</div>
 			<div class="kuai ">
@@ -70,45 +70,39 @@
 			</div>
 		</div>
 	</div>
-	<!-- <div style="border:4px dotted #F5F5F5;background:#F5F5F5; "></div> -->	
-	<div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>
+	<div style="border:6px dotted #F5F5F5;background:#F5F5F5; "></div>	
     <!-- 贷款额度 -->
     <div class="layer">
    		<h2 class="title">贷款额度</h2>
    		<p>额度：<?php echo $list['limit']; ?></p>
     </div>
-    <!-- <div style="border:4px dotted #F5F5F5;background:#F5F5F5;"></div> -->
-    <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>	
+    <div style="border:6px dotted #F5F5F5;background:#F5F5F5;"></div>	
     <!-- 费用利率 -->
     <div class="layer lixi">
    		<h2 class="title">费用利率</h2>
    		<p>月利息：<?php echo $list['accrual']; ?></p><p></p>
     </div>
-    <!-- <div style="border:4px dotted #F5F5F5;background:#F5F5F5;"></div> -->
-    <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>	
+    <div style="border:6px dotted #F5F5F5;background:#F5F5F5;"></div>	
     <!-- 贷款期限 -->
     <div class="layer">
    		<h2 class="title">贷款期限</h2>
    		<p>期限：<?php echo $list['agelimit']; ?></p>
     </div>
-    <!-- <div style="border:4px dotted #F5F5F5;background:#F5F5F5;"></div> -->
-    <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>	
+    <div style="border:6px dotted #F5F5F5;background:#F5F5F5;"></div>	
     <!-- 申请条件 -->
     <div class="layer">
    		<h2 class="title">申请条件</h2>
    		<?php echo $list['condition']; ?>
     </div>
-    <!-- <div style="border:4px dotted #F5F5F5;background:#F5F5F5;"></div>-->
-    <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>
+    <div style="border:6px dotted #F5F5F5;background:#F5F5F5;"></div>	
     <!-- 准备资料 -->
     <div class="layer">
    		<h2 class="title">准备资料</h2>
    		<?php echo $list['datum']; ?>
     </div>
-    <!-- <div style="border:4px dotted #F5F5F5;background:rgb(245,245,245);"></div>	 -->
-    <div style="height:1px;border-bottom:9px solid rgba(245,245,245,0.8)"></div>
+    <div style="border:6px dotted #F5F5F5;background:#F5F5F5;"></div>	
     <!-- 注意事项 -->
-    <div class="layer footer">
+    <div class="layer">
    		<h2 class="title">注意事项</h2>
    		<?php echo $list['notice']; ?>
     </div>

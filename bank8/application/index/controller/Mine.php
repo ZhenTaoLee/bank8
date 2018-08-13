@@ -17,18 +17,15 @@ class mine extends Index
 		$info= Request::instance()->header();
 
 		if(array_key_exists('tokenid', $info)===false){
-    		return json(['state'=>4040,'data'=>[''],'mesg'=>'请先登录']);		
-    	}
-    	
-    	$rest = substr($info['tokenid'] , 20 , 5);
+    			$invitation='';
+  	}else{
+  		$rest = substr($info['tokenid'] , 20 , 5);
     	$id=$rest;
 //  	$deviceid=$info['deviceid'];							
 		if($id==0 || $id==null ){			
-		return json(['state'=>4040,'data'=>[''],'mesg'=>'请先登录']);		
-    	}
-	
-					
-					$user = db('user')
+		$invitation='';		
+	  }else{
+	  	$user = db('user')
 					->where('user_id',$id)
 					->find();	
 					$InvitationCode=$user['InvitationCode'];
@@ -56,8 +53,11 @@ class mine extends Index
 						
 					}else{
 						$invitation=$InvitationCode;
-					}
-
+					}	
+	  }
+  	
+  }
+    	
 
 $data=['invitation'=>$invitation,'describe'=>'描述描述描述描述描述描述描述描述描述','picture'=>'https://zykj.8haoqianzhuang.cn/dcc05201807061731598324.jpg','headline'=>'标题标题标题标题','people'=>5,'url'=>'https://www.8haoqianzhuang.com/index.php/index/index/share'];
 	return json(['state'=>2558,'data'=>$data,'mesg'=>'操作完成']);
